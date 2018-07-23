@@ -1,5 +1,6 @@
 package br.forte.controller;
 
+import br.forte.DAO.UsuarioDao;
 import br.forte.DAO.ZabbixDao;
 import br.forte.Model.Usuario;
 import br.forte.controller.Apis.Zabbix.api.domain.base.*;
@@ -15,11 +16,10 @@ import java.text.SimpleDateFormat;
 import java.util.logging.Logger;
 import java.sql.Timestamp;
 
+import static br.forte.DAO.UsuarioDao.login;
+
 @Controller
 public class ZabbixController {
-    private static Logger log = Logger.getLogger(String.valueOf(UserServiceImpl.class));
-    private static IUserService userService = new UserServiceImpl();
-
 
     @RequestMapping("Graphs")
     public String Login(){
@@ -28,66 +28,22 @@ public class ZabbixController {
 
     @RequestMapping ("CadZabbix")
     public String CadZabbix (Usuario usuario, Host host, HostGroup hostGroup, HostInterface hostInterface, Template template, Macro macro, HttpServletRequest rq){
+        try {
 
-        host.setName(rq.getParameter("nomehost"));
-        host.setHost(rq.getParameter("nomevisivel"));
-        host.setStatus(Integer.valueOf(rq.getParameter("status")));
+            boolean retorno = new ZabbixDao().CreateHost(usuario, host, hostGroup, hostInterface, template, macro);
 
-        hostGroup.setGroupid(rq.getParameter("grupoid"));
-
-//        hostGroup.setName(rq.getParameter(""));
-
-        hostInterface.setType(Integer.valueOf(rq.getParameter("tipo")));
-        hostInterface.setIp(rq.getParameter("ip"));
-        hostInterface.setDns(rq.getParameter("dns"));
-        hostInterface.setUseip(Integer.valueOf(rq.getParameter("useip")));
-        hostInterface.setMain(Integer.valueOf(rq.getParameter("main")));
-        hostInterface.setPort(rq.getParameter("porta"));
-
-        template.setTemplateid(rq.getParameter("temp"));
-
-        macro.setMacro(rq.getParameter("macroname"));
-        macro.setValue(rq.getParameter("value"));
-
-        usuario.setIdUsuario(rq.getParameter("idUsuario"));
-
-        boolean retorno = new ZabbixDao().CreateHost(usuario, host, hostGroup, hostInterface, template, macro);
-//        boolean retorno2 = new ZabbixDao().CreateHostGroup(hostGroup);
-
-        if(retorno){
-            rq.setAttribute("mensagem", "Host cadastrado sucesso");
-            return "API/API";
-        }else{
-            return "API/API";
+            if (retorno) {
+                rq.setAttribute("mensagem", "Host cadastrado sucesso");
+                return "API/API";
+            } else {
+                return "API/API";
+            }
+        }catch (Exception e){
+            System.out.println("ERRO no cad zabbix: "+e);
         }
+        return "API/API";
     }
 
-//    @RequestMapping ("CadUserZabbix")
-//    public void CreateUser() {
-//        UserCreateRequest create = new UserCreateRequest();
-//
-//        create.getParams().setName("test4");
-//        create.getParams().setAlias("test4");
-//        create.getParams().setPasswd("skycloud");
-//        List<String> usrgrps = new ArrayList<String>();
-//        usrgrps.add("13");
-//        create.getParams().setUsrgrps(usrgrps);
-//        create.getParams().setType(1);
-//
-//        Media media = new Media();
-//        media.setMediatypeid("1");
-//        media.setSendto("admin");
-//        media.setPeriod("1-7,00:00-24:00");
-//        media.setActive("0");
-//        media.setSeverity("63");
-//        media.setActive("0");
-//
-//        create.getParams().getUser_medias().add(media);
-//
-////		create.getParams().getUser_medias().add("4");
-//        userService.create(create);
-//
-//    }
 
     @RequestMapping ("AltZabbix")
     public String AltZabbix (Host host, HostGroup hostGroup, HostInterface hostInterface, Template template, Macro macro, HttpServletRequest rq){

@@ -5,8 +5,6 @@ import java.util.List;
 
 import br.forte.DAO.UsuarioDao;
 import br.forte.controller.Apis.Zabbix.api.domain.base.*;
-import br.forte.controller.Apis.Zabbix.api.domain.host.HostCreateRequest;
-import br.forte.controller.Apis.Zabbix.api.domain.host.HostGetRequest;
 import br.forte.controller.Apis.Zabbix.api.service.IHostService;
 import br.forte.controller.Apis.Zabbix.api.service.impl.HostServiceImpl;
 import junit.framework.TestCase;
@@ -15,13 +13,13 @@ import org.junit.Test;
 
 
 public class TestHost extends TestCase {
-//
+
 //	private static IHostService hostService = new HostServiceImpl();
 //	static {
 //		System.out.println("ta aqui no login do zabbix dao");
 //		new UsuarioDao().login();
 //	}
-//
+
 //	@Test
 //	public boolean testCreate() {
 //		// 数据准备
@@ -178,8 +176,7 @@ public class TestHost extends TestCase {
 //		hostInterface.setMain(1); // 0 - not default; 1 - default.
 //		hostInterface.setPort("161"); // agent监控默认端口
 //		template.setTemplateid("10081");
-//		String ss = hostService
-//				.createHost(host, hostInterface, group, template, macro);
+//		String ss = hostService.createHost(host, hostInterface, group, template, macro);
 //		System.out.println(ss);
 //
 //		retorno = true;

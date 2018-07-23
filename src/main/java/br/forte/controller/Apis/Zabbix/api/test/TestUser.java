@@ -22,7 +22,7 @@ public class TestUser extends TestCase {
 //		System.out.println("ta aqui no login do zabbix dao");
 //		new UsuarioDao().login();
 //	}
-//
+////
 //	public void testAddmedia() {
 //		// 数据准备
 //		UserAddmediaRequest addmedia =  new UserAddmediaRequest();
@@ -57,7 +57,7 @@ public class TestUser extends TestCase {
 //		create.getParams().setAlias("test4");
 //		create.getParams().setPasswd("skycloud");
 //		List<String> usrgrps = new ArrayList<String>();
-//		usrgrps.add("13");
+//		usrgrps.add("7");
 //		create.getParams().setUsrgrps(usrgrps);
 //		create.getParams().setType(1);
 //
@@ -73,7 +73,7 @@ public class TestUser extends TestCase {
 //
 ////		create.getParams().getUser_medias().add("4");
 //		userService.create(create);
-//
+
 //	}
 //
 //	public void testDeleteMedia() {

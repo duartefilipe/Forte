@@ -196,7 +196,7 @@ public class TemplateServiceImpl implements ITemplateService {
 						Template template = new Template();
 						template.setTemplateid(jsonObject.getString("templateid"));
 						template.setHost(jsonObject.getString("host"));
-						template.setName(jsonObject.getString("name"));
+						template.setNameTemplate(jsonObject.getString("nameTemplate"));
 						templates.add(template);
 					}
 				}

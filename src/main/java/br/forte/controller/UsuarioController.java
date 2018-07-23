@@ -88,25 +88,26 @@ public class UsuarioController {
     public String adiciona (Usuario usuario, HttpServletRequest rq) {
         System.out.println("Entrou no cadastrar usuario");
 
-//        HostGroup hostGroup = new HostGroup();
-//        hostGroup.setName(usuario.getNome());
+        HostGroup hostGroup = new HostGroup();
+        hostGroup.setName(usuario.getNome());
 
         UserGroup userGroup = new UserGroup();
         userGroup.setName(usuario.getNome());
 
-        try {
-            boolean retorno1 = new UsuarioDao().cadastraUsuario(usuario);
-//            boolean retorno2 = new ZabbixDao().CreateHostGroup(hostGroup);
-//            boolean retorno3 = new UsuarioDao().cadastraUserGroup(userGroup);
 
-            if (retorno1) {
+        try {
+            boolean retorno1 = new ZabbixDao().CreateHostGroup(hostGroup);
+            boolean retorno2 = new UsuarioDao().cadastraUserGroup(userGroup);
+            boolean retorno3 = new UsuarioDao().cadastraUsuario(usuario);
+
+            if (retorno1 && retorno2 && retorno3) {
                 rq.setAttribute("mensagem", "usuario cadastrado sucesso");
                 return "Usuario/Usuario";
             }else {
                 return "Usuario/Usuario";
             }
         }catch (Exception e){
-            System.out.println("ERRO: "+e);
+            System.out.println("ERRO pra cadastrar os usu, hostgroup e usergroup: "+e);
         }
         return "Usuario/Usuario";
     }

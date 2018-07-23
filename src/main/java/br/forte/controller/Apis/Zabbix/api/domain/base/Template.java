@@ -2,7 +2,7 @@ package br.forte.controller.Apis.Zabbix.api.domain.base;
 public class Template{
 	private String templateid;
 	private String host;
-	private String name;
+	private String nameTemplate;
 	public void setTemplateid(String templateid) {
 		this.templateid = templateid;
 	}
@@ -15,10 +15,12 @@ public class Template{
 	public String getHost() {
 		return host;
 	}
-	public void setName(String name) {
-		this.name = name;
+
+	public String getNameTemplate() {
+		return nameTemplate;
 	}
-	public String getName() {
-		return name;
+
+	public void setNameTemplate(String nameTemplate) {
+		this.nameTemplate = nameTemplate;
 	}
 }

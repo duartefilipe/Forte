@@ -187,26 +187,14 @@
                     </div>
 
                     <div class="row">
-
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Grupo</label>
-                                <select name="grupo" class="form-control select2" style="width: 100%;">
-                                    <option></option>
-                                    <option value="Zabbix administrators">Zabbix administrators</option>
-                                    <option value="Zabbix administrators">Clientes</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label type="text">Senha</label>
                                 <input type="password" class="form-control" name="senha" placeholder="Senha">
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label>Perfil</label>
                                 <select name="tipo" class="form-control select2" style="width: 100%;">

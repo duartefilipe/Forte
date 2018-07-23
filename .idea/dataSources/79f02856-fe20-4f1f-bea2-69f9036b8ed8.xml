@@ -51,8 +51,8 @@
     <schema id="11" parent="3" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-07-13.16:03:15.005</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1127</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-07-23.08:44:04.205</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1594</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -76,152 +76,152 @@
       <ObjectId>4000</ObjectId>
       <Comment>SP-GiST index access method</Comment>
     </access-method>
-    <sequence id="17" parent="11" name="hostgroup_hostgroupid_seq">
-      <ObjectId>24785</ObjectId>
-      <StateNumber>1127</StateNumber>
+    <sequence id="17" parent="11" name="host_idhost_seq">
+      <ObjectId>24932</ObjectId>
+      <StateNumber>1594</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="18" parent="11" name="host_idhost_seq">
-      <ObjectId>24736</ObjectId>
-      <StateNumber>992</StateNumber>
+    <sequence id="18" parent="11" name="hostgroup_hostgroupid_seq">
+      <ObjectId>24863</ObjectId>
+      <StateNumber>1360</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="19" parent="11" name="usergroup_usergroupid_seq">
-      <ObjectId>24768</ObjectId>
-      <StateNumber>1044</StateNumber>
+      <ObjectId>24890</ObjectId>
+      <StateNumber>1362</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="20" parent="11" name="usuario_idusuario_seq">
-      <ObjectId>16397</ObjectId>
-      <StateNumber>726</StateNumber>
+      <ObjectId>24874</ObjectId>
+      <StateNumber>1361</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <table id="21" parent="11" name="host">
-      <ObjectId>24738</ObjectId>
-      <StateNumber>992</StateNumber>
+      <ObjectId>24934</ObjectId>
+      <StateNumber>1594</StateNumber>
     </table>
     <table id="22" parent="11" name="hostgroup">
-      <ObjectId>24787</ObjectId>
-      <StateNumber>1127</StateNumber>
+      <ObjectId>24865</ObjectId>
+      <StateNumber>1362</StateNumber>
     </table>
     <table id="23" parent="11" name="usergroup">
-      <ObjectId>24770</ObjectId>
-      <StateNumber>1044</StateNumber>
+      <ObjectId>24892</ObjectId>
+      <StateNumber>1362</StateNumber>
     </table>
     <table id="24" parent="11" name="usuario">
-      <ObjectId>16399</ObjectId>
-      <StateNumber>1127</StateNumber>
+      <ObjectId>24876</ObjectId>
+      <StateNumber>1594</StateNumber>
     </table>
     <column id="25" parent="21" name="idhost">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <DefaultExpression>nextval(&apos;host_idhost_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>host_idhost_seq</SequenceName>
     </column>
-    <column id="26" parent="21" name="nome">
+    <column id="26" parent="21" name="namehost">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="27" parent="21" name="hos">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="28" parent="21" name="status">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="29" parent="21" name="idusuario">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="30" parent="21" name="tipo">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="31" parent="21" name="ip">
       <Position>7</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="32" parent="21" name="dns">
       <Position>8</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="33" parent="21" name="useip">
       <Position>9</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="34" parent="21" name="main">
       <Position>10</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="35" parent="21" name="porta">
       <Position>11</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="36" parent="21" name="temp">
       <Position>12</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="37" parent="21" name="mac">
       <Position>13</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="38" parent="21" name="val">
       <Position>14</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>992</StateNumber>
+      <StateNumber>1594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="39" parent="21" name="host_pkey">
-      <ObjectId>24745</ObjectId>
+      <ObjectId>24941</ObjectId>
       <ColNames>idhost</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="40" parent="21" name="host_pkey">
-      <ObjectId>24746</ObjectId>
+      <ObjectId>24942</ObjectId>
       <ColNames>idhost</ColNames>
       <UnderlyingIndexName>host_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="41" parent="21" name="host_idusuario_fkey">
-      <ObjectId>24747</ObjectId>
+      <ObjectId>24943</ObjectId>
       <ColNames>idusuario</ColNames>
-      <RefTableId>16399</RefTableId>
+      <RefTableId>24876</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>usuario</RefTableName>
       <RefKeyName>usuario_pkey</RefKeyName>
@@ -231,193 +231,202 @@
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1360</StateNumber>
       <DefaultExpression>nextval(&apos;hostgroup_hostgroupid_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>hostgroup_hostgroupid_seq</SequenceName>
     </column>
-    <column id="43" parent="22" name="name">
+    <column id="43" parent="22" name="namehostgroup">
       <Position>2</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1360</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="44" parent="22" name="internal">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1360</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="45" parent="22" name="flags">
       <Position>4</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1360</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="46" parent="22" name="iduser">
-      <Position>5</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>1127</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="47" parent="22" name="hostgroup_pkey">
-      <ObjectId>24794</ObjectId>
+    <index id="46" parent="22" name="hostgroup_pkey">
+      <ObjectId>24872</ObjectId>
       <ColNames>hostgroupid</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="48" parent="22" name="hostgroup_pkey">
-      <ObjectId>24795</ObjectId>
+    <key id="47" parent="22" name="hostgroup_pkey">
+      <ObjectId>24873</ObjectId>
       <ColNames>hostgroupid</ColNames>
       <UnderlyingIndexName>hostgroup_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="49" parent="22" name="hostgroup_iduser_fkey">
-      <ObjectId>24796</ObjectId>
+    <column id="48" parent="23" name="usergroupid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1362</StateNumber>
+      <DefaultExpression>nextval(&apos;usergroup_usergroupid_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>usergroup_usergroupid_seq</SequenceName>
+    </column>
+    <column id="49" parent="23" name="nameusergroup">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>1362</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="50" parent="23" name="debug_mode">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1362</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="51" parent="23" name="gui_access">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1362</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="52" parent="23" name="users_status">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1362</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="53" parent="23" name="iduser">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1362</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="54" parent="23" name="hostgroupid">
+      <Position>7</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1362</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="55" parent="23" name="usergroup_pkey">
+      <ObjectId>24899</ObjectId>
+      <ColNames>usergroupid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="56" parent="23" name="usergroup_pkey">
+      <ObjectId>24900</ObjectId>
+      <ColNames>usergroupid</ColNames>
+      <UnderlyingIndexName>usergroup_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="57" parent="23" name="usergroup_iduser_fkey">
+      <ObjectId>24901</ObjectId>
       <ColNames>iduser</ColNames>
-      <RefTableId>16399</RefTableId>
+      <RefTableId>24876</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>usuario</RefTableName>
       <RefKeyName>usuario_pkey</RefKeyName>
       <RefColNames>idusuario</RefColNames>
     </foreign-key>
-    <column id="50" parent="23" name="usergroupid">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1044</StateNumber>
-      <DefaultExpression>nextval(&apos;usergroup_usergroupid_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-      <SequenceName>usergroup_usergroupid_seq</SequenceName>
-    </column>
-    <column id="51" parent="23" name="name">
-      <Position>2</Position>
-      <DataType>text|0s</DataType>
-      <StateNumber>1044</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="52" parent="23" name="debug_mode">
-      <Position>3</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>1044</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="53" parent="23" name="gui_access">
-      <Position>4</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>1044</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="54" parent="23" name="users_status">
-      <Position>5</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>1044</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="55" parent="23" name="iduser">
-      <Position>6</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>1044</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="56" parent="23" name="usergroup_pkey">
-      <ObjectId>24777</ObjectId>
-      <ColNames>usergroupid</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="57" parent="23" name="usergroup_pkey">
-      <ObjectId>24778</ObjectId>
-      <ColNames>usergroupid</ColNames>
-      <UnderlyingIndexName>usergroup_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="58" parent="23" name="usergroup_iduser_fkey">
-      <ObjectId>24779</ObjectId>
-      <ColNames>iduser</ColNames>
-      <RefTableId>16399</RefTableId>
+    <foreign-key id="58" parent="23" name="usergroup_hostgroupid_fkey">
+      <ObjectId>24906</ObjectId>
+      <ColNames>hostgroupid</ColNames>
+      <RefTableId>24865</RefTableId>
       <RefColPositions>1</RefColPositions>
-      <RefTableName>usuario</RefTableName>
-      <RefKeyName>usuario_pkey</RefKeyName>
-      <RefColNames>idusuario</RefColNames>
+      <RefTableName>hostgroup</RefTableName>
+      <RefKeyName>hostgroup_pkey</RefKeyName>
+      <RefColNames>hostgroupid</RefColNames>
     </foreign-key>
     <column id="59" parent="24" name="idusuario">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>726</StateNumber>
+      <StateNumber>1361</StateNumber>
       <DefaultExpression>nextval(&apos;usuario_idusuario_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>usuario_idusuario_seq</SequenceName>
     </column>
-    <column id="60" parent="24" name="nome">
+    <column id="60" parent="24" name="nameuser">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>726</StateNumber>
+      <StateNumber>1361</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="61" parent="24" name="sobrenome">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>726</StateNumber>
+      <StateNumber>1361</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="62" parent="24" name="email">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>726</StateNumber>
+      <StateNumber>1361</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="63" parent="24" name="telefone">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>726</StateNumber>
+      <StateNumber>1361</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="64" parent="24" name="endereco">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>726</StateNumber>
+      <StateNumber>1361</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="65" parent="24" name="senha">
       <Position>7</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <StateNumber>726</StateNumber>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>1361</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="66" parent="24" name="tipo">
       <Position>8</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>726</StateNumber>
+      <StateNumber>1361</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="67" parent="24" name="userzabbix">
       <Position>9</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <StateNumber>734</StateNumber>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>1361</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="68" parent="24" name="senhazabbix">
       <Position>10</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <StateNumber>735</StateNumber>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>1361</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="69" parent="24" name="grupo">
+    <column id="69" parent="24" name="hostgroupid">
       <Position>11</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <StateNumber>782</StateNumber>
-      <TypeId>1043</TypeId>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1361</StateNumber>
+      <TypeId>23</TypeId>
     </column>
     <index id="70" parent="24" name="usuario_pkey">
-      <ObjectId>16406</ObjectId>
+      <ObjectId>24883</ObjectId>
       <ColNames>idusuario</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="71" parent="24" name="usuario_pkey">
-      <ObjectId>16407</ObjectId>
+      <ObjectId>24884</ObjectId>
       <ColNames>idusuario</ColNames>
       <UnderlyingIndexName>usuario_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <foreign-key id="72" parent="24" name="usuario_hostgroupid_fkey">
+      <ObjectId>24885</ObjectId>
+      <ColNames>hostgroupid</ColNames>
+      <RefTableId>24865</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>hostgroup</RefTableName>
+      <RefKeyName>hostgroup_pkey</RefKeyName>
+      <RefColNames>hostgroupid</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

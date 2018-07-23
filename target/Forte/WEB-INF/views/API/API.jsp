@@ -27,12 +27,6 @@
 
 <c:out value="${requestScope.usuario}" />
 
-<jsp:useBean id="usuarios" class="br.forte.DAO.UsuarioDao" />
-<c:set var="user" value="${usuarios.getUsuarios()}" />
-
-<%--<jsp:useBean id="hostss" class="br.forte.DAO.ZabbixDao" />--%>
-<%--<c:set var="hostss" value="${hostss.getHost()}" />--%>
-
 <jsp:useBean id="hosts" class="br.forte.DAO.ZabbixDao" />
 <c:set var="hosts" value="${hosts.getHostsAdmin(usuario.idUsuario, usuario.tipo)}" />
 
@@ -151,23 +145,26 @@
                         <div class="box-body">
                             <form action="CadZabbix" method="post">
                                 <div class="row">
-                                    <input type="hidden" name="idUsuario" value="${usuario.idUsuario}">
+
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">Nome do Host</label>
-                                            <input type="text" class="form-control" name="nomehost" placeholder="Informe um nome para o host">
+                                            <input type="text" class="form-control" name="name" placeholder="Informe um nome para o host">
                                         </div>
                                     </div>
 
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">nome visivel</label>
-                                            <input type="text" class="form-control" name="nomevisivel" placeholder="Informe o nome que ficara visivel">
+                                            <input type="text" class="form-control" name="host" placeholder="Informe o nome que ficara visivel">
                                         </div>
                                     </div>
 
                                     <input type="hidden" class="form-control " value="0" name="status">
-                                    <input type="hidden" class="form-control" value="8" name="grupoid">
+
+                                    <input type="hidden" name="idUsuario" value="${usuario.idUsuario}">
+
+                                    <%--<input type="hidden" class="form-control" value="8" name="grupoid">--%>
                                     <%--<input type="hidden" class="form-control" value="nomehost" name="hostGroup">--%>
 
                                     <%--<div class="col-md-3">--%>
@@ -181,7 +178,7 @@
                                         <%--</div>--%>
                                     <%--</div>--%>
 
-                                    <input type="hidden" class="form-control" value="2" name="tipo">
+                                    <input type="hidden" class="form-control" value="2" name="type">
 
                                     <div class="col-md-3">
                                         <div class="form-group">
@@ -201,7 +198,7 @@
                                         <div class="form-group">
                                             <label>Multiple</label>
                                             <label type="text">Porta</label>
-                                            <input type="text" class="form-control disable" name="porta" placeholder="161">
+                                            <input type="text" class="form-control disable" name="port" placeholder="161">
                                         </div>
                                     </div>
 
@@ -211,12 +208,12 @@
                                             <%--<input type="text" class="form-control disable" name="temp" placeholder="10124">--%>
                                         <%--</div>--%>
                                     <%--</div>--%>
-                                    <input type="hidden" name="temp" value="10124">
+                                    <input type="hidden" name="nameTemplate" value="10124">
 
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label type="text">Macro</label>
-                                            <input type="text" class="form-control disable" name="macroname" placeholder="{$SNMP_COMMUNITY}">
+                                            <input type="text" class="form-control disable" name="macro" placeholder="{$SNMP_COMMUNITY}">
                                         </div>
                                     </div>
 
@@ -390,7 +387,7 @@
                         <div class="row">
                             <div class="box box-default">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title btn btn-box-tool button" data-widget="collapse" style="color: black">Usuarios</h3>
+                                    <h3 class="box-title btn btn-box-tool button" data-widget="collapse" style="color: black">Hosts</h3>
 
                                     <div class="box-tools pull-right">
                                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
