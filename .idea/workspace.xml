@@ -7,19 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1c99b5c-4f77-4484-a9bc-d48f40943ab5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/79f02856-fe20-4f1f-bea2-69f9036b8ed8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/79f02856-fe20-4f1f-bea2-69f9036b8ed8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/ZabbixDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/ZabbixDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/DAO/ZabbixDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/DAO/ZabbixDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/controller/UsuarioController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,28 +73,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="4" />
+          <entry key="java" value="5" />
           <entry key="jsp" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="5" />
           <entry key="JSP" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="211" />
+          <entry key="java" value="316" />
           <entry key="jsp" value="20" />
-          <entry key="sql" value="38" />
+          <entry key="sql" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="211" />
+          <entry key="JAVA" value="316" />
           <entry key="JSP" value="20" />
-          <entry key="Scratch" value="38" />
+          <entry key="Scratch" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -140,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="214" selection-start-line="214" selection-end-line="214" />
+            <state relative-caret-position="195">
+              <caret line="284" column="130" selection-start-line="284" selection-start-column="130" selection-end-line="284" selection-end-column="130" />
               <folding>
                 <element signature="method#autenticar#0;class#UsuarioDao#0" />
                 <element signature="method#loginJson#0;class#UsuarioDao#0" />
@@ -161,11 +149,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestUsergroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="257">
+              <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -397,6 +394,39 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="DAO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -521,7 +551,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="forte" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532696131683" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532700118859" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -795,7 +825,7 @@
       <workItem from="1532104350191" duration="3578000" />
       <workItem from="1532346051393" duration="3595000" />
       <workItem from="1532611779279" duration="5187000" />
-      <workItem from="1532692080241" duration="3834000" />
+      <workItem from="1532692080241" duration="8016000" />
     </task>
     <servers />
   </component>
@@ -832,7 +862,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352659000" />
+    <option name="totallyTimeSpent" value="356841000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -858,7 +888,7 @@
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284055" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3223684" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3223684" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39802632" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -869,7 +899,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.2446281" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.32730263" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32730263" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3289256" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -888,132 +918,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>197</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>199</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>201</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>198</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>200</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>203</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>206</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>205</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>209</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>210</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>211</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>213</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>212</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>214</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>185</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>184</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>187</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>186</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>195</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
-          <line>193</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1192,10 +1096,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestUsergroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        <state relative-caret-position="195">
+          <caret line="284" column="130" selection-start-line="284" selection-start-column="130" selection-end-line="284" selection-end-column="130" />
           <folding>
             <element signature="method#autenticar#0;class#UsuarioDao#0" />
             <element signature="method#loginJson#0;class#UsuarioDao#0" />
@@ -1216,8 +1127,8 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="257">
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="45" />
         </state>
       </provider>
     </entry>

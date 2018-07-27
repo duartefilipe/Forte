@@ -25,6 +25,7 @@ import org.json.JSONObject;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.PostMethod;
 import org.json.JSONStringer;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -156,7 +157,7 @@ public class UsuarioDao {
             String grupoid = null;
             if (tipo == 3) {
                 grupoid = ("7");
-            } else{
+            } else {
                 grupoid = UltIDHostGroup;
             }
 
@@ -180,7 +181,7 @@ public class UsuarioDao {
             login();
 
             UserCreateRequest create = new UserCreateRequest();
-            System.out.println("Nome que vai cadastrar: "+nome);
+
             //nao ta cadastrando mais
             create.getParams().setAlias(nome);
             create.getParams().setName(nome);
@@ -196,9 +197,9 @@ public class UsuarioDao {
                 UltIDUserGroup = UserG.getUsrgrpid();
             }
             String grupoUserid = null;
-            if(tipo == 3){
+            if (tipo == 3) {
                 grupoUserid = "7";
-            }else{
+            } else {
                 grupoUserid = UltIDUserGroup;
             }
             usrgrps.add(grupoUserid);
@@ -238,8 +239,10 @@ public class UsuarioDao {
             UsuarioDao uD = new UsuarioDao();
             usuario = uD.getUltUsu();
             String UltUsuID = null;
+            String tipoUltUsu = null;
             for (Usuario usu : usuario) {
                 UltUsuID = usu.getIdUsuario();
+                tipoUltUsu = String.valueOf(usu.getTipo());
             }
 
             //pegando o id do ultimo HostGroup cadastrado
@@ -247,6 +250,7 @@ public class UsuarioDao {
             ZabbixDao zD = new ZabbixDao();
             hostgroup = zD.getUltHostGroup();
             String UltIDHostGroup = null;
+
             for (HostGroup h : hostgroup) {
                 UltIDHostGroup = h.getGroupid();
             }
@@ -275,15 +279,15 @@ public class UsuarioDao {
 //            userGroup.setUsrgrpid(UltIDUsu);
 
             //o grupo de hosts que vai permitir no hostgroup
-//            List<Permission> rights = new ArrayList<>();
-//            Permission permission = new Permission();
-//            permission.setId(UltIDHostGroup);//id do hostgroup
-//            permission.setPermission(2); //aqui e o grupo de nivel de acesso dele (2 - admin, 3 - superadmin)
-//            rights.add(permission);
-//
-//            userGroupCreate.getParams().setRights(rights);
+            List<Permission> rights = new ArrayList<>();
+            Permission permission = new Permission();
+            permission.setId(UltIDHostGroup);//id do hostgroup
+            permission.setPermission(3); //aqui e o grupo de nivel de acesso dele (2 - admin, 3 - superadmin) ou permissao nivel 3
+            rights.add(permission);
+
+            userGroupCreate.getParams().setRights(rights);
 //            List<String> ids = new ArrayList<>();
-//            ids.add("1"); //id do host que vai cadastrar nas permissoes
+//            ids.add("1"); //id do usuario que vai cadastrar
 //            userGroupCreate.getParams().setUserids(ids);
 
             usergroupService.userGroupCreate(userGroupCreate);
@@ -600,16 +604,6 @@ public class UsuarioDao {
         }
         return UserGroups;
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }
