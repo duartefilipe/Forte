@@ -38,7 +38,7 @@
 
 <c:if  test="${usuario != null}">
 
-
+    <c:if  test="${usuario.tipo == 3}">
 
 <div class="wrapper">
 
@@ -398,6 +398,10 @@
 
     <!-- Modal cliente FIM-->
 
+    </c:if>
+    </c:if>
+<c:if  test="${usuario.tipo == 2}">
+            <% response.sendRedirect("ZabiRepo");%>
     </c:if>
 
     <c:if  test="${sessionScope['usuario'] == null}">

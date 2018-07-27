@@ -98,17 +98,17 @@
                     <li class="header">
                         MENU
                     </li>
-    <%--<c:if  test="${usuario.tipo == 3}">--%>
-                    <%--<li>--%>
-                        <%--<a href="index"><i class="fa fa-dashboard"></i> <span>Home</span> </a>--%>
-                    <%--</li>--%>
-    <%--</c:if>--%>
+    <c:if  test="${usuario.tipo == 3}">
                     <li>
-                        <a href="index">
-                            <i class="fa fa-dashboard"></i>
-                            <span>Home</span>
-                        </a>
+                        <a href="index"><i class="fa fa-dashboard"></i> <span>Home</span> </a>
                     </li>
+    </c:if>
+                    <%--<li>--%>
+                        <%--<a href="index">--%>
+                            <%--<i class="fa fa-dashboard"></i>--%>
+                            <%--<span>Home</span>--%>
+                        <%--</a>--%>
+                    <%--</li>--%>
 
                     <li>
                         <a href="" id="menu_dashboard"><i class="fa fa-dashboard"></i> <span>DashBoard</span> </a>
