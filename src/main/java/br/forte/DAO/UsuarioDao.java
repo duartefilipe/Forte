@@ -39,6 +39,8 @@ public class UsuarioDao {
     private static IHostService hostService = new HostServiceImpl();
 
     public static final String url = "http://192.168.199.104/zabbix/api_jsonrpc.php";  //forte pc
+    //public static final String url = "http://177.67.163.20:8089/zabbix/api_jsonrpc.php";  //zabbix externo
+
     private static String loginName;
     private static String password;
 
@@ -152,9 +154,9 @@ public class UsuarioDao {
             int tipo = u.getTipo();
 
             String grupoid = null;
-            if (u.getTipo() == 3) {
+            if (tipo == 3) {
                 grupoid = ("7");
-            } else if (u.getTipo() == 2) {
+            } else{
                 grupoid = UltIDHostGroup;
             }
 
@@ -178,9 +180,10 @@ public class UsuarioDao {
             login();
 
             UserCreateRequest create = new UserCreateRequest();
-
-            create.getParams().setName(nome);
+            System.out.println("Nome que vai cadastrar: "+nome);
+            //nao ta cadastrando mais
             create.getParams().setAlias(nome);
+            create.getParams().setName(nome);
             create.getParams().setSurname(sobrenome);
             create.getParams().setPasswd(senha);
             List<String> usrgrps = new ArrayList<String>();
@@ -192,12 +195,13 @@ public class UsuarioDao {
             for (UserGroup UserG : usergroup) {
                 UltIDUserGroup = UserG.getUsrgrpid();
             }
-
+            String grupoUserid = null;
             if(tipo == 3){
-                usrgrps.add("7");
+                grupoUserid = "7";
             }else{
-                usrgrps.add(UltIDUserGroup);
+                grupoUserid = UltIDUserGroup;
             }
+            usrgrps.add(grupoUserid);
 
             create.getParams().setUsrgrps(usrgrps);
             create.getParams().setType(tipo);
@@ -225,6 +229,7 @@ public class UsuarioDao {
     }
 
     public boolean cadastraUserGroup(UserGroup userGroup) {
+        System.out.println("Ta no metodo cad userGroup");
         boolean retorno;
         try {
 
@@ -270,16 +275,16 @@ public class UsuarioDao {
 //            userGroup.setUsrgrpid(UltIDUsu);
 
             //o grupo de hosts que vai permitir no hostgroup
-            List<Permission> rights = new ArrayList<>();
-            Permission permission = new Permission();
-            permission.setId(UltIDHostGroup);//id do hostgroup
-            permission.setPermission(3); //aqui e o grupo de nivel de acesso dele
-            rights.add(permission);
-
-            userGroupCreate.getParams().setRights(rights);
-            List<String> ids = new ArrayList<>();
-            ids.add("1"); //id do host que vai cadastrar nas permissoes
-            userGroupCreate.getParams().setUserids(ids);
+//            List<Permission> rights = new ArrayList<>();
+//            Permission permission = new Permission();
+//            permission.setId(UltIDHostGroup);//id do hostgroup
+//            permission.setPermission(2); //aqui e o grupo de nivel de acesso dele (2 - admin, 3 - superadmin)
+//            rights.add(permission);
+//
+//            userGroupCreate.getParams().setRights(rights);
+//            List<String> ids = new ArrayList<>();
+//            ids.add("1"); //id do host que vai cadastrar nas permissoes
+//            userGroupCreate.getParams().setUserids(ids);
 
             usergroupService.userGroupCreate(userGroupCreate);
 

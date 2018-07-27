@@ -9,38 +9,20 @@
     <list default="true" id="f1c99b5c-4f77-4484-a9bc-d48f40943ab5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/79f02856-fe20-4f1f-bea2-69f9036b8ed8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/79f02856-fe20-4f1f-bea2-69f9036b8ed8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/79f02856-fe20-4f1f-bea2-69f9036b8ed8/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/79f02856-fe20-4f1f-bea2-69f9036b8ed8/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/domain/base/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/domain/base/Template.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/service/impl/TemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/service/impl/TemplateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestHost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestHost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/ZabbixDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/ZabbixDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/Apis/Zabbix/api/domain/base/Template.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/Apis/Zabbix/api/domain/base/Template.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/Apis/Zabbix/api/service/impl/TemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/Apis/Zabbix/api/service/impl/TemplateServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/Apis/Zabbix/api/test/TestHost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/Apis/Zabbix/api/test/TestHost.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/ZabbixController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/ZabbixController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/API/API.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/API/API.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Usuario/Usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Usuario/Usuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/forte/DAO/ZabbixDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/DAO/ZabbixDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/controller/Apis/Zabbix/api/domain/base/Template.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/controller/Apis/Zabbix/api/domain/base/Template.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/controller/Apis/Zabbix/api/service/impl/TemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/controller/Apis/Zabbix/api/service/impl/TemplateServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/controller/Apis/Zabbix/api/test/TestHost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/controller/Apis/Zabbix/api/test/TestHost.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/forte/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/controller/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/controller/ZabbixController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/controller/ZabbixController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,15 +73,54 @@
     </expand>
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1509149149">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.91" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+          <entry key="jsp" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="JSP" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="211" />
+          <entry key="jsp" value="20" />
+          <entry key="sql" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="211" />
+          <entry key="JSP" value="20" />
+          <entry key="Scratch" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ZabbixDao.java" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-658">
-              <caret line="118" column="45" lean-forward="true" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
+            <state relative-caret-position="-30">
+              <caret line="122" column="54" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
               <folding>
-                <element signature="method#CreateHostGroup#0;class#ZabbixDao#0" />
+                <element signature="method#CreateHost#0;class#ZabbixDao#0" />
                 <element signature="method#getUltHostGroup#0;class#ZabbixDao#0" />
                 <element signature="method#AlteraHost#0;class#ZabbixDao#0" />
                 <element signature="method#getHost#0;class#ZabbixDao#0" />
@@ -111,25 +132,26 @@
                 <element signature="method#getUserGroup#0;class#ZabbixDao#0" />
                 <element signature="method#userGroupGet#0;class#ZabbixDao#0" />
                 <element signature="method#Delete#0;class#ZabbixDao#0" />
-                <element signature="e#21053#21070#0" expanded="true" />
-                <element signature="e#21119#21125#0" expanded="true" />
-                <element signature="e#21192#21207#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsuarioDao.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="546" column="31" lean-forward="true" selection-start-line="546" selection-start-column="31" selection-end-line="546" selection-end-column="31" />
+            <state relative-caret-position="180">
+              <caret line="214" selection-start-line="214" selection-end-line="214" />
               <folding>
-                <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
+                <element signature="method#autenticar#0;class#UsuarioDao#0" />
+                <element signature="method#loginJson#0;class#UsuarioDao#0" />
+                <element signature="method#login#0;class#UsuarioDao#0" />
+                <element signature="e#7600#7611#0" expanded="true" />
                 <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
                 <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
                 <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
                 <element signature="method#removerUsuario#0;class#UsuarioDao#0" />
+                <element signature="method#getUser#0;class#UsuarioDao#0" />
                 <element signature="method#userGet#0;class#UsuarioDao#0" />
                 <element signature="method#mediaGet#0;class#UsuarioDao#0" />
                 <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
@@ -139,38 +161,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="API.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+            <state relative-caret-position="107">
+              <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
+            <state relative-caret-position="3510">
+              <caret line="234" selection-start-line="234" selection-end-line="234" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZabbixController.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="915">
               <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="180">
+              <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+              <folding>
+                <element signature="method#AlteraPerfilUsuario#0;class#UsuarioController#0" />
+                <element signature="method#DeletaUsuario#0;class#UsuarioController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -240,7 +266,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Hosts/Hosts.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/domain/hostgroup/HostGroupCreateRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/HostController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestHostinterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestApplication.java" />
@@ -264,12 +289,13 @@
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/service/impl/TemplateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/domain/base/Template.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestHost.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql" />
       </list>
     </option>
   </component>
@@ -321,37 +347,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -359,74 +383,16 @@
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="forte" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="forte" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="forte" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="forte" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="forte" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -435,14 +401,32 @@
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -450,7 +434,7 @@
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -459,7 +443,7 @@
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -469,7 +453,18 @@
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+              <item name="Zabbix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -479,7 +474,7 @@
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -489,7 +484,7 @@
             </path>
             <path>
               <item name="Forte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forte-master" type="462c0819:PsiDirectoryNode" />
+              <item name="forte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -516,6 +511,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -524,6 +521,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="forte" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532696131683" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -562,9 +560,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TestHost.testCreateHost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Forte" />
@@ -574,20 +578,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="br.forte.controller.Apis.Zabbix.api.test" />
       <option name="MAIN_CLASS_NAME" value="br.forte.controller.Apis.Zabbix.api.test.TestHost" />
       <option name="METHOD_NAME" value="testCreateHost" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TestHostgroup.testHostGroupCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Forte" />
@@ -597,20 +595,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="br.forte.controller.Apis.Zabbix.api.test" />
       <option name="MAIN_CLASS_NAME" value="br.forte.controller.Apis.Zabbix.api.test.TestHostgroup" />
       <option name="METHOD_NAME" value="testHostGroupCreate" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TestUser.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Forte" />
@@ -620,20 +612,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="br.forte.controller.Apis.Zabbix.api.test" />
       <option name="MAIN_CLASS_NAME" value="br.forte.controller.Apis.Zabbix.api.test.TestUser" />
       <option name="METHOD_NAME" value="testCreate" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ZabbixDao.CreateHost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Forte" />
@@ -643,58 +629,28 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="br.forte.DAO" />
       <option name="MAIN_CLASS_NAME" value="br.forte.DAO.ZabbixDao" />
       <option name="METHOD_NAME" value="CreateHost" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TomCat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat " ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -763,7 +719,8 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="MakeProject" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Forte:war exploded" />
@@ -837,6 +794,8 @@
       <workItem from="1532087030363" duration="7869000" />
       <workItem from="1532104350191" duration="3578000" />
       <workItem from="1532346051393" duration="3595000" />
+      <workItem from="1532611779279" duration="5187000" />
+      <workItem from="1532692080241" duration="3834000" />
     </task>
     <servers />
   </component>
@@ -873,7 +832,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343638000" />
+    <option name="totallyTimeSpent" value="352659000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -888,40 +847,40 @@
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3289256" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32954547" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2159091" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983471" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289256" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32561985" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32561985" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3289256" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.3289256" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2446281" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3289256" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3280303" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info id="Learn" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3284055" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3284055" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3223684" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39802632" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289256" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32730263" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3289256" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3223684" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2446281" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.32730263" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3289256" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32954547" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -932,7 +891,128 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="295" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>199</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>198</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>200</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>203</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>205</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>209</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>210</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>211</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>213</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>214</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>185</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>184</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>187</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>186</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java</url>
+          <line>193</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -940,343 +1020,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-          <folding>
-            <element signature="method#CreateHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#getUltHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#AlteraHost#0;class#ZabbixDao#0" />
-            <element signature="method#getHost#0;class#ZabbixDao#0" />
-            <element signature="method#hostGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostInterface#0;class#ZabbixDao#0" />
-            <element signature="method#hostInterfaceGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#hostGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#getUserGroup#0;class#ZabbixDao#0" />
-            <element signature="method#userGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#Delete#0;class#ZabbixDao#0" />
-            <element signature="e#21053#21070#0" expanded="true" />
-            <element signature="e#21119#21125#0" expanded="true" />
-            <element signature="e#21192#21207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9015">
-          <caret line="601" lean-forward="true" selection-start-line="601" selection-end-line="601" />
-          <folding>
-            <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
-            <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
-            <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#removerUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#userGet#0;class#UsuarioDao#0" />
-            <element signature="method#mediaGet#0;class#UsuarioDao#0" />
-            <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="11" lean-forward="true" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="73" />
-          <folding>
-            <element signature="method#AlteraPerfilUsuario#0;class#UsuarioController#0" />
-            <element signature="method#DeletaUsuario#0;class#UsuarioController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="174" column="53" selection-start-line="174" selection-start-column="53" selection-end-line="174" selection-end-column="53" />
-          <folding>
-            <element signature="method#CreateHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#getUltHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#AlteraHost#0;class#ZabbixDao#0" />
-            <element signature="method#getHost#0;class#ZabbixDao#0" />
-            <element signature="method#hostGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostInterface#0;class#ZabbixDao#0" />
-            <element signature="method#hostInterfaceGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#hostGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#getUserGroup#0;class#ZabbixDao#0" />
-            <element signature="method#userGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#Delete#0;class#ZabbixDao#0" />
-            <element signature="e#21053#21070#0" expanded="true" />
-            <element signature="e#21119#21125#0" expanded="true" />
-            <element signature="e#21192#21207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
-          <folding>
-            <element signature="method#AlteraPerfilUsuario#0;class#UsuarioController#0" />
-            <element signature="method#DeletaUsuario#0;class#UsuarioController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2940">
-          <caret line="196" column="58" selection-start-line="196" selection-start-column="58" selection-end-line="196" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/domain/base/UserGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3570">
-          <caret line="238" column="75" selection-start-line="238" selection-start-column="69" selection-end-line="238" selection-end-column="75" />
-          <folding>
-            <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
-            <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
-            <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#removerUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#userGet#0;class#UsuarioDao#0" />
-            <element signature="method#mediaGet#0;class#UsuarioDao#0" />
-            <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="137" column="19" selection-start-line="137" selection-start-column="19" selection-end-line="137" selection-end-column="19" />
-          <folding>
-            <element signature="method#CreateHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#getUltHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#AlteraHost#0;class#ZabbixDao#0" />
-            <element signature="method#getHost#0;class#ZabbixDao#0" />
-            <element signature="method#hostGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostInterface#0;class#ZabbixDao#0" />
-            <element signature="method#hostInterfaceGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#hostGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#getUserGroup#0;class#ZabbixDao#0" />
-            <element signature="method#userGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#Delete#0;class#ZabbixDao#0" />
-            <element signature="e#21053#21070#0" expanded="true" />
-            <element signature="e#21119#21125#0" expanded="true" />
-            <element signature="e#21192#21207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2910">
-          <caret line="194" column="33" selection-start-line="194" selection-start-column="33" selection-end-line="194" selection-end-column="33" />
-          <folding>
-            <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
-            <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
-            <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#removerUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#userGet#0;class#UsuarioDao#0" />
-            <element signature="method#mediaGet#0;class#UsuarioDao#0" />
-            <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2940">
-          <caret line="196" column="58" selection-start-line="196" selection-start-column="58" selection-end-line="196" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/domain/base/UserGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="137" column="19" selection-start-line="137" selection-start-column="19" selection-end-line="137" selection-end-column="19" />
-          <folding>
-            <element signature="method#CreateHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#getUltHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#AlteraHost#0;class#ZabbixDao#0" />
-            <element signature="method#getHost#0;class#ZabbixDao#0" />
-            <element signature="method#hostGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostInterface#0;class#ZabbixDao#0" />
-            <element signature="method#hostInterfaceGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#hostGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#getUserGroup#0;class#ZabbixDao#0" />
-            <element signature="method#userGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#Delete#0;class#ZabbixDao#0" />
-            <element signature="e#21053#21070#0" expanded="true" />
-            <element signature="e#21119#21125#0" expanded="true" />
-            <element signature="e#21192#21207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2910">
-          <caret line="194" column="33" selection-start-line="194" selection-start-column="33" selection-end-line="194" selection-end-column="33" />
-          <folding>
-            <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
-            <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
-            <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#removerUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#userGet#0;class#UsuarioDao#0" />
-            <element signature="method#mediaGet#0;class#UsuarioDao#0" />
-            <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2940">
-          <caret line="196" column="58" selection-start-line="196" selection-start-column="58" selection-end-line="196" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/domain/base/UserGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="195" column="52" selection-start-line="195" selection-start-column="52" selection-end-line="195" selection-end-column="52" />
-          <folding>
-            <element signature="method#CreateHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#getUltHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#AlteraHost#0;class#ZabbixDao#0" />
-            <element signature="method#getHost#0;class#ZabbixDao#0" />
-            <element signature="method#hostGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostInterface#0;class#ZabbixDao#0" />
-            <element signature="method#hostInterfaceGet#0;class#ZabbixDao#0" />
-            <element signature="method#getHostGroup#0;class#ZabbixDao#0" />
-            <element signature="method#hostGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#getUserGroup#0;class#ZabbixDao#0" />
-            <element signature="method#userGroupGet#0;class#ZabbixDao#0" />
-            <element signature="method#Delete#0;class#ZabbixDao#0" />
-            <element signature="e#21053#21070#0" expanded="true" />
-            <element signature="e#21119#21125#0" expanded="true" />
-            <element signature="e#21192#21207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3945">
-          <caret line="263" column="68" selection-start-line="263" selection-start-column="68" selection-end-line="263" selection-end-column="68" />
-          <folding>
-            <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
-            <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
-            <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#removerUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#userGet#0;class#UsuarioDao#0" />
-            <element signature="method#mediaGet#0;class#UsuarioDao#0" />
-            <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/util/Connect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1354,17 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="method#AlteraPerfilUsuario#0;class#UsuarioController#0" />
-            <element signature="method#DeletaUsuario#0;class#UsuarioController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/test/TestHost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2355">
@@ -1393,52 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="546" column="31" lean-forward="true" selection-start-line="546" selection-start-column="31" selection-end-line="546" selection-end-column="31" />
-          <folding>
-            <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
-            <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
-            <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#removerUsuario#0;class#UsuarioDao#0" />
-            <element signature="method#userGet#0;class#UsuarioDao#0" />
-            <element signature="method#mediaGet#0;class#UsuarioDao#0" />
-            <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/service/IHostService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1453,12 +1139,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+          <folding>
+            <element signature="method#AlteraPerfilUsuario#0;class#UsuarioController#0" />
+            <element signature="method#DeletaUsuario#0;class#UsuarioController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-658">
-          <caret line="118" column="45" lean-forward="true" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
+        <state relative-caret-position="-30">
+          <caret line="122" column="54" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
           <folding>
-            <element signature="method#CreateHostGroup#0;class#ZabbixDao#0" />
+            <element signature="method#CreateHost#0;class#ZabbixDao#0" />
             <element signature="method#getUltHostGroup#0;class#ZabbixDao#0" />
             <element signature="method#AlteraHost#0;class#ZabbixDao#0" />
             <element signature="method#getHost#0;class#ZabbixDao#0" />
@@ -1470,10 +1188,36 @@
             <element signature="method#getUserGroup#0;class#ZabbixDao#0" />
             <element signature="method#userGroupGet#0;class#ZabbixDao#0" />
             <element signature="method#Delete#0;class#ZabbixDao#0" />
-            <element signature="e#21053#21070#0" expanded="true" />
-            <element signature="e#21119#21125#0" expanded="true" />
-            <element signature="e#21192#21207#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+          <folding>
+            <element signature="method#autenticar#0;class#UsuarioDao#0" />
+            <element signature="method#loginJson#0;class#UsuarioDao#0" />
+            <element signature="method#login#0;class#UsuarioDao#0" />
+            <element signature="e#7600#7611#0" expanded="true" />
+            <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
+            <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
+            <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
+            <element signature="method#removerUsuario#0;class#UsuarioDao#0" />
+            <element signature="method#getUser#0;class#UsuarioDao#0" />
+            <element signature="method#userGet#0;class#UsuarioDao#0" />
+            <element signature="method#mediaGet#0;class#UsuarioDao#0" />
+            <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
+            <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79f02856-fe20-4f1f-bea2-69f9036b8ed8/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>

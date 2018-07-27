@@ -83,25 +83,11 @@ public class ZabbixDao {
 
             login();
 
-//            host.setName(nome);
-//            host.setHost(hos);
-//            macro.setMacro(mac);
-//            macro.setValue(val);
-//            host.setStatus(status);
-//            hostInterface.setType(tipo); // 1 - agent; 2 - SNMP; 3 - IPMI 4 - JMX.
-//            hostInterface.setIp(ip);
-//            hostInterface.setDns(dns);
-//            hostInterface.setUseip(useip); // 0 - connect using host DNS name 1 - // connect using host IP address.
-//            hostInterface.setMain(main); // 0 - not default; 1 - default.
-//            hostInterface.setPort(porta); // agent
-//            template.setTemplateid(temp);
-
-
 		HostCreateRequest create = new HostCreateRequest();
 
 		create.getParams().setHost(hos);
 		create.getParams().setName(nome);
-		hostGroup.setGroupid("110");
+		hostGroup.setGroupid("111");
 
 		create.getParams().getGroups().add(hostGroup);
 		hostInterface.setType(tipo);
@@ -134,6 +120,7 @@ public class ZabbixDao {
     }
 
     public boolean CreateHostGroup(HostGroup hostGroup) {
+        System.out.println("Ta no metodo cad hostGroup");
         boolean retorno;
 
         try {

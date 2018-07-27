@@ -133,7 +133,7 @@
                 <li class="active">Painel</li>
             </ol>
         </section>
-
+        <c:if  test="${usuario.tipo == 3}">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
@@ -181,7 +181,7 @@
                 </section>
                 </div>
 
-    <c:if  test="${usuario.tipo == 3}">
+
                 <div class="col-md-6">
                     <section class="content">
                         <div class="row">
@@ -225,9 +225,59 @@
 
                     </section>
                 </div>
-    </c:if>
+
             </div>
         </div>
+        </c:if>
+        <c:if  test="${usuario.tipo == 2}">
+
+            <div class="container-fluid">
+                        <section class="content">
+                            <div class="row">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Hosts</h3>
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                        <table id="example1" class="table table-bordered table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>IP</th>
+                                                <th>NOME</th>
+                                                <th>Acessar</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            <c:forEach var="listaHost" items="${hosts}" >
+                                                <tr>
+                                                    <td><a href="#" data-toggle="modal" data-target="#modalhost" style="color: black"><b>${listaHost.hostInterface.ip} ${listaHost.hostInterface.dns}</b></a></td>
+                                                    <td>${listaHost.host.host}</td>
+                                                    <td><a href="https://${listaHost.hostInterface.ip}${listaHost.hostInterface.dns}:4488" target="_blank" style="color: #0a0a0a">Acessar</a></td>
+                                                </tr>
+                                            </c:forEach>
+
+                                            </tbody>
+                                            <tfoot>
+                                            <tr>
+                                                <th>IP</th>
+                                                <th>NOME</th>
+                                                <th>Acessar</th>
+                                            </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!-- /.box -->
+                            </div>
+
+                        </section>
+
+            </div>
+
+        </c:if>
     </div>
 
     <footer class="main-footer">
