@@ -59,6 +59,7 @@ public class ZabbixDao {
             String mac = macro.getMacro();
             String val = macro.getValue();
             int idUsuario = Integer.parseInt(usuario.getIdUsuario());
+            String grupo = hostGroup.getGroupid();
 
             c = Connect.getConexao();
 
@@ -87,7 +88,7 @@ public class ZabbixDao {
 
 		create.getParams().setHost(hos);
 		create.getParams().setName(nome);
-		hostGroup.setGroupid("111");
+		hostGroup.setGroupid(grupo);
 
 		create.getParams().getGroups().add(hostGroup);
 		hostInterface.setType(tipo);
@@ -522,32 +523,35 @@ public class ZabbixDao {
     }
 
     public boolean Delete(String id) {
+        System.out.println("Entrou no remover zabbic dao com o id: "+id);
+
         int id2 = Integer.parseInt(id);
+
         Connection c = null;
         PreparedStatement stmt = null;
         boolean retorno = false;
 
-        HostDeleteRequest hostDeleteRequest = new HostDeleteRequest();
         Host host = new Host();
 
-
         try {
-
             c = Connect.getConexao();
             String sql = " delete from host where idhost=?";
             stmt = c.prepareStatement(sql);
-            stmt.setString(1, id);
+            stmt.setInt(1, id2);
             stmt.execute();
             stmt.close();
 
-            host.setHostid(id);
+            login();
 
-            retorno = hostDeleteRequest.getParams().add(id);
+            HostDeleteRequest hostDeleteRequest = new HostDeleteRequest();
+
+            hostDeleteRequest.getParams().add(id);
 
             hostService.delete(hostDeleteRequest);
 
             System.out.println("retorno: " + retorno);
 
+            retorno = true;
             return retorno;
 
         } catch (Exception e) {
@@ -576,8 +580,6 @@ public class ZabbixDao {
             }
             PreparedStatement stmt = con.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery();
-
-            System.out.println(" SQL: " + sql);
 
             //ta trazendo a quantidade de hosts certa, mas repetidos
             while (rs.next()) {
@@ -615,6 +617,41 @@ public class ZabbixDao {
             System.out.println("ERRO no try catch trazer hosts: " + e);
         }
         return hostIntegrations;
+
+    }
+
+    public ArrayList<HostGroup> getHostsGroup() throws ClassNotFoundException {
+
+        ArrayList<HostIntegration> hostIntegrations = new ArrayList<HostIntegration>();
+        ArrayList<Host> hosts = new ArrayList<Host>();
+        ArrayList<HostInterface> hostInterfaces = new ArrayList<HostInterface>();
+        ArrayList<HostGroup> hostgroups = new ArrayList<HostGroup>();
+
+        Connection con = Connect.getConexao();
+
+        try {
+            String sql = "select * from hostgroup";
+            PreparedStatement stmt = con.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+
+            //ta trazendo a quantidade de hosts certa, mas repetidos
+            while (rs.next()) {
+                Host h = new Host();
+                HostInterface hi = new HostInterface();
+                HostGroup hg = new HostGroup();
+
+                hg.setGroupid(rs.getString("hostgroupid"));
+                hg.setName(rs.getString("namehostgroup"));
+                hostgroups.add(hg);
+            }
+
+
+
+        } catch (Exception e) {
+
+            System.out.println("ERRO no try catch trazer hosts: " + e);
+        }
+        return hostgroups;
 
     }
 }

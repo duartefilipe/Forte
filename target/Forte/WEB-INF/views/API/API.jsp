@@ -30,6 +30,10 @@
 <jsp:useBean id="hosts" class="br.forte.DAO.ZabbixDao" />
 <c:set var="hosts" value="${hosts.getHostsAdmin(usuario.idUsuario, usuario.tipo)}" />
 
+<jsp:useBean id="hostgroups" class="br.forte.DAO.ZabbixDao" />
+<c:set var="hostgroups" value="${hostgroups.getHostsGroup()}" />
+
+
 <c:if  test="${usuario != null}">
 
 
@@ -186,6 +190,13 @@
                                             <input type="text" class="form-control disable" name="ip" placeholder="172.36.44.210">
                                         </div>
                                     </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label type="text">Porta</label>
+                                            <input type="text" class="form-control disable" name="port" placeholder="161">
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <input type="hidden" class="form-control" value="" name="dns">
@@ -196,18 +207,16 @@
 
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Multiple</label>
-                                            <label type="text">Porta</label>
-                                            <input type="text" class="form-control disable" name="port" placeholder="161">
+                                            <label>Grupo</label>
+                                            <select name="groupid" class="form-control select2" style="width: 100%;">
+                                                    <option ></option>
+                                                <c:forEach var="hostgroups" items="${hostgroups}">
+                                                    <option value="${hostgroups.groupid}">${hostgroups.name}</option>
+                                                </c:forEach>
+                                            </select>
                                         </div>
                                     </div>
 
-                                    <%--<div class="col-md-3">--%>
-                                        <%--<div class="form-group">--%>
-                                            <%--<label type="text">Tamplate</label>--%>
-                                            <%--<input type="text" class="form-control disable" name="temp" placeholder="10124">--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
                                     <input type="hidden" name="nameTemplate" value="10124">
 
                                     <div class="col-md-4">
@@ -413,7 +422,7 @@
                                                     <td>${listaHost.host.host}</td>
                                                     <td>${listaHost.host.name}</td>
                                                     <td>
-                                                        <a href="Remover?hostid=${listaHost.host.hostid}">
+                                                        <a href="Remover?idhost=${listaHost.host.hostid}">
                                                             <i class="glyphicon glyphicon-remove" style="color: black"></i>
                                                         </a>
                                                     </td>

@@ -1,6 +1,7 @@
 package br.forte.Model;
 
 import br.forte.controller.Apis.Zabbix.api.domain.base.Host;
+import br.forte.controller.Apis.Zabbix.api.domain.base.HostGroup;
 import br.forte.controller.Apis.Zabbix.api.domain.base.HostInterface;
 
 import java.util.ArrayList;
@@ -10,8 +11,26 @@ public class HostIntegration {
 
     private Host host;
     private HostInterface hostInterface;
+    private HostGroup hostGroup;
     private List<Host> hosts;
     private List<HostInterface> hostInterfaces;
+    private List<HostGroup> hostGroups;
+
+    public HostGroup getHostGroup() {
+        return hostGroup;
+    }
+
+    public void setHostGroup(HostGroup hostGroup) {
+        this.hostGroup = hostGroup;
+    }
+
+    public List<HostGroup> getHostGroups() {
+        return hostGroups;
+    }
+
+    public void setHostGroups(List<HostGroup> hostGroups) {
+        this.hostGroups = hostGroups;
+    }
 
     public Host getHost() {
         return host;

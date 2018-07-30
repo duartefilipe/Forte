@@ -79,10 +79,6 @@ public class ZabbixController {
     @RequestMapping("Remover")
     public String Deleta(String idhost, HttpServletRequest rq, Host host) {
 
-        idhost = host.getHostid();
-
-        host.setHostid(rq.getParameter("hostid"));
-
         ZabbixDao zD = new ZabbixDao();
 
         System.out.println("Entrou no remover com o id: "+idhost);
@@ -124,9 +120,6 @@ public class ZabbixController {
 
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Timestamp data = new Timestamp(System.currentTimeMillis());
-
-        //ed.cadastraEmail(u.getId(), id_dest, assunto, mensagem, data);
-
 
         if(enviado){
             rq.setAttribute("enviadosim", "enviou");
