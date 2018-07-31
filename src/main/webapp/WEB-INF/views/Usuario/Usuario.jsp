@@ -248,7 +248,6 @@
 
                                             <c:forEach var="list" items="${users}">
                                                 <tr>
-
                                                     <td>${list.user.alias}</td>
                                                     <td>${list.user.name}</td>
                                                     <td>${list.user.surname}</td>

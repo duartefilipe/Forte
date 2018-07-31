@@ -378,9 +378,14 @@ public class UsuarioDao {
         boolean deletar = false;
         Connection c = null;
         PreparedStatement stmt = null;
+
+        System.out.println("Nome no dao: ");
         try {
             c = Connect.getConexao();
             String sql = " delete from usuario where idusuario=?";
+            String sql2 = "";
+            String sql3 = "";
+
             stmt = c.prepareStatement(sql);
             stmt.setInt(1, id);
             stmt.execute();
