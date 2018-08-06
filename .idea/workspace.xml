@@ -6,21 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c99b5c-4f77-4484-a9bc-d48f40943ab5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22ff58d1-631c-43af-bbb4-4cf27414d941.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/22ff58d1-631c-43af-bbb4-4cf27414d941.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Usuario/Usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Usuario/Usuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/controller/UsuarioController.class" afterDir="false" />
-    </list>
+    <list default="true" id="f1c99b5c-4f77-4484-a9bc-d48f40943ab5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -782,7 +768,7 @@
       <workItem from="1533124505003" duration="5646000" />
       <workItem from="1533211466080" duration="9059000" />
       <workItem from="1533296847583" duration="11295000" />
-      <workItem from="1533555270312" duration="4737000" />
+      <workItem from="1533555270312" duration="5815000" />
     </task>
     <servers />
   </component>
@@ -819,7 +805,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="407638000" />
+    <option name="totallyTimeSpent" value="408716000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
