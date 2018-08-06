@@ -3,16 +3,20 @@ package br.forte.DAO;
 import br.forte.Model.Integration;
 import br.forte.Model.Usuario;
 import br.forte.controller.Apis.Zabbix.api.domain.base.*;
+import br.forte.controller.Apis.Zabbix.api.domain.hostgroup.HostGroupDeleteRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.media.MediaGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.user.UserCreateRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.user.UserDeleteRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.user.UserGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.usergroup.UserGroupCreateRequest;
+import br.forte.controller.Apis.Zabbix.api.domain.usergroup.UserGroupDeleteRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.usergroup.UserGroupGetRequest;
 import br.forte.controller.Apis.Zabbix.api.service.IHostService;
+import br.forte.controller.Apis.Zabbix.api.service.IHostgroupService;
 import br.forte.controller.Apis.Zabbix.api.service.IUserService;
 import br.forte.controller.Apis.Zabbix.api.service.IUsergroupService;
 import br.forte.controller.Apis.Zabbix.api.service.impl.HostServiceImpl;
+import br.forte.controller.Apis.Zabbix.api.service.impl.HostgroupServiceImpl;
 import br.forte.controller.Apis.Zabbix.api.service.impl.UserServiceImpl;
 import br.forte.controller.Apis.Zabbix.api.service.impl.UsergroupServiceImpl;
 import br.forte.controller.Apis.Zabbix.util.FormatData;
@@ -37,6 +41,7 @@ public class UsuarioDao {
 
     private static IUserService userService = new UserServiceImpl();
     private static IUsergroupService usergroupService = new UsergroupServiceImpl();
+    private static IHostgroupService hostgroupService = new HostgroupServiceImpl();
     private static IHostService hostService = new HostServiceImpl();
 
     public static final String url = "http://192.168.199.104/zabbix/api_jsonrpc.php";  //forte pc
@@ -44,6 +49,7 @@ public class UsuarioDao {
 
     private static String loginName;
     private static String password;
+
 
     static {
         FormatData.API_URL = url;
@@ -352,6 +358,26 @@ public class UsuarioDao {
         return usuarios;
     }
 
+//    public ArrayList<UserGroup> getIdUserGroup(String nameuser) throws ClassNotFoundException {
+//        ArrayList<UserGroup> userGroups = new ArrayList<UserGroup>();
+//        Connection con = Connect.getConexao();
+//        UserGroup userGroup;
+//        try {
+//            String sql = "SELECT usergroupid FROM usergroup where nameusergroup = '"+nameuser+"'";
+//            PreparedStatement stmt = con.prepareStatement(sql);
+//            ResultSet rs = stmt.executeQuery();
+//            while (rs.next()) {
+//                userGroup = new UserGroup();
+//                userGroup.setUsrgrpid(String.valueOf(rs.getInt("usergroupid")));
+//                System.out.println("ID do usuario grupo: "+userGroup.getUsrgrpid());
+//                userGroups.add(userGroup);
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return userGroups;
+//    }
+
     public boolean alteraUsuario(Usuario u) throws ClassNotFoundException, SQLException {
         boolean retorno = false;
         Connection c = null;
@@ -373,36 +399,79 @@ public class UsuarioDao {
         return retorno;
     }
 
-    public boolean removerUsuario(String idUsuario) {
+    public boolean removerUsuario(String idUsuario, String nameuser) throws ClassNotFoundException {
         int id = Integer.parseInt(idUsuario);
+
         boolean deletar = false;
         Connection c = null;
         PreparedStatement stmt = null;
+        Usuario u = new Usuario();
+        UserGroup ug = new UserGroup();
+        UsuarioDao ud = new UsuarioDao();
 
-        System.out.println("Nome no dao: ");
+        //pegando o id do UserGroup
+        ArrayList<UserGroup> usergroup = new ArrayList<UserGroup>();
+        UsuarioDao uD = new UsuarioDao();
+        usergroup = uD.getIdUserGroup(nameuser);
+        String IDUserGroup = null;
+
+        for (UserGroup ugg : usergroup) {
+            IDUserGroup = ugg.getUsrgrpid();
+        }
+
+        //pegando o id do HostGroup
+        ArrayList<HostGroup> hostgroup = new ArrayList<HostGroup>();
+        hostgroup = uD.getIdHostGroup(nameuser);
+        String IDHostGroup = null;
+
+        for (HostGroup hgg : hostgroup) {
+            IDHostGroup = hgg.getGroupid();
+        }
+
+//        String idGroup = String.valueOf(getIdUserGroup(nameuser));
+
         try {
+
             c = Connect.getConexao();
             String sql = " delete from usuario where idusuario=?";
-            String sql2 = "";
-            String sql3 = "";
+            String sql2 = "delete from usergroup where nameusergroup = ?";
+            String sql3 = "delete from hostgroup where namehostgroup = ?";
 
             stmt = c.prepareStatement(sql);
             stmt.setInt(1, id);
             stmt.execute();
+
+            stmt = c.prepareStatement(sql2);
+            stmt.setString(1, nameuser);
+            stmt.execute();
+
+            stmt = c.prepareStatement(sql3);
+            stmt.setString(1, nameuser);
+            stmt.execute();
             stmt.close();
+
             UserDeleteRequest delete = new UserDeleteRequest();
-//            UserGroupDeleteRequest delete2 = new UserGroupDeleteRequest();
-//            HostGroupDeleteRequest delete3 = new HostGroupDeleteRequest();
+            UserGroupDeleteRequest delete2 = new UserGroupDeleteRequest();
+            HostGroupDeleteRequest delete3 = new HostGroupDeleteRequest();
+
             User user = new User();
+            UserGroup userGroup = new UserGroup();
+            HostGroup hostGroup = new HostGroup();
 
             user.setUserid(idUsuario);
             delete.getParams().add(idUsuario);
 
-            JSONObject object = (JSONObject) userService.delete(delete);
-//            JSONObject object2 = (JSONObject) userGroupService.userGroupDelete(delete2);
-//            JSONObject object3 = (JSONObject) hostGroupService.hostGroupDelete(delete3);
+            userGroup.setUsrgrpid(IDUserGroup);
+            delete2.getParams().add(IDUserGroup);
 
-            System.out.println(object.toString());
+            hostGroup.setName(IDHostGroup);
+            delete3.getParams().add(IDHostGroup);
+
+            JSONObject object = (JSONObject) userService.delete(delete);
+            JSONObject object2 = (JSONObject) usergroupService.userGroupDelete(delete2);
+            JSONObject object3 = (JSONObject) hostgroupService.hostGroupDelete(delete3);
+//
+//            System.out.println(object.toString());
 //            System.out.println(object2.toString());
 //            System.out.println(object3.toString());
 
@@ -608,6 +677,58 @@ public class UsuarioDao {
             e.printStackTrace();
         }
         return UserGroups;
+    }
+
+    public ArrayList<UserGroup> getIdUserGroup(String nameuser) throws ClassNotFoundException {
+        System.out.println("Ta no metodo de pegar o id do usergroup");
+        ArrayList<UserGroup> UserGroups = new ArrayList<UserGroup>();
+        Connection con = Connect.getConexao();
+        UserGroup ug = null;
+
+        try {
+            String sql = "SELECT usergroupid FROM usergroup where nameusergroup = '" + nameuser + "'";
+            PreparedStatement stmt = con.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                ug = new UserGroup();
+                ug.setUsrgrpid(rs.getString("usergroupid"));
+                UserGroups.add(ug);
+            }
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+//        System.out.println("Id do UserGroup no DAO: " + ug.getUsrgrpid());
+//        idGroup = ug.getUsrgrpid();
+        return UserGroups;
+    }
+
+    public ArrayList<HostGroup> getIdHostGroup(String nameuser) throws ClassNotFoundException {
+        System.out.println("Ta no metodo de pegar o id do hostgroup");
+        ArrayList<HostGroup> HostGroups = new ArrayList<HostGroup>();
+        Connection con = Connect.getConexao();
+        HostGroup hg = null;
+
+        try {
+            String sql = "SELECT hostgroupid FROM hostgroup where namehostgroup = '" + nameuser + "'";
+            PreparedStatement stmt = con.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                hg = new HostGroup();
+                hg.setGroupid(rs.getString("hostgroupid"));
+                HostGroups.add(hg);
+            }
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+//        System.out.println("Id do UserGroup no DAO: " + ug.getUsrgrpid());
+//        idGroup = ug.getUsrgrpid();
+        return HostGroups;
     }
 
 

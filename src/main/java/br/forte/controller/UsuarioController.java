@@ -131,16 +131,20 @@ public class UsuarioController {
     }
 
     @RequestMapping("RemoverUsuario")
-    public String DeletaUsuario(String idUsuario , HttpServletRequest rq) throws ClassNotFoundException {
+    public String DeletaUsuario(String idUsuario , String nameuser, HttpServletRequest rq) throws ClassNotFoundException {
 
-        Usuario u = new Usuario();
-        String nome  = u.getNome();
 
-        System.out.println("Nome no controller: "+nome);
+        System.out.println("Nome no controller: "+nameuser);
+        System.out.println("ID no controller: "+idUsuario);
 
         UsuarioDao uD = new UsuarioDao();
+        UserGroup ug = new UserGroup();
+//        ug.setUsrgrpid(String.valueOf(uD.getIdUserGroup(nameuser)));
+//        String idUserGroup = ug.getUsrgrpid();
+////        uD.getIdUserGroup(nameuser);
+        System.out.println("\n");
 
-        boolean retorno1 = uD.removerUsuario(idUsuario);
+        boolean retorno1 = uD.removerUsuario(idUsuario, nameuser);
 //        boolean retorno2 = uD.removerUsuario(idUsuario);
 //        boolean retorno3 = uD.removerUsuario(idUsuario);
 

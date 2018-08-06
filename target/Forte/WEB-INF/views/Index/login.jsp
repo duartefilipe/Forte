@@ -25,8 +25,8 @@
 <br>
 <div class="login">
     <form action="login" method="post">
-        <input type="text" placeholder="Email" name="email" value="filipeduarte.si@gmail.com"><br>
-        <input type="password" placeholder="Senha" name="senha" value="1234" ><br>
+        <input type="text" placeholder="Email" name="email"><br>
+        <input type="password" placeholder="Senha" name="senha"><br>
         <button type="submit" class="btn btn-app">Login</button>
     </form>
 

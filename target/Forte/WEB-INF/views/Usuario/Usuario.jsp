@@ -258,7 +258,7 @@
                                                         </a>
                                                     </td>
                                                     <td>
-                                                        <a href="RemoverUsuario?idUsuario=${list.user.userid}">
+                                                        <a href="RemoverUsuario?idUsuario=${list.user.userid}&&nameuser=${list.user.name}">
                                                             <i class="glyphicon glyphicon-remove" style="color: black"></i> </a>
                                                     </td>
                                                 </tr>
