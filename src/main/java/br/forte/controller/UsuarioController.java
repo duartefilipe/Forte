@@ -36,27 +36,26 @@ public class UsuarioController {
     }
 
     @RequestMapping("login")
-    public String AutenticaUsuario(String email, String senha , HttpServletRequest rq) {
+    public String AutenticaUsuario(String email, String senha, HttpServletRequest rq) {
 
         System.out.println("Foi pro Autenticar");
         HttpSession sessao = rq.getSession(true);
-        try{
+        try {
 
             Usuario u = new Usuario();
             UsuarioDao uD = new UsuarioDao();
 
             u = uD.autenticar(email, senha);
 
-            if(u != null){
+            if (u != null) {
 
-                if(u.getTipo() == 3){
+                if (u.getTipo() == 3) {
                     rq.getSession().invalidate();
                     sessao = rq.getSession();
                     sessao.setAttribute("usuario", u);
 
                     return "Index/index";
-                }
-                else{
+                } else {
                     rq.getSession().invalidate();
                     sessao = rq.getSession();
                     sessao.setAttribute("usuario", u);
@@ -64,13 +63,13 @@ public class UsuarioController {
                 }
 
 
-            }else{
-                rq.setAttribute("msg","Problemas ao Logar");
+            } else {
+                rq.setAttribute("msg", "Problemas ao Logar");
                 return "Index/login";
 
             }
 
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -78,14 +77,14 @@ public class UsuarioController {
     }
 
     @RequestMapping("logout")
-    public String logout (HttpServletRequest rq){
+    public String logout(HttpServletRequest rq) {
         System.out.println("Foi pro Logout");
         rq.getSession().invalidate();
         return "Index/login";
     }
 
-    @RequestMapping ("CadastrarUsuario")
-    public String adiciona (Usuario usuario, HttpServletRequest rq) {
+    @RequestMapping("CadastrarUsuario")
+    public String adiciona(Usuario usuario, HttpServletRequest rq) {
         System.out.println("Entrou no cadastrar usuario");
 
         HostGroup hostGroup = new HostGroup();
@@ -94,67 +93,76 @@ public class UsuarioController {
         UserGroup userGroup = new UserGroup();
         userGroup.setName(usuario.getNome());
 
-
         try {
-            boolean retorno1 = new ZabbixDao().CreateHostGroup(hostGroup);
-            boolean retorno2 = new UsuarioDao().cadastraUserGroup(userGroup);
-            boolean retorno3 = new UsuarioDao().cadastraUsuario(usuario);
+            if (usuario.getTipo() == 3) {
+                boolean retorno3 = new UsuarioDao().cadastraUsuario(usuario);
 
-            if (retorno1 && retorno2 && retorno3) {
-                rq.setAttribute("mensagem", "usuario cadastrado sucesso");
-                return "Usuario/Usuario";
-            }else {
-                return "Usuario/Usuario";
+                if (retorno3) {
+                    rq.setAttribute("mensagem", "usuario cadastrado sucesso");
+                    return "Usuario/Usuario";
+                } else {
+                    return "Usuario/Usuario";
+                }
+            } else if(usuario.getTipo() == 2){
+                boolean retorno1 = new ZabbixDao().CreateHostGroup(hostGroup);
+                boolean retorno2 = new UsuarioDao().cadastraUserGroup(userGroup);
+                boolean retorno3 = new UsuarioDao().cadastraUsuario(usuario);
+
+                if (retorno1 && retorno2 && retorno3) {
+                    rq.setAttribute("mensagem", "usuario cadastrado sucesso");
+                    return "Usuario/Usuario";
+                } else {
+                    return "Usuario/Usuario";
+                }
+
             }
-        }catch (Exception e){
-            System.out.println("ERRO pra cadastrar os usu, hostgroup e usergroup: "+e);
+        } catch (Exception e) {
+            System.out.println("ERRO pra cadastrar os usu, hostgroup e usergroup: " + e);
         }
         return "Usuario/Usuario";
     }
 
     @RequestMapping("AlterarUsuario")
-    public String AlteraPerfilUsuario(Usuario u, HttpServletRequest rq) throws ClassNotFoundException, SQLException{
+    public String AlteraPerfilUsuario(Usuario u, HttpServletRequest rq) throws ClassNotFoundException, SQLException {
 
         UsuarioDao uD = new UsuarioDao();
         HttpSession sessao = rq.getSession(true);
         boolean retorno = uD.alteraUsuario(u);
 
-        System.out.println("No Altera usuario  :   "+retorno);
-        if(retorno){
+        System.out.println("No Altera usuario  :   " + retorno);
+        if (retorno) {
             sessao = rq.getSession();
             sessao.setAttribute("usuario", u);
             return "Usuario/Usuario";
-        }else{
-            rq.setAttribute("msg","problemas ao alterar usuario");
+        } else {
+            rq.setAttribute("msg", "problemas ao alterar usuario");
             return "Usuario/Usuario";
         }
     }
 
     @RequestMapping("RemoverUsuario")
-    public String DeletaUsuario(String idUsuario , String nameuser, HttpServletRequest rq) throws ClassNotFoundException {
+    public String DeletaUsuario(String idUsuario, String nameuser, int tipo, HttpServletRequest rq) throws ClassNotFoundException {
 
 
-        System.out.println("Nome no controller: "+nameuser);
-        System.out.println("ID no controller: "+idUsuario);
+        System.out.println("Nome no controller: " + nameuser);
+        System.out.println("ID no controller: " + idUsuario);
+        System.out.println("Tipo no controller: " +tipo);
 
         UsuarioDao uD = new UsuarioDao();
         UserGroup ug = new UserGroup();
-//        ug.setUsrgrpid(String.valueOf(uD.getIdUserGroup(nameuser)));
-//        String idUserGroup = ug.getUsrgrpid();
-////        uD.getIdUserGroup(nameuser);
+
         System.out.println("\n");
 
-        boolean retorno1 = uD.removerUsuario(idUsuario, nameuser);
-//        boolean retorno2 = uD.removerUsuario(idUsuario);
-//        boolean retorno3 = uD.removerUsuario(idUsuario);
+        boolean retorno1 = uD.removerUsuario(idUsuario, nameuser, tipo);
 
 
-        if(retorno1){
+
+        if (retorno1) {
             rq.setAttribute("usuarios", uD.getUsuarios());
             System.out.println("Usuario excluido");
             return "Usuario/Usuario";
-        }else{
-            rq.setAttribute("msg","problema pra excluir");
+        } else {
+            rq.setAttribute("msg", "problema pra excluir");
             System.out.println("\nProblema para excluir");
             return "Usuario/Usuario";
         }

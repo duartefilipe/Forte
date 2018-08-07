@@ -6,7 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c99b5c-4f77-4484-a9bc-d48f40943ab5" name="Default" comment="" />
+    <list default="true" id="f1c99b5c-4f77-4484-a9bc-d48f40943ab5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/forte/util/Criptografa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22ff58d1-631c-43af-bbb4-4cf27414d941.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/22ff58d1-631c-43af-bbb4-4cf27414d941.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,41 +61,42 @@
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.129" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="19" />
+          <entry key="java" value="20" />
           <entry key="jsp" value="6" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="20" />
           <entry key="JSP" value="6" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2948" />
-          <entry key="jsp" value="185" />
-          <entry key="sql" value="475" />
+          <entry key="java" value="3324" />
+          <entry key="jsp" value="210" />
+          <entry key="sql" value="522" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2948" />
-          <entry key="JSP" value="185" />
-          <entry key="Scratch" value="475" />
+          <entry key="JAVA" value="3324" />
+          <entry key="JSP" value="210" />
+          <entry key="Scratch" value="522" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -108,10 +118,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
+            <state relative-caret-position="128">
+              <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
               <folding>
                 <element signature="method#AutenticaUsuario#0;class#UsuarioController#0" />
+                <element signature="method#adiciona#0;class#UsuarioController#0" />
                 <element signature="method#AlteraPerfilUsuario#0;class#UsuarioController#0" />
               </folding>
             </state>
@@ -121,25 +132,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="467" column="47" selection-start-line="467" selection-start-column="47" selection-end-line="467" selection-end-column="47" />
+            <state relative-caret-position="124">
+              <caret line="495" selection-start-line="495" selection-end-line="495" />
               <folding>
-                <element signature="method#autenticar#0;class#UsuarioDao#0" />
-                <element signature="method#loginJson#0;class#UsuarioDao#0" />
-                <element signature="method#login#0;class#UsuarioDao#0" />
-                <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
-                <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
-                <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
-                <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
-                <element signature="e#15941#15952#0" expanded="true" />
-                <element signature="e#16253#16264#0" expanded="true" />
-                <element signature="method#getUser#0;class#UsuarioDao#0" />
-                <element signature="method#userGet#0;class#UsuarioDao#0" />
-                <element signature="method#mediaGet#0;class#UsuarioDao#0" />
-                <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
-                <element signature="method#getUsers#0;class#UsuarioDao#0" />
-                <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
-                <element signature="e#26865#26876#0" expanded="true" />
+                <element signature="e#3751#4368#0" />
+                <element signature="e#4374#5602#0" />
+                <element signature="e#5608#9041#0" />
+                <element signature="e#9166#11914#0" />
+                <element signature="e#11920#13164#0" />
+                <element signature="e#13170#13876#0" />
+                <element signature="e#13878#13975#0" />
+                <element signature="e#14799#15583#0" />
+                <element signature="e#18445#21537#0" />
+                <element signature="e#21543#22221#0" />
+                <element signature="e#22227#22912#0" />
+                <element signature="e#22918#23619#0" />
+                <element signature="e#23625#25260#0" />
+                <element signature="e#25266#26000#0" />
+                <element signature="e#26006#26954#0" />
+                <element signature="e#26960#27907#0" />
               </folding>
             </state>
           </provider>
@@ -148,8 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="300">
+              <caret line="260" column="160" selection-start-line="260" selection-start-column="160" selection-end-line="260" selection-end-column="160" />
             </state>
           </provider>
         </entry>
@@ -171,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22ff58d1-631c-43af-bbb4-4cf27414d941/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -221,7 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/forte/Model/Host.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/MInhasClasses/HostGetRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/Model/HostZabbix.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/Apis/Zabbix/api/domain/base/User.java" />
@@ -267,10 +277,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/forte/util/Criptografa.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/22ff58d1-631c-43af-bbb4-4cf27414d941/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" />
       </list>
     </option>
@@ -323,7 +334,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -477,6 +487,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -487,7 +498,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="forte" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533308164943" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533651107375" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -769,6 +780,7 @@
       <workItem from="1533211466080" duration="9059000" />
       <workItem from="1533296847583" duration="11295000" />
       <workItem from="1533555270312" duration="5815000" />
+      <workItem from="1533644769854" duration="5362000" />
     </task>
     <servers />
   </component>
@@ -805,7 +817,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="408716000" />
+    <option name="totallyTimeSpent" value="414078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -820,7 +832,7 @@
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23409091" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23787878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1095,13 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/ZabbixController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1114,45 +1119,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/util/Criptografa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
+        <state relative-caret-position="230">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="method#AutenticaUsuario#0;class#UsuarioController#0" />
-            <element signature="method#AlteraPerfilUsuario#0;class#UsuarioController#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22ff58d1-631c-43af-bbb4-4cf27414d941/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="260" column="160" selection-start-line="260" selection-start-column="160" selection-end-line="260" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/controller/UsuarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
+          <folding>
+            <element signature="method#AutenticaUsuario#0;class#UsuarioController#0" />
+            <element signature="method#adiciona#0;class#UsuarioController#0" />
+            <element signature="method#AlteraPerfilUsuario#0;class#UsuarioController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="467" column="47" selection-start-line="467" selection-start-column="47" selection-end-line="467" selection-end-column="47" />
+        <state relative-caret-position="124">
+          <caret line="495" selection-start-line="495" selection-end-line="495" />
           <folding>
-            <element signature="method#autenticar#0;class#UsuarioDao#0" />
-            <element signature="method#loginJson#0;class#UsuarioDao#0" />
-            <element signature="method#login#0;class#UsuarioDao#0" />
-            <element signature="method#cadastraUserGroup#0;class#UsuarioDao#0" />
-            <element signature="method#getUsuarios#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUsu#0;class#UsuarioDao#0" />
-            <element signature="method#alteraUsuario#0;class#UsuarioDao#0" />
-            <element signature="e#15941#15952#0" expanded="true" />
-            <element signature="e#16253#16264#0" expanded="true" />
-            <element signature="method#getUser#0;class#UsuarioDao#0" />
-            <element signature="method#userGet#0;class#UsuarioDao#0" />
-            <element signature="method#mediaGet#0;class#UsuarioDao#0" />
-            <element signature="method#userGroupGet#0;class#UsuarioDao#0" />
-            <element signature="method#getUsers#0;class#UsuarioDao#0" />
-            <element signature="method#getUltUserGroup#0;class#UsuarioDao#0" />
-            <element signature="e#26865#26876#0" expanded="true" />
+            <element signature="e#3751#4368#0" />
+            <element signature="e#4374#5602#0" />
+            <element signature="e#5608#9041#0" />
+            <element signature="e#9166#11914#0" />
+            <element signature="e#11920#13164#0" />
+            <element signature="e#13170#13876#0" />
+            <element signature="e#13878#13975#0" />
+            <element signature="e#14799#15583#0" />
+            <element signature="e#18445#21537#0" />
+            <element signature="e#21543#22221#0" />
+            <element signature="e#22227#22912#0" />
+            <element signature="e#22918#23619#0" />
+            <element signature="e#23625#25260#0" />
+            <element signature="e#25266#26000#0" />
+            <element signature="e#26006#26954#0" />
+            <element signature="e#26960#27907#0" />
           </folding>
         </state>
       </provider>

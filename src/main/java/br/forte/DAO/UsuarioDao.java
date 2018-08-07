@@ -21,6 +21,7 @@ import br.forte.controller.Apis.Zabbix.api.service.impl.UserServiceImpl;
 import br.forte.controller.Apis.Zabbix.api.service.impl.UsergroupServiceImpl;
 import br.forte.controller.Apis.Zabbix.util.FormatData;
 import br.forte.util.Connect;
+import br.forte.util.Criptografa;
 import com.google.gson.Gson;
 import org.apache.commons.httpclient.methods.PutMethod;
 import org.json.JSONArray;
@@ -62,8 +63,12 @@ public class UsuarioDao {
 
         PreparedStatement stmt = con.prepareStatement(sql);
         Usuario u = null;
+        Criptografa criptografa = new Criptografa();
+        String senhaHash = criptografa.criptografa(senha);
+
         stmt.setString(1, email);
-        stmt.setString(2, senha);
+//        stmt.setString(2, criptografa.criptografa(senha));
+        stmt.setString(2, senhaHash);
         ResultSet rs = stmt.executeQuery();
         while (rs.next()) {
             u = new Usuario();
@@ -142,6 +147,7 @@ public class UsuarioDao {
         try {
             Connection c = null;
             PreparedStatement stmt = null;
+            Criptografa criptografa = new Criptografa();
 
             //pegando o id do ultimo HostGroup cadastrado
             ArrayList<HostGroup> hostgroup = new ArrayList<HostGroup>();
@@ -158,6 +164,7 @@ public class UsuarioDao {
             String telefone = u.getTelefone();
             String endereco = u.getEndereco();
             String senha = u.getSenha();
+            String senhaHash = criptografa.criptografa(senha);
             int tipo = u.getTipo();
 
             String grupoid = null;
@@ -175,7 +182,7 @@ public class UsuarioDao {
             stmt.setString(3, email);
             stmt.setString(4, telefone);
             stmt.setString(5, endereco);
-            stmt.setString(6, senha);
+            stmt.setString(6, senhaHash);
             stmt.setInt(7, tipo);
             stmt.setString(8, nome);
             stmt.setString(9, senha);
@@ -399,15 +406,14 @@ public class UsuarioDao {
         return retorno;
     }
 
-    public boolean removerUsuario(String idUsuario, String nameuser) throws ClassNotFoundException {
+    public boolean removerUsuario(String idUsuario, String nameuser, int tipo) throws ClassNotFoundException {
         int id = Integer.parseInt(idUsuario);
 
         boolean deletar = false;
         Connection c = null;
         PreparedStatement stmt = null;
-        Usuario u = new Usuario();
-        UserGroup ug = new UserGroup();
-        UsuarioDao ud = new UsuarioDao();
+
+        System.out.println("Tipo no DAO: "+tipo);
 
         //pegando o id do UserGroup
         ArrayList<UserGroup> usergroup = new ArrayList<UserGroup>();
@@ -433,47 +439,68 @@ public class UsuarioDao {
         try {
 
             c = Connect.getConexao();
-            String sql = " delete from usuario where idusuario=?";
-            String sql2 = "delete from usergroup where nameusergroup = ?";
-            String sql3 = "delete from hostgroup where namehostgroup = ?";
+            if(tipo == 2) {
+                String sql = " delete from usuario where idusuario=?";
+                String sql2 = "delete from usergroup where nameusergroup = ?";
+                String sql3 = "delete from hostgroup where namehostgroup = ?";
 
-            stmt = c.prepareStatement(sql);
-            stmt.setInt(1, id);
-            stmt.execute();
+                stmt = c.prepareStatement(sql);
+                stmt.setInt(1, id);
+                stmt.execute();
 
-            stmt = c.prepareStatement(sql2);
-            stmt.setString(1, nameuser);
-            stmt.execute();
+                stmt = c.prepareStatement(sql2);
+                stmt.setString(1, nameuser);
+                stmt.execute();
 
-            stmt = c.prepareStatement(sql3);
-            stmt.setString(1, nameuser);
-            stmt.execute();
-            stmt.close();
+                stmt = c.prepareStatement(sql3);
+                stmt.setString(1, nameuser);
+                stmt.execute();
+                stmt.close();
 
-            UserDeleteRequest delete = new UserDeleteRequest();
-            UserGroupDeleteRequest delete2 = new UserGroupDeleteRequest();
-            HostGroupDeleteRequest delete3 = new HostGroupDeleteRequest();
 
-            User user = new User();
-            UserGroup userGroup = new UserGroup();
-            HostGroup hostGroup = new HostGroup();
+                UserDeleteRequest delete = new UserDeleteRequest();
+                UserGroupDeleteRequest delete2 = new UserGroupDeleteRequest();
+                HostGroupDeleteRequest delete3 = new HostGroupDeleteRequest();
 
-            user.setUserid(idUsuario);
-            delete.getParams().add(idUsuario);
+                User user = new User();
+                UserGroup userGroup = new UserGroup();
+                HostGroup hostGroup = new HostGroup();
 
-            userGroup.setUsrgrpid(IDUserGroup);
-            delete2.getParams().add(IDUserGroup);
+                user.setUserid(idUsuario);
+                delete.getParams().add(idUsuario);
 
-            hostGroup.setName(IDHostGroup);
-            delete3.getParams().add(IDHostGroup);
+                userGroup.setUsrgrpid(IDUserGroup);
+                delete2.getParams().add(IDUserGroup);
 
-            JSONObject object = (JSONObject) userService.delete(delete);
-            JSONObject object2 = (JSONObject) usergroupService.userGroupDelete(delete2);
-            JSONObject object3 = (JSONObject) hostgroupService.hostGroupDelete(delete3);
+                hostGroup.setName(IDHostGroup);
+                delete3.getParams().add(IDHostGroup);
+
+                JSONObject object = (JSONObject) userService.delete(delete);
+                JSONObject object2 = (JSONObject) usergroupService.userGroupDelete(delete2);
+                JSONObject object3 = (JSONObject) hostgroupService.hostGroupDelete(delete3);
 //
 //            System.out.println(object.toString());
 //            System.out.println(object2.toString());
 //            System.out.println(object3.toString());
+            }else if(tipo == 3){
+                String sql = " delete from usuario where idusuario=?";
+
+                stmt = c.prepareStatement(sql);
+                stmt.setInt(1, id);
+                stmt.execute();
+                stmt.close();
+
+
+                UserDeleteRequest delete = new UserDeleteRequest();
+
+                User user = new User();
+
+                user.setUserid(idUsuario);
+                delete.getParams().add(idUsuario);
+
+                JSONObject object = (JSONObject) userService.delete(delete);
+
+            }
 
         } catch (Exception e) {
             System.out.println("ERRO: " + e);
@@ -634,6 +661,7 @@ public class UsuarioDao {
                 u.setAlias(rs.getString("userzabbix"));
                 u.setName(rs.getString("nameuser"));
                 u.setSurname(rs.getString("sobrenome"));
+                u.setType(rs.getInt("tipo"));
                 users.add(u);
                 m.setSendto(rs.getString("email"));
                 medias.add(m);
