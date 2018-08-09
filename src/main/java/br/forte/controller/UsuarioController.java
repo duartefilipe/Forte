@@ -35,6 +35,12 @@ public class UsuarioController {
         return "Index/index";
     }
 
+//    @RequestMapping("VaiZabiRepo")
+//    public String redirecionaVaiZabiRepo() {
+////        System.out.println("Foi pra index");
+//        return "Index/ZabiRepo";
+//    }
+
     @RequestMapping("login")
     public String AutenticaUsuario(String email, String senha, HttpServletRequest rq) {
 
@@ -49,18 +55,18 @@ public class UsuarioController {
 
             if (u != null) {
 
-                if (u.getTipo() == 3) {
+//                if (u.getTipo() == 3) {
                     rq.getSession().invalidate();
                     sessao = rq.getSession();
                     sessao.setAttribute("usuario", u);
 
                     return "Index/index";
-                } else {
-                    rq.getSession().invalidate();
-                    sessao = rq.getSession();
-                    sessao.setAttribute("usuario", u);
-                    return "Index/index";
-                }
+//                } else {
+//                    rq.getSession().invalidate();
+//                    sessao = rq.getSession();
+//                    sessao.setAttribute("usuario", u);
+//                    return "Index/index";
+//                }
 
 
             } else {
@@ -154,8 +160,6 @@ public class UsuarioController {
         System.out.println("\n");
 
         boolean retorno1 = uD.removerUsuario(idUsuario, nameuser, tipo);
-
-
 
         if (retorno1) {
             rq.setAttribute("usuarios", uD.getUsuarios());

@@ -9,6 +9,7 @@ import br.forte.controller.Apis.Zabbix.api.domain.host.HostGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.hostgroup.HostGroupCreateRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.hostgroup.HostGroupGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.hostinterface.HostInterfaceGetRequest;
+import br.forte.controller.Apis.Zabbix.api.domain.template.TemplateGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.usergroup.UserGroupGetRequest;
 import br.forte.controller.Apis.Zabbix.api.service.*;
 import br.forte.controller.Apis.Zabbix.api.service.impl.*;
@@ -653,5 +654,62 @@ public class ZabbixDao {
         }
         return hostgroups;
 
+    }
+
+    public List<Template> getTemplate() {
+
+        ArrayList<Template> templates = new ArrayList<Template>();
+
+        TemplateGetRequest templateGet = new TemplateGetRequest();
+
+        JSONObject result = (JSONObject) this.templateGet(templateGet);
+
+        if (result != null) {
+            if (result.has("result")) {
+                try {
+                    JSONArray array = result.getJSONArray("result");
+
+                    if (array != null && array.length() > 0) {
+
+                        for (int i = 0; i < array.length(); i++) {
+
+                            Template template = new Template();
+
+                            JSONObject object = array.getJSONObject(i);
+
+                            template.setTemplateid(object.getString("templateid"));
+                            template.setNameTemplate(object.getString("nameTemplate"));
+                            templates.add(template);
+
+                        }
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    return null;
+                }
+                return templates;
+            } else if (result.has("error")) {
+                return null;
+            }
+        }
+        return templates;
+    }
+
+    public Object templateGet(TemplateGetRequest templateGet) {
+        Gson js = new Gson();
+        HttpClient client = new HttpClient();
+        PostMethod putMethod = new PostMethod(FormatData.API_URL);
+        putMethod.setRequestHeader("Content-Type", "application/json-rpc");
+        JSONObject rs = null;
+        try {
+            String json = js.toJson(templateGet);
+            putMethod.setRequestBody(FormatData.fromString(json));
+            client.executeMethod(putMethod);
+            String response = putMethod.getResponseBodyAsString();
+            rs = new JSONObject(response);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return rs;
     }
 }

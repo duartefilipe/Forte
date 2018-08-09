@@ -19,7 +19,9 @@ body{
     bottom: -40px;
     width: auto;
     height: auto;
-    background-image: url(/resources/Images/Background.jpg);
+    /*background-image: url(/resources/Images/Background.jpg);*/
+    background-image: url(https://1.bp.blogspot.com/-zf-6XqZWJyQ/ViFBJyEkLUI/AAAAAAAAAR8/ZbGpdihqGpI/s1600/ponte-golden-gate-em-san-francisco.jpg);
+
     background-size: cover;
     -webkit-filter: blur(5px);
     z-index: 0;

@@ -33,6 +33,8 @@
 <jsp:useBean id="hostgroups" class="br.forte.DAO.ZabbixDao" />
 <c:set var="hostgroups" value="${hostgroups.getHostsGroup()}" />
 
+<jsp:useBean id="templates" class="br.forte.DAO.ZabbixDao" />
+<c:set var="templates" value="${templates.getTemplate()}" />
 
 <c:if  test="${usuario != null}">
 
@@ -205,7 +207,8 @@
 
                                 <div class="row">
 
-                                    <div class="col-md-4">
+
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Grupo</label>
                                             <select name="groupid" class="form-control select2" style="width: 100%;">
@@ -217,16 +220,28 @@
                                         </div>
                                     </div>
 
-                                    <input type="hidden" name="nameTemplate" value="10124">
+                                    <input type="hidden" name="nameTemplate" value="10189">
 
-                                    <div class="col-md-4">
+                                    <%--<div class="col-md-3">--%>
+                                        <%--<div class="form-group">--%>
+                                            <%--<label>Multiple</label>--%>
+                                            <%--<select class="form-control select2" multiple="multiple" data-placeholder="Select a State"--%>
+                                                    <%--style="width: 100%;">--%>
+                                                <%--<c:forEach var="templates" items="${templates}">--%>
+                                                <%--<option>${templates.nameTemplate}</option>--%>
+                                                <%--</c:forEach>--%>
+                                            <%--</select>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
+
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">Macro</label>
                                             <input type="text" class="form-control disable" name="macro" placeholder="{$SNMP_COMMUNITY}">
                                         </div>
                                     </div>
 
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">Value</label>
                                             <input type="text" class="form-control disable" name="value" placeholder="Forte">
@@ -428,6 +443,13 @@
                                                     </td>
                                                 </tr>
                                             </c:forEach>
+
+                                            <%--<c:forEach var="templates" items="${templates}">--%>
+                                                <%--<tr>--%>
+                                                    <%--<td>${templates.templateid}</td>--%>
+                                                    <%--<td>${templates.nameTemplate}</td>--%>
+                                                <%--</tr>--%>
+                                            <%--</c:forEach>--%>
                                         </tbody>
                                         <tfoot>
                                         <tr>

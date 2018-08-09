@@ -478,10 +478,7 @@ public class UsuarioDao {
                 JSONObject object = (JSONObject) userService.delete(delete);
                 JSONObject object2 = (JSONObject) usergroupService.userGroupDelete(delete2);
                 JSONObject object3 = (JSONObject) hostgroupService.hostGroupDelete(delete3);
-//
-//            System.out.println(object.toString());
-//            System.out.println(object2.toString());
-//            System.out.println(object3.toString());
+
             }else if(tipo == 3){
                 String sql = " delete from usuario where idusuario=?";
 
