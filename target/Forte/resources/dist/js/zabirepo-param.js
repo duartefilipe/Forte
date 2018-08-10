@@ -1,5 +1,6 @@
-// var baseURL = '//' + "192.168.199.60:88" + '/zabbix';
-var baseURL = '//' + "192.168.199.104" + '/zabbix';
+// var baseURL = '//' + "192.168.199.60:88" + '/zabbix';  //mauqina virtual
+// var baseURL = '//' + "192.168.199.104" + '/zabbix';   //ip interno
+var baseURL = '//' + "177.67.163.20:8089" + '/zabbix';   //ip externo
 var graphURL = baseURL + '/chart.php';
 var apiURL = baseURL + '/api_jsonrpc.php';
 

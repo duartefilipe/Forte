@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/jQRangeSlider/css/iThing-min.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/dist/css/index.css'/>">
     <script type="text/javascript" charset="UTF-8" src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body class="skin-blue sidebar-mini login-page">
@@ -45,19 +46,20 @@
 
 <c:if test="${usuario != null}">
 
-    <%--<script type="text/javascript">--%>
-        <%--window.onload = function(){--%>
-        <%--var enviar =document.getElementById('submit_login');--%>
-        <%--enviar.click();--%>
-        <%--};--%>
-    <%--</script>--%>
-
-    <script >
-        $(document).ready(function() {
-            var enviar =document.getElementById('submit_login');
-            enviar.click();
-        });
+    <script type="text/javascript">
+        window.onload = function(){
+        var enviar =document.getElementById('submit_login');
+        enviar.click();
+        console.log("document is ready");
+        };
     </script>
+
+    <%--<script>--%>
+        <%--function ready() {--%>
+            <%--var enviar =document.getElementById('submit_login');--%>
+            <%--enviar.click();--%>
+        <%--}--%>
+    <%--</script>--%>
 
 
     <div id="top_login">
@@ -768,7 +770,7 @@
             src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
     <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
     <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/WEB-INF/views/Index/ZabiRepo.jsp'/>"></script>
+    <%--<script type="text/javascript" charset="UTF-8" src="<c:url value='/WEB-INF/views/Index/ZabiRepo.jsp'/>"></script>--%>
 
 </c:if>
 
