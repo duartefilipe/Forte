@@ -23,12 +23,14 @@
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/c3.js/c3.min.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/pivot.js/pivot.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/zoomjs/zoom.css'/>">
-    <link type="text/css" media="screen" rel="stylesheet" href="<c:url value='/resources/plugins/jquery.multi-select.js/multi-select.css'/>">
+    <link type="text/css" media="screen" rel="stylesheet"
+          href="<c:url value='/resources/plugins/jquery.multi-select.js/multi-select.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/dc.js/dc.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/jQRangeSlider/css/iThing-min.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/dist/css/index.css'/>">
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <%--<script type="text/javascript" charset="UTF-8"--%>
+            <%--src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>--%>
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>--%>
 </head>
 
 <body class="skin-blue sidebar-mini login-page">
@@ -47,18 +49,18 @@
 <c:if test="${usuario != null}">
 
     <script type="text/javascript">
-        window.onload = function(){
-        var enviar =document.getElementById('submit_login');
-        enviar.click();
-        console.log("document is ready");
+        window.onload = function () {
+            var enviar = document.getElementById('submit_login');
+            enviar.click();
+            console.log("document is ready");
         };
     </script>
 
     <%--<script>--%>
-        <%--function ready() {--%>
-            <%--var enviar =document.getElementById('submit_login');--%>
-            <%--enviar.click();--%>
-        <%--}--%>
+    <%--function ready() {--%>
+    <%--var enviar =document.getElementById('submit_login');--%>
+    <%--enviar.click();--%>
+    <%--}--%>
     <%--</script>--%>
 
 
@@ -67,8 +69,8 @@
         <div class="col-md-5"></div>
 
         <div class="col-md-4">
-                <%--<img src="/resources/Images/loading.gif" alt=""/>--%>
-            <img src="https://tenor.com/PwmK.gif" alt=""/>
+            <img src="/resources/Images/loading.gif" alt=""/>
+            <%--<img src="https://tenor.com/PwmK.gif" alt=""/>--%>
 
             <input type="hidden" id="inputUser" value="${usuario.userzabbix}"/>
             <input type="hidden" id="inputPasswd" value="${usuario.senhazabbix}"/>
@@ -238,47 +240,50 @@
                         <!-- /.row -->
 
                         <div class="box box-info">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Problem Triggers Summary</h3>
+                            <%--<div class="box-header with-border">--%>
+                                <%--<h3 class="box-title">Problem Triggers Summary</h3>--%>
 
-                                <div class="box-tools pull-right">
-                                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
+                                <%--<div class="box-tools pull-right">--%>
+                                    <%--<button type="button" class="btn btn-box-tool" data-widget="collapse">--%>
+                                        <%--<i class="fa fa-minus"></i>--%>
+                                    <%--</button>--%>
 
-                                </div>
-                            </div>
+                                <%--</div>--%>
+                            <%--</div>--%>
                             <!-- /.box-header -->
-                            <div class="box-body">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                        <div id="chart_severity">
-                                            <p>
-                                                Severity
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                        <div id="chart_hostGroup">
-                                            <p>
-                                                HostGroup
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                        <div id="chart_host">
-                                            <p>
-                                                Host
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <!-- aqui e o quadro que mostra o grafico em pizza (erro da cor  sempre azul -->
 
-                            </div>
-                            <!-- /.box-body -->
+                            <%--<div class="box-body">--%>
+                                <%--<div class="row">--%>
+                                    <%--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">--%>
+                                        <%--<div id="chart_severity">--%>
+                                            <%--<p>--%>
+                                                <%--Severity--%>
+                                            <%--</p>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
+                                    <%--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">--%>
+                                        <%--<div id="chart_hostGroup">--%>
+                                            <%--<p>--%>
+                                                <%--HostGroup--%>
+                                            <%--</p>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
 
-                        </div>
+                                    <%--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">--%>
+                                        <%--<div id="chart_host">--%>
+                                            <%--<p>--%>
+                                                <%--Host--%>
+                                            <%--</p>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
+                                <%--</div>--%>
+
+                            <%--</div>--%>
+                            <%--<!-- /.box-body -->--%>
+
+                        <%--</div>--%>
                         <!-- /.box -->
 
                         <div class="row">
@@ -684,10 +689,28 @@
 
             <!-- footer -->
             <footer class="main-footer">
-                <div id="zabirepoVersion" class="pull-right hidden-xs"></div>
-                <strong>Copyright &copy; 2018-2018
-                    <a href="#">Forte Security</a>.
-                </strong> All rights reserved.
+                <div class="row>">
+                    <div class="pull-right hidden-xs">
+                        <b>Version</b> 1.0
+                    </div>
+
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'pt',
+                                includedLanguages: 'en,es,pt',
+                                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                                multilanguagePage: true
+                            }, 'google_translate_element');
+                        }
+                    </script>
+
+
+                    <strong>Copyright &copy; 2018-2018
+                        <a href="#">Forte Security</a>.
+                    </strong> All rights reserved.
+                </div>
             </footer>
         </div>
         <!-- end wrapper -->
@@ -730,47 +753,34 @@
     <!-- end alert modal -->
 
     <!-- JS -->
-
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jquery/jquery-2.2.4.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jQueryPlugin/jquery.ui.touch-punch.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jQueryPlugin/js.cookie.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jquery-csv.js/jquery.csv.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/pathseg/pathseg.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/bootstrap/js/bootstrap.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/bootstrap-multiselect/bootstrap-multiselect.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/adminLTE/app.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/d3.js/d3.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/c3.js/c3.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/pivot.js/pivot.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/pivot.js/c3_renderers.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/pivot.js/d3_renderers.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/zoomjs/zoom.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jquery.multi-select.js/jquery.multi-select.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jquery.blockUI/jquery.blockUI.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/crossfilter/crossfilter.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/dc.js/dc.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jQRangeSlider/jQRangeSlider-min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery/jquery-2.2.4.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jQueryPlugin/jquery.ui.touch-punch.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jQueryPlugin/js.cookie.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery-csv.js/jquery.csv.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pathseg/pathseg.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/bootstrap/js/bootstrap.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/bootstrap-multiselect/bootstrap-multiselect.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/adminLTE/app.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/d3.js/d3.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/c3.js/c3.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/pivot.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/c3_renderers.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/d3_renderers.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/zoomjs/zoom.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery.multi-select.js/jquery.multi-select.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery.blockUI/jquery.blockUI.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/crossfilter/crossfilter.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/dc.js/dc.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jQRangeSlider/jQRangeSlider-min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
     <%--<script type="text/javascript" charset="UTF-8" src="<c:url value='/WEB-INF/views/Index/ZabiRepo.jsp'/>"></script>--%>
+    <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </c:if>
 

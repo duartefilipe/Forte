@@ -33,8 +33,8 @@
 <jsp:useBean id="hostgroups" class="br.forte.DAO.ZabbixDao" />
 <c:set var="hostgroups" value="${hostgroups.getHostsGroup()}" />
 
-<jsp:useBean id="templates" class="br.forte.DAO.ZabbixDao" />
-<c:set var="templates" value="${templates.getTemplate()}" />
+<%--<jsp:useBean id="templates" class="br.forte.DAO.ZabbixDao" />--%>
+<%--<c:set var="templates" value="${templates.getTemplate()}" />--%>
 
 <c:if  test="${usuario != null}">
 
@@ -54,7 +54,8 @@
 
 
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">   <!--<img src="resources/Images/logo.png" class="img-responsive"/> -->
+            <span class="logo-lg">
+                <!--<img src="resources/Images/logo.png" class="img-responsive"/> -->
                 <b>ForteSecurity</b>
             </span>
         </a>
@@ -220,7 +221,7 @@
                                         </div>
                                     </div>
 
-                                    <input type="hidden" name="nameTemplate" value="10189">
+                                    <input type="hidden" name="nameTemplate" value="10196">
 
                                     <%--<div class="col-md-3">--%>
                                         <%--<div class="form-group">--%>

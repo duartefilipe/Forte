@@ -8361,17 +8361,7 @@ dc.rowChart = function (parent, chartGroup) {
 
     _chart.label(_chart.cappedKeyAccessor);
 
-    /**
-     * Gets or sets the x scale. The x scale can be any d3
-     * {@link https://github.com/mbostock/d3/wiki/Quantitative-Scales quantitive scale}
-     * @method x
-     * @memberof dc.rowChart
-     * @instance
-     * @see {@link https://github.com/mbostock/d3/wiki/Quantitative-Scales quantitive scale}
-     * @param {d3.scale} [scale]
-     * @return {d3.scale}
-     * @return {dc.rowChart}
-     */
+
     _chart.x = function (scale) {
         if (!arguments.length) {
             return _x;
@@ -8522,15 +8512,7 @@ dc.rowChart = function (parent, chartGroup) {
         }
     }
 
-    /**
-     * Turn on/off Title label rendering (values) using SVG style of text-anchor 'end'
-     * @method renderTitleLabel
-     * @memberof dc.rowChart
-     * @instance
-     * @param {Boolean} [renderTitleLabel=false]
-     * @return {Boolean}
-     * @return {dc.rowChart}
-     */
+
     _chart.renderTitleLabel = function (renderTitleLabel) {
         if (!arguments.length) {
             return _renderTitleLabel;
@@ -8555,39 +8537,12 @@ dc.rowChart = function (parent, chartGroup) {
         return _chart;
     };
 
-    /**
-     * Get the x axis for the row chart instance.  Note: not settable for row charts.
-     * See the {@link https://github.com/mbostock/d3/wiki/SVG-Axes#wiki-axis d3 axis object}
-     * documention for more information.
-     * @method xAxis
-     * @memberof dc.rowChart
-     * @instance
-     * @see {@link https://github.com/mbostock/d3/wiki/SVG-Axes#wiki-axis d3.svg.axis}
-     * @example
-     * // customize x axis tick format
-     * chart.xAxis().tickFormat(function (v) {return v + '%';});
-     * // customize x axis tick values
-     * chart.xAxis().tickValues([0, 100, 200, 300]);
-     * @return {d3.svg.axis}
-     */
+
     _chart.xAxis = function () {
         return _xAxis;
     };
 
-    /**
-     * Get or set the fixed bar height. Default is [false] which will auto-scale bars.
-     * For example, if you want to fix the height for a specific number of bars (useful in TopN charts)
-     * you could fix height as follows (where count = total number of bars in your TopN and gap is
-     * your vertical gap space).
-     * @method fixedBarHeight
-     * @memberof dc.rowChart
-     * @instance
-     * @example
-     * chart.fixedBarHeight( chartheight - (count + 1) * gap / count);
-     * @param {Boolean|Number} [fixedBarHeight=false]
-     * @return {Boolean|Number}
-     * @return {dc.rowChart}
-     */
+
     _chart.fixedBarHeight = function (fixedBarHeight) {
         if (!arguments.length) {
             return _fixedBarHeight;
@@ -8596,15 +8551,7 @@ dc.rowChart = function (parent, chartGroup) {
         return _chart;
     };
 
-    /**
-     * Get or set the vertical gap space between rows on a particular row chart instance
-     * @method gap
-     * @memberof dc.rowChart
-     * @instance
-     * @param {Number} [gap=5]
-     * @return {Number}
-     * @return {dc.rowChart}
-     */
+
     _chart.gap = function (gap) {
         if (!arguments.length) {
             return _gap;
@@ -8613,16 +8560,7 @@ dc.rowChart = function (parent, chartGroup) {
         return _chart;
     };
 
-    /**
-     * Get or set the elasticity on x axis. If this attribute is set to true, then the x axis will rescle to auto-fit the
-     * data range when filtered.
-     * @method elasticX
-     * @memberof dc.rowChart
-     * @instance
-     * @param {Boolean} [elasticX]
-     * @return {Boolean}
-     * @return {dc.rowChart}
-     */
+
     _chart.elasticX = function (elasticX) {
         if (!arguments.length) {
             return _elasticX;
@@ -8631,15 +8569,7 @@ dc.rowChart = function (parent, chartGroup) {
         return _chart;
     };
 
-    /**
-     * Get or set the x offset (horizontal space to the top left corner of a row) for labels on a particular row chart.
-     * @method labelOffsetX
-     * @memberof dc.rowChart
-     * @instance
-     * @param {Number} [labelOffsetX=10]
-     * @return {Number}
-     * @return {dc.rowChart}
-     */
+
     _chart.labelOffsetX = function (labelOffsetX) {
         if (!arguments.length) {
             return _labelOffsetX;
@@ -8648,15 +8578,7 @@ dc.rowChart = function (parent, chartGroup) {
         return _chart;
     };
 
-    /**
-     * Get or set the y offset (vertical space to the top left corner of a row) for labels on a particular row chart.
-     * @method labelOffsetY
-     * @memberof dc.rowChart
-     * @instance
-     * @param {Number} [labelOffsety=15]
-     * @return {Number}
-     * @return {dc.rowChart}
-     */
+
     _chart.labelOffsetY = function (labelOffsety) {
         if (!arguments.length) {
             return _labelOffsetY;
@@ -8666,15 +8588,7 @@ dc.rowChart = function (parent, chartGroup) {
         return _chart;
     };
 
-    /**
-     * Get of set the x offset (horizontal space between right edge of row and right edge or text.
-     * @method titleLabelOffsetX
-     * @memberof dc.rowChart
-     * @instance
-     * @param {Number} [titleLabelOffsetX=2]
-     * @return {Number}
-     * @return {dc.rowChart}
-     */
+
     _chart.titleLabelOffsetX = function (titleLabelOffsetX) {
         if (!arguments.length) {
             return _titleLabelOffsetX;

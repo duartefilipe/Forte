@@ -5,6 +5,7 @@ import br.forte.Model.Usuario;
 import br.forte.controller.Apis.Zabbix.api.domain.base.*;
 import br.forte.controller.Apis.Zabbix.api.domain.hostgroup.HostGroupDeleteRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.media.MediaGetRequest;
+import br.forte.controller.Apis.Zabbix.api.domain.template.TemplateGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.user.UserCreateRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.user.UserDeleteRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.user.UserGetRequest;
@@ -51,7 +52,6 @@ public class UsuarioDao {
     private static String loginName;
     private static String password;
 
-
     static {
         FormatData.API_URL = url;
     }
@@ -86,6 +86,11 @@ public class UsuarioDao {
         }
         loginName = u.getUserzabbix();
         password = u.getSenhazabbix();
+
+        getTemplate();
+        ZabbixDao zD = new ZabbixDao();
+        zD.getTemplate();
+
         return u;
     }
 
@@ -640,6 +645,7 @@ public class UsuarioDao {
 
     public ArrayList<Integration> getUsers() throws ClassNotFoundException {
 
+
         ArrayList<Integration> IntegrationUsers = new ArrayList<Integration>();
         ArrayList<User> users = new ArrayList<User>();
         ArrayList<Media> medias = new ArrayList<Media>();
@@ -674,6 +680,7 @@ public class UsuarioDao {
                 }
                 IntegrationUsers.add(integration);
             }
+
 
         } catch (Exception e) {
 
@@ -725,8 +732,6 @@ public class UsuarioDao {
             e.printStackTrace();
         }
 
-//        System.out.println("Id do UserGroup no DAO: " + ug.getUsrgrpid());
-//        idGroup = ug.getUsrgrpid();
         return UserGroups;
     }
 
@@ -751,9 +756,57 @@ public class UsuarioDao {
             e.printStackTrace();
         }
 
-//        System.out.println("Id do UserGroup no DAO: " + ug.getUsrgrpid());
-//        idGroup = ug.getUsrgrpid();
         return HostGroups;
+    }
+
+    public List<Template> getTemplate() {
+        ArrayList<Template> templates = new ArrayList<Template>();
+        TemplateGetRequest templateGet = new TemplateGetRequest();
+        JSONObject result = (JSONObject) this.templateGet(templateGet);
+        System.out.println("TA NO ARRAY JSON TEMPLATE");
+        if (result != null) {
+            if (result.has("result")) {
+                try {
+                    JSONArray array = result.getJSONArray("result");
+                    if (array != null && array.length() > 0) {
+                        for (int i = 0; i < array.length(); i++) {
+                            JSONObject object = array.getJSONObject(i);
+                            Template temp = new Template();
+                            temp.setTemplateid(object.getString("templateid"));
+                            temp.setNameTemplate(object.getString("nametemplate"));
+
+                            System.out.println("Id do template: "+temp.getTemplateid()+" Nome do Template: "+temp.getNameTemplate());
+                        }
+                    }
+                    System.out.println("\n");
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    return null;
+                }
+            } else if (result.has("error")) {
+                return null;
+            }
+        }
+
+        return templates;
+    }
+
+    public Object templateGet(TemplateGetRequest templateGet) {
+        Gson js = new Gson();
+        HttpClient client = new HttpClient();
+        PostMethod putMethod = new PostMethod(FormatData.API_URL);
+        putMethod.setRequestHeader("Content-Type", "application/json-rpc");
+        JSONObject rs = null;
+        try {
+            String json = js.toJson(templateGet);
+            putMethod.setRequestBody(FormatData.fromString(json));
+            client.executeMethod(putMethod);
+            String response = putMethod.getResponseBodyAsString();
+            rs = new JSONObject(response);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return rs;
     }
 
 

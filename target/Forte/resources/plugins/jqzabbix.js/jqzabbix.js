@@ -1,22 +1,3 @@
-/*!
- *  jQuery plugin for Zabbix API
- *
- *  jQuery plugin for Zabbix API is a simple and easy-use plugin for jQuery JavaScript Library.
- *  It can be used for development of original Zabbix web application using Zabbix API.
- *
- *  Documentation on Mozaby site http://www.mozaby.com
- *  Issue tracking on GitHub http://github.com/kodai/jqzabbix
- *
- *  jQuery plugin for Zabbix API is Released under the MIT License.
- *  Copyright (c) 2011, Kodai Terashima http://kodai74.blogpot.com.
- *  Mozaby project http://www.mozaby.com
- *
- *  ------------------------------------------
- *  2016/3 Modify the jquery.deffered from callback  by usiusi360
- *
- */
-
-
 (function($) {
 
 	$.jqzabbix = function(options) {
@@ -26,8 +7,8 @@
 			// default settings
 			url : 'http://192.168.199.104/zabbix/api_jsonrpc.php',
             // url : 'http://177.67.163.20:8089/zabbix/api_jsonrpc.php',
-			username : 'Admin',
-			password : 'zabbix',
+			username : 'Filipe',
+			password : 'eumesmo',
             // username : options.username,
             // password : options.password,
 			basicauth : false,

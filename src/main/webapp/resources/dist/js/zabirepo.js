@@ -238,19 +238,21 @@ var zbxApi = {
 
 			var resultArray = [];
 
-			if (data.result.length === 0) {
-				var innerArray = {
-					"host" : "No Problem host",
-					"group" : "No Problem group",
-					"status" : "OK",
-					"severity" : "information",
-					"description" : "No Problem trigger",
-					"lastchange" : convTime(),
-					"age" : "00d 00h 00m"
-
-				};
-				resultArray.push(innerArray);
-			} else {
+			// if (data.result.length === 0) {
+			// 	var innerArray = {
+			// 		"host" : "No Problem host",
+			// 		"group" : "No Problem group",
+			// 		"status" : "OK",
+			// 		"severity" : "information",
+			// 		"description" : "No Problem trigger",
+			// 		"lastchange" : convTime(),
+			// 		"age" : "00d 00h 00m"
+            //
+			// 	};
+			// 	resultArray.push(innerArray);
+			// }
+			// else {
+                if (data.result.length != 0) {
 
 				// console.log(data);
 
@@ -294,6 +296,7 @@ var int = {
 		options.username = $("#inputUser").val();
 		options.password = $("#inputPasswd").val();
 
+		//ver se e aqui que eu posso enviar o usuario logado
 		// for API Login
 		server = new $.jqzabbix(options);
 		server.getApiVersion().then(function() {
@@ -306,6 +309,7 @@ var int = {
 		}, function(data) {
 			alertDiag(data.error.data);
 			// end API Login
+
 		}).then(function() {
 			// for Dashboard
 			$.blockUI(blockUI_opt_all);
@@ -1344,7 +1348,7 @@ var sortObjectStr = function(object, key) {
 
 var blockUI_opt_all = {
 
-	message : '<h4><img src="./dist/img/loading.gif" />　Please Wait...</h4>',
+	message : '<h4><img src="/resources/dist/img/loading.gif" />　Please Wait...</h4>',
 	fadeIn : 200,
 	fadeOut : 200,
 	css : {
@@ -1359,7 +1363,7 @@ var blockUI_opt_all = {
 };
 
 var blockUI_opt_el = {
-	message : '<img src="./dist/img/loading.gif" />',
+	message : '<img src="/resources/dist/img/loading.gif" />',
 	fadeIn : 200,
 	fadeOut : 200,
 

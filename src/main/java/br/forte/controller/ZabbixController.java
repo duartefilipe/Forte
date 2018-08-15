@@ -44,7 +44,6 @@ public class ZabbixController {
         return "API/API";
     }
 
-
     @RequestMapping ("AltZabbix")
     public String AltZabbix (Host host, HostGroup hostGroup, HostInterface hostInterface, Template template, Macro macro, HttpServletRequest rq){
 

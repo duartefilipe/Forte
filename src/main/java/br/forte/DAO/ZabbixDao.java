@@ -669,9 +669,7 @@ public class ZabbixDao {
                 try {
                     JSONArray array = result.getJSONArray("result");
 
-                    if (array != null && array.length() > 0) {
-
-                        for (int i = 0; i < array.length(); i++) {
+                    if (array != null && array.length() > 0)for (int i = 0; i < array.length(); i++) {
 
                             Template template = new Template();
 
@@ -679,9 +677,10 @@ public class ZabbixDao {
 
                             template.setTemplateid(object.getString("templateid"));
                             template.setNameTemplate(object.getString("nameTemplate"));
+
                             templates.add(template);
 
-                        }
+
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
