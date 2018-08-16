@@ -163,6 +163,7 @@ var zbxApi = {
 				"skipDependent" : true,
 				"withUnacknowledgedEvents" : true,
 				"countOutput" : true,
+
 				"limit" : "10000"
 			};
 
@@ -220,12 +221,12 @@ var zbxApi = {
 				"selectHosts" : [ "host", "maintenance_status" ],
 				"selectItems" : [ "itemid" ],
 				"sortfield" : "description",
-
-				// TODO アラート状態のトリガーだけでなく、直近ステータス変更があったトリガーに変更
 				"only_true" : true,
-				// "filter" : {
-				// "value" : [ 1 ]
-				// },
+
+                //esse filter e pra escolher se quer mostrar os eventos recentes, qualquer ou problemas
+				"filter" : {
+				"value" : [ 1 ]
+				},
 
 				"selectLastEvent" : "true",
 				"limit" : "10000"
@@ -914,6 +915,7 @@ var int = {
 				var srcUrl = "";
 				var addUrl = "";
 				var timestamp = new Date().getTime();
+
 				//aqui que eu tenho que arrumar o tipo de grafico e colocar o graphid certo
 
 				var srcUrl = graphURL + '?period=' + lastPeriod + '&height=' + zabirepo.GRAPH_HEIGHT + '&width=' + zabirepo.GRAPH_WIDTH + '&type=' + zabirepo.GRAPH_TYPE + '&batch=1' + '&' + itemUrl + '&' + timestamp;
@@ -1034,8 +1036,8 @@ var int = {
 				return d.lastchange;
 			}, function(d) {
 				return d.age;
-			}, function(d) {
-				return d.ack;
+			// }, function(d) {
+			// 	return d.ack;
 			}, function(d) {
 				return d.host;
 			}, function(d) {
@@ -1235,7 +1237,7 @@ var pivotMain = function(Latest_events, event_type) {
 				return sortAs([ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]);
 			}
 			if (attr == "Severity") {
-				return sortAs([ "Disaster", "High", "Average", "Warning", "Information", "Not Classfied" ]);
+				return sortAs([ "Desastre", "Alta", "Media", "Atencao", "Informaçao", "Não Classificada" ]);
 			}
 			if (attr == "Status") {
 				return sortAs([ "PROBLEM", "OK" ]);
@@ -1467,7 +1469,7 @@ var convStatus = function(status) {
 var convAck = function(ack) {
 
 	if (ack === "0") {
-		return "Unacked";
+		return "UnackedeventList";
 	} else {
 		return "Acked";
 	}
@@ -1478,17 +1480,17 @@ var convPriority = function(priority) {
 
 	switch (priority) {
 	case "0":
-		return "not classified";
+		return "Não Classificada";
 	case "1":
-		return "information";
+		return "Informação";
 	case "2":
-		return "warning";
+		return "Atenção";
 	case "3":
-		return "average";
+		return "Média";
 	case "4":
-		return "high";
+		return "Alta";
 	case "5":
-		return "disaster";
+		return "Desastre";
 	}
 }
 
@@ -1515,44 +1517,46 @@ var reloadTimer = function(flag, interval) {
 };
 
 var addDcTableColor = function() {
+
+    //aqui conforme o dc-table-column a coluna fica piscando
 	$.each($(".dc-table-column._1"), function(index, value) {
-		if (this.textContent === "problem") {
+		if (this.textContent === "PROBLEM") {
 			$(this).css('color', 'Red');
 			$(this).addClass('flash');
 		} else {
-			$(this).css('color', 'blue');
+			$(this).css('color', 'red');
 			$(this).addClass('flash');
 		}
 	});
 
-	$.each($(".dc-table-column._4"), function(index, value) {
-		if (this.textContent === "Unacked") {
-			$(this).css('color', 'Red');
-			$(this).addClass('flash');
-		} else {
-			$(this).css('color', 'green');
-			$(this).addClass('flash');
-		}
-	});
+	// $.each($(".dc-table-column._4"), function(index, value) {
+	// 	if (this.textContent === "Unacked") {
+	// 		$(this).css('color', 'Red');
+	// 		$(this).addClass('flash');
+	// 	} else {
+	// 		$(this).css('color', 'green');
+	// 		$(this).addClass('flash');
+	// 	}
+	// });
 
 	$.each($(".dc-table-column._0"), function(index, value) {
 		switch (this.textContent) {
-		case "not classified":
+		case "Nao Classificada":
 			$(this).css('background-color', '#97AAB3');
 			break;
-		case "information":
+		case "Informaçao":
 			$(this).css('background-color', '#7499FF');
 			break;
-		case "warning":
+		case "Atençao":
 			$(this).css('background-color', '#FFC859');
 			break;
-		case "average":
+		case "Media":
 			$(this).css('background-color', '#FFA059');
 			break;
-		case "high":
-			$(this).css('background-color', '#E97659');
+		case "Alta":
+			$(this).css('background-color', '#e97303');
 			break;
-		case "disaster":
+		case "Desastre":
 			$(this).css('background-color', '#E45959');
 			break;
 		}

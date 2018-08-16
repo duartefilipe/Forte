@@ -311,9 +311,10 @@
         <div class="row>">
             <div class="pull-right hidden-xs">
                 <b>Version</b> 1.0
+                <button id="google_translate_element"></button>
             </div>
 
-            <div id="google_translate_element"></div>
+                <%--<div id="google_translate_element"></div>--%>
             <script type="text/javascript">
                 function googleTranslateElementInit() {
                     new google.translate.TranslateElement({

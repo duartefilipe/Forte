@@ -595,17 +595,7 @@ dc.utils.printSingleValue = function (filter) {
 };
 dc.utils.printSingleValue.fformat = d3.format('.2f');
 
-/**
- * Arbitrary add one value to another.
- * @method add
- * @memberof dc.utils
- * @todo
- * These assume than any string r is a percentage (whether or not it includes %).
- * They also generate strange results if l is a string.
- * @param {String|Date|Number} l
- * @param {Number} r
- * @returns {String|Date|Number}
- */
+
 dc.utils.add = function (l, r) {
     if (typeof r === 'string') {
         r = r.replace('%', '');
@@ -627,17 +617,6 @@ dc.utils.add = function (l, r) {
     }
 };
 
-/**
- * Arbitrary subtract one value from another.
- * @method subtract
- * @memberof dc.utils
- * @todo
- * These assume than any string r is a percentage (whether or not it includes %).
- * They also generate strange results if l is a string.
- * @param {String|Date|Number} l
- * @param {Number} r
- * @returns {String|Date|Number}
- */
 dc.utils.subtract = function (l, r) {
     if (typeof r === 'string') {
         r = r.replace('%', '');
@@ -659,94 +638,42 @@ dc.utils.subtract = function (l, r) {
     }
 };
 
-/**
- * Is the value a number?
- * @method isNumber
- * @memberof dc.utils
- * @param {any} n
- * @returns {Boolean}
- */
+
 dc.utils.isNumber = function (n) {
     return n === +n;
 };
 
-/**
- * Is the value a float?
- * @method isFloat
- * @memberof dc.utils
- * @param {any} n
- * @returns {Boolean}
- */
+
 dc.utils.isFloat = function (n) {
     return n === +n && n !== (n | 0);
 };
 
-/**
- * Is the value an integer?
- * @method isInteger
- * @memberof dc.utils
- * @param {any} n
- * @returns {Boolean}
- */
+
 dc.utils.isInteger = function (n) {
     return n === +n && n === (n | 0);
 };
 
-/**
- * Is the value very close to zero?
- * @method isNegligible
- * @memberof dc.utils
- * @param {any} n
- * @returns {Boolean}
- */
+
 dc.utils.isNegligible = function (n) {
     return !dc.utils.isNumber(n) || (n < dc.constants.NEGLIGIBLE_NUMBER && n > -dc.constants.NEGLIGIBLE_NUMBER);
 };
 
-/**
- * Ensure the value is no greater or less than the min/max values.  If it is return the boundary value.
- * @method clamp
- * @memberof dc.utils
- * @param {any} val
- * @param {any} min
- * @param {any} max
- * @returns {any}
- */
+
 dc.utils.clamp = function (val, min, max) {
     return val < min ? min : (val > max ? max : val);
 };
 
-/**
- * Using a simple static counter, provide a unique integer id.
- * @method uniqueId
- * @memberof dc.utils
- * @returns {Number}
- */
+
 var _idCounter = 0;
 dc.utils.uniqueId = function () {
     return ++_idCounter;
 };
 
-/**
- * Convert a name to an ID.
- * @method nameToId
- * @memberof dc.utils
- * @param {String} name
- * @returns {String}
- */
+
 dc.utils.nameToId = function (name) {
     return name.toLowerCase().replace(/[\s]/g, '_').replace(/[\.']/g, '');
 };
 
-/**
- * Append or select an item on a parent element
- * @method appendOrSelect
- * @memberof dc.utils
- * @param {d3.selection} parent
- * @param {String} selector
- * @param {String} tag
- * @returns {d3.selection}
- */
 dc.utils.appendOrSelect = function (parent, selector, tag) {
     tag = tag || selector;
     var element = parent.select(selector);
@@ -756,13 +683,7 @@ dc.utils.appendOrSelect = function (parent, selector, tag) {
     return element;
 };
 
-/**
- * Return the number if the value is a number; else 0.
- * @method safeNumber
- * @memberof dc.utils
- * @param {Number|any} n
- * @returns {Number}
- */
+
 dc.utils.safeNumber = function (n) { return dc.utils.isNumber(+n) ? +n : 0;};
 
 dc.logger = {};
@@ -844,26 +765,7 @@ dc.events.trigger = function (closure, delay) {
     }, delay);
 };
 
-/**
- * The dc.js filters are functions which are passed into crossfilter to chose which records will be
- * accumulated to produce values for the charts.  In the crossfilter model, any filters applied on one
- * dimension will affect all the other dimensions but not that one.  dc always applies a filter
- * function to the dimension; the function combines multiple filters and if any of them accept a
- * record, it is filtered in.
- *
- * These filter constructors are used as appropriate by the various charts to implement brushing.  We
- * mention below which chart uses which filter.  In some cases, many instances of a filter will be added.
- *
- * Each of the dc.js filters is an object with the following properties:
- * * `isFiltered` - a function that returns true if a value is within the filter
- * * `filterType` - a string identifying the filter, here the name of the constructor
- *
- * Currently these filter objects are also arrays, but this is not a requirement. Custom filters
- * can be used as long as they have the properties above.
- * @namespace filters
- * @memberof dc
- * @type {{}}
- */
+
 dc.filters = {};
 
 /**
@@ -4730,16 +4632,7 @@ dc.pieChart = function (parent, chartGroup) {
         return _chart.cappedKeyAccessor(d) + ': ' + _chart.cappedValueAccessor(d);
     });
 
-    /**
-     * Get or set the maximum number of slices the pie chart will generate. The top slices are determined by
-     * value from high to low. Other slices exeeding the cap will be rolled up into one single *Others* slice.
-     * @method slicesCap
-     * @memberof dc.pieChart
-     * @instance
-     * @param {Number} [cap]
-     * @return {Number}
-     * @return {dc.pieChart}
-     */
+
     _chart.slicesCap = _chart.cap;
 
     _chart.label(_chart.cappedKeyAccessor);

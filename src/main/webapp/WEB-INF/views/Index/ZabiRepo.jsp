@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/jQRangeSlider/css/iThing-min.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/dist/css/index.css'/>">
     <%--<script type="text/javascript" charset="UTF-8"--%>
-            <%--src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>--%>
+    <%--src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>--%>
     <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>--%>
 </head>
 
@@ -70,7 +70,7 @@
 
         <div class="col-md-4">
             <img src="/resources/Images/loading.gif" alt=""/>
-            <%--<img src="https://tenor.com/PwmK.gif" alt=""/>--%>
+                <%--<img src="https://tenor.com/PwmK.gif" alt=""/>--%>
 
             <input type="hidden" id="inputUser" value="${usuario.userzabbix}"/>
             <input type="hidden" id="inputPasswd" value="${usuario.senhazabbix}"/>
@@ -125,35 +125,36 @@
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa fa-history"></i> <span>Events</span> <i
+                            <a href="#"><i class="fa fa-history"></i> <span>Eventos</span> <i
                                     class="fa fa-angle-left pull-right"></i></a>
                             <ul class="treeview-menu">
                                 <li>
-                                    <a href="#" id="menu_histogram"><i class="fa fa-bar-chart"></i> Histogram</a>
+                                    <a href="#" id="menu_histogram"><i class="fa fa-bar-chart"></i> Histograma</a>
                                 </li>
                                 <li>
-                                    <a href="#" id="menu_pivottable"><i class="fa fa-table"></i> PivotTable</a>
+                                    <a href="#" id="menu_pivottable"><i class="fa fa-table"></i>
+                                        Tabela Dinâmica</a>
                                 </li>
                                 <li>
-                                    <a href="#" id="menu_treemap"><i class="fa fa-tree"></i> TreeMap</a>
+                                    <a href="#" id="menu_treemap"><i class="fa fa-tree"></i> Tabela Cores</a>
                                 </li>
                                 <li>
-                                    <a href="#" id="menu_free"><i class="fa fa-circle-o"></i> Free</a>
+                                    <a href="#" id="menu_free"><i class="fa fa-circle-o"></i> Tabela livre</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="treeview">
-                            <a href="#"> <i class="fa fa-line-chart"></i> <span>Graphs</span> <i
+                            <a href="#"> <i class="fa fa-line-chart"></i> <span>Graficos</span> <i
                                     class="fa fa-angle-left pull-right"></i> </a>
                             <ul class="treeview-menu">
                                 <li>
-                                    <a href="#"><i class="fa fa-circle-o"></i>Group to Item<i
+                                    <a href="#"><i class="fa fa-circle-o"></i>Groupos<i
                                             class="fa fa-angle-left pull-right"></i></a>
                                     <ul class="treeview-menu" id="menu_group_top"></ul>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-circle-o"></i> Item to Group <i
+                                    <a href="#"><i class="fa fa-circle-o"></i> Itens por Grupo <i
                                             class="fa fa-angle-left pull-right"></i></a>
 
                                     <ul class="treeview-menu" id="menu_item_top"></ul>
@@ -162,7 +163,7 @@
                         </li>
 
                         <li>
-                            <a href="#" id="menu_setting"><i class="fa fa-gears"></i> <span>Setting</span></a>
+                            <a href="#" id="menu_setting"><i class="fa fa-gears"></i> <span>Configuraçoes</span></a>
                         </li>
                     </ul>
                 </section>
@@ -188,8 +189,9 @@
                                     <span class="info-box-icon bg-red"><i class="fa fa-exclamation-triangle"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="info-box-text">Problem Triggers</span><span class="info-box-number"
-                                                                                                 id="infobox_alertTrigger">--</span>
+                                        <span class="info-box-text">Problemas <!-- Problem Triggers --></span><span
+                                            class="info-box-number"
+                                            id="infobox_alertTrigger">--</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
@@ -202,7 +204,7 @@
                                             class="fa fa-exclamation-circle"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="info-box-text">Unacknowledged Events</span><span
+                                        <span class="info-box-text">Eventos não reconhecidos</span><span
                                             class="info-box-number" id="unAcknowledgedEvents">--</span>
                                     </div>
                                     <!-- /.info-box-content -->
@@ -232,7 +234,7 @@
 
                             <div class="col-xs-1 pull-right"></div>
                             <div class="pull-right" style="clear: left;">
-                                <b>Last Update: </b>
+                                <b>Ultima Atualizaçao: </b>
                                 <text id="lastUpdateDashboard"></text>
                             </div>
 
@@ -240,50 +242,50 @@
                         <!-- /.row -->
 
                         <div class="box box-info">
-                            <%--<div class="box-header with-border">--%>
+                            <div class="box-header with-border">
                                 <%--<h3 class="box-title">Problem Triggers Summary</h3>--%>
+                                <h3 class="box-title">Sumario de problemas</h3>
 
-                                <%--<div class="box-tools pull-right">--%>
-                                    <%--<button type="button" class="btn btn-box-tool" data-widget="collapse">--%>
-                                        <%--<i class="fa fa-minus"></i>--%>
-                                    <%--</button>--%>
+                                <div class="box-tools pull-right">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
 
-                                <%--</div>--%>
-                            <%--</div>--%>
+                                </div>
+                            </div>
                             <!-- /.box-header -->
 
                             <!-- aqui e o quadro que mostra o grafico em pizza (erro da cor  sempre azul -->
 
-                            <%--<div class="box-body">--%>
-                                <%--<div class="row">--%>
-                                    <%--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">--%>
-                                        <%--<div id="chart_severity">--%>
-                                            <%--<p>--%>
-                                                <%--Severity--%>
-                                            <%--</p>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">--%>
-                                        <%--<div id="chart_hostGroup">--%>
-                                            <%--<p>--%>
-                                                <%--HostGroup--%>
-                                            <%--</p>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div id="chart_severity">
+                                            <p>
+                                                Severidade
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div id="chart_hostGroup">
+                                            <p>
+                                                Grupo de Hosts
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div id="chart_host">
+                                            <p>
+                                                Host
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <%--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">--%>
-                                        <%--<div id="chart_host">--%>
-                                            <%--<p>--%>
-                                                <%--Host--%>
-                                            <%--</p>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
-                                <%--</div>--%>
+                            </div>
+                                <%--<!-- /.box-body -->--%>
 
-                            <%--</div>--%>
-                            <%--<!-- /.box-body -->--%>
-
-                        <%--</div>--%>
+                        </div>
                         <!-- /.box -->
 
                         <div class="row">
@@ -291,7 +293,8 @@
                                 <div class="box box-info">
 
                                     <div class="box-header with-border">
-                                        <h3 class="box-title">Problem Events History</h3>
+                                            <%--<h3 class="box-title">Problem Events History</h3>--%>
+                                        <h3 class="box-title">Historico de Problemas</h3>
 
                                         <div class="box-tools pull-right">
                                             <button type="button" class="btn btn-box-tool" data-widget="collapse">
@@ -312,8 +315,8 @@
                         <!-- TABLE: LATEST ORDERS -->
                         <div class="box box-info">
                             <div class="box-header with-border">
-                                <h3 class="box-title">Problem Triggers List</h3>
-
+                                    <%--<h3 class="box-title">Problem Triggers List</h3>--%>
+                                <h3 class="box-title">Lista de Problemas</h3>
                                 <div class="box-tools pull-right">
                                     <button type="button" class="btn btn-box-tool" data-widget="collapse">
                                         <i class="fa fa-minus"></i>
@@ -327,13 +330,13 @@
                                            id="eventList">
                                         <thead>
                                         <tr>
-                                            <th>Severity</th>
+                                            <th>Gravidade</th>
                                             <th>Status</th>
-                                            <th>Lastchange</th>
-                                            <th>Age</th>
-                                            <th>Acknowledged</th>
+                                            <th>Ultima Atualizaçao</th>
+                                            <th>Tempo</th>
+                                                <%--<th>Acknowledged</th>--%>
                                             <th>Host</th>
-                                            <th>Description</th>
+                                            <th>Descriçao</th>
                                         </tr>
                                         </thead>
                                     </table>
@@ -349,25 +352,25 @@
                 <!-- for event -->
                 <div id="base_event" style="display: none;">
                     <section class="content-header">
-                        <h1>Events</h1>
+                        <h1>Eventos</h1>
                     </section>
                     <section class="content">
 
                         <div id="base_histogram" style="display: none;">
                             <div class="box box-primary">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">Histogram</h3>
+                                    <h3 class="box-title">Histograma</h3>
                                 </div>
 
                                 <div class="box-body">
                                     <button type="submit" class="btn btn-primary" id="save_event_histogram">
-                                        Save
+                                        Salvar
                                     </button>
                                     <button type="submit" class="btn btn-default" id="clear_event_histogram">
-                                        Clear
+                                        Limpar
                                     </button>
                                     <span class="label" id="label_event_histogram"></span><span
-                                        class="alert alert-success" id="alert_event_histogram">Success</span>
+                                        class="alert alert-success" id="alert_event_histogram">Sucesso</span>
                                     <div id="event_histogram" style="margin: 30px;"></div>
                                 </div>
                             </div>
@@ -376,18 +379,19 @@
                         <div id="base_pivottable" style="display: none;">
                             <div class="box box-primary">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">PivotTable</h3>
+                                    <h3 class="box-title">
+                                        Tabela Dinâmica</h3>
                                 </div>
 
                                 <div class="box-body">
                                     <button type="submit" class="btn btn-primary" id="save_event_pivot">
-                                        Save
+                                        Salvar
                                     </button>
                                     <button type="submit" class="btn btn-default" id="clear_event_pivot">
-                                        Clear
+                                        Limpar
                                     </button>
                                     <span class="label" id="label_event_pivot"></span><span class="alert alert-success"
-                                                                                            id="alert_event_pivot">Success</span>
+                                                                                            id="alert_event_pivot">Sucesso</span>
                                     <div id="event_pivot" style="margin: 30px;"></div>
                                 </div>
                             </div>
@@ -401,13 +405,13 @@
 
                                 <div class="box-body">
                                     <button type="submit" class="btn btn-primary" id="save_event_treemap">
-                                        Save
+                                        Salvar
                                     </button>
                                     <button type="submit" class="btn btn-default" id="clear_event_treemap">
-                                        Clear
+                                        Limpar
                                     </button>
                                     <span class="label" id="label_event_treemap"></span><span
-                                        class="alert alert-success" id="alert_event_treemap">Success</span>
+                                        class="alert alert-success" id="alert_event_treemap">Sucesso</span>
                                     <div id="event_treemap" style="margin: 30px;"></div>
                                 </div>
                             </div>
@@ -416,18 +420,18 @@
                         <div id="base_free" style="display: none;">
                             <div class="box box-primary">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">Free</h3>
+                                    <h3 class="box-title">Livre</h3>
                                 </div>
 
                                 <div class="box-body">
                                     <button type="submit" class="btn btn-primary" id="save_event_free">
-                                        Save
+                                        Salvar
                                     </button>
                                     <button type="submit" class="btn btn-default" id="clear_event_free">
-                                        Clear
+                                        Limpar
                                     </button>
                                     <span class="label" id="label_event_free"></span><span class="alert alert-success"
-                                                                                           id="alert_event_free">Success</span>
+                                                                                           id="alert_event_free">Sucesso</span>
                                     <div id="event_free" style="margin: 30px;"></div>
                                 </div>
                             </div>
@@ -440,7 +444,7 @@
                 <!-- for report  -->
                 <div id="base_graph" style="display: none;">
                     <section class="content-header">
-                        <h1>Graphs</h1>
+                        <h1>Graficos</h1>
                         <div id="reportName" class="bg-success text-center"></div>
                         <div id="graphCount" class="pull-right"></div>
                     </section>
@@ -511,19 +515,19 @@
                 <div id="base_setting" style="display: none;">
 
                     <section class="content-header">
-                        <h1>Setting</h1>
+                        <h1>Configuraçoes</h1>
                     </section>
                     <section class="content">
 
                         <ul class="nav nav-tabs">
                             <li class="active">
-                                <a href="#tab_event_setting" data-toggle="tab">Events</a>
+                                <a href="#tab_event_setting" data-toggle="tab">Eventos</a>
                             </li>
                             <li>
-                                <a href="#tab_graph_setting" data-toggle="tab">Graphs</a>
+                                <a href="#tab_graph_setting" data-toggle="tab">Graficos</a>
                             </li>
                             <li>
-                                <a href="#tab_etc_setting" data-toggle="tab">Etc</a>
+                                <a href="#tab_etc_setting" data-toggle="tab">Reset</a>
                             </li>
 
                         </ul>
@@ -533,15 +537,15 @@
                             <div class="tab-pane fade in active" id="tab_event_setting">
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
-                                        <h6 class="panel-title">Events Period</h6>
+                                        <h6 class="panel-title">Periodo dos Eventos</h6>
                                     </div>
                                     <div class="panel-body">
 
                                         <form role="form">
                                             <div class="form-group">
                                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3">
-                                                    <label class="control-label settingInfoLabel">Target from XX days
-                                                        before</label>
+                                                    <label class="control-label settingInfoLabel">Escolha quantos dias
+                                                        deseja visualizar</label>
                                                 </div>
                                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
                                                     <input type="text" class="form-control" id="form_beforeDay">
@@ -553,19 +557,20 @@
                                 </div>
 
                                 <button type="submit" class="btn btn-primary" id="submit_form_beforeDay">
-                                    Submit
+                                    Enviar
                                 </button>
                                 <button type="submit" class="btn btn-default" id="cancel_form_beforeDay">
-                                    Cancel
+                                    Cancelar
                                 </button>
-                                <span class="alert alert-success" id="alert_form_beforeDay">Success</span>
+                                <span class="alert alert-success" id="alert_form_beforeDay">Sucesso</span>
 
                             </div>
 
                             <div class="tab-pane fade" id="tab_graph_setting">
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
-                                        <h6 class="panel-title">Zabbix Item Key</h6>
+                                        <h6 class="panel-title">Chave de item do Zabbix
+                                        </h6>
                                     </div>
                                     <div class="panel-body">
 
@@ -573,7 +578,7 @@
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
 
                                                 <div class="settingInfoLabel">
-                                                    Select target Zabbix Item Key
+                                                    Selecione a chave do item Zabbix de destino
                                                 </div>
 
                                             </div>
@@ -584,7 +589,7 @@
                                                         <thead>
                                                         <tr>
                                                             <th></th>
-                                                            <th class="text-center">Item Key Name</th>
+                                                            <th class="text-center">Nome da chave do item</th>
                                                             <th></th>
                                                             <th class="text-center">split</th>
                                                         </tr>
@@ -625,33 +630,32 @@
 
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
-                                        <h6 class="panel-title">Zabbix Group</h6>
+                                        <h6 class="panel-title">Grupo Zabbix</h6>
                                     </div>
                                     <div class="panel-body">
 
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
                                             <div class="settingInfoLabel">
-                                                Select target Zabbix Group
+                                                Selecione o grupo do Zabbix
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
                                             <select id='zbxGroup' multiple='multiple'></select>
                                             <br>
-                                            <a href='#' id='select-all-zbxGroup'>select all</a> / <a href='#'
-                                                                                                     id='deselect-all-zbxGroup'>deselect
-                                            all</a>
+                                            <a href='#' id='select-all-zbxGroup'>Selecionar Todos</a> / <a href='#'
+                                            </a>
                                         </div>
 
                                     </div>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary" id="submit_graph_setting">
-                                    Submit
+                                    Enviar
                                 </button>
                                 <button type="submit" class="btn btn-default" id="cancel_graph_setting">
-                                    Cancel
+                                    Cancelar
                                 </button>
-                                <span class="alert alert-success" id="alert_graph_setting">Success</span>
+                                <span class="alert alert-success" id="alert_graph_setting">Sucesso</span>
                                 <div></div>
 
                             </div>
@@ -659,12 +663,12 @@
                             <div class="tab-pane fade" id="tab_etc_setting">
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
-                                        <h6 class="panel-title">Setting</h6>
+                                        <h6 class="panel-title">Configuraçoes</h6>
                                     </div>
                                     <div class="panel-body">
 
                                         <button id="allClear" type="button" class="btn btn-default">
-                                            Setting All Clear
+                                            Limpar todas configuraçoes
                                         </button>
                                         <!-- <button id="export" type="button" class="btn btn-default">
                                         Setting Export
@@ -692,9 +696,10 @@
                 <div class="row>">
                     <div class="pull-right hidden-xs">
                         <b>Version</b> 1.0
+                        <button id="google_translate_element"></button>
                     </div>
 
-                    <div id="google_translate_element"></div>
+                        <%--<div id="google_translate_element"></div>--%>
                     <script type="text/javascript">
                         function googleTranslateElementInit() {
                             new google.translate.TranslateElement({
@@ -753,16 +758,20 @@
     <!-- end alert modal -->
 
     <!-- JS -->
-    <script type="text/javascript" src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>
-    <script type="text/javascript" src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/jquery/jquery-2.2.4.min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.js'/>"></script>
-    <script type="text/javascript" src="<c:url value='/resources/plugins/jQueryPlugin/jquery.ui.touch-punch.min.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/jQueryPlugin/jquery.ui.touch-punch.min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/jQueryPlugin/js.cookie.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/jquery-csv.js/jquery.csv.min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/pathseg/pathseg.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/bootstrap/js/bootstrap.min.js'/>"></script>
-    <script type="text/javascript" src="<c:url value='/resources/plugins/bootstrap-multiselect/bootstrap-multiselect.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/bootstrap-multiselect/bootstrap-multiselect.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/adminLTE/app.min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/d3.js/d3.min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/c3.js/c3.min.js'/>"></script>
@@ -770,11 +779,13 @@
     <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/c3_renderers.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/d3_renderers.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/zoomjs/zoom.js'/>"></script>
-    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery.multi-select.js/jquery.multi-select.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/jquery.multi-select.js/jquery.multi-select.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/jquery.blockUI/jquery.blockUI.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/crossfilter/crossfilter.min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/dc.js/dc.js'/>"></script>
-    <script type="text/javascript" src="<c:url value='/resources/plugins/jQRangeSlider/jQRangeSlider-min.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/jQRangeSlider/jQRangeSlider-min.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
