@@ -1520,11 +1520,11 @@ var addDcTableColor = function() {
 
     //aqui conforme o dc-table-column a coluna fica piscando
 	$.each($(".dc-table-column._1"), function(index, value) {
-		if (this.textContent === "PROBLEM") {
+		if (this.textContent == "problem") {
 			$(this).css('color', 'Red');
 			$(this).addClass('flash');
 		} else {
-			$(this).css('color', 'red');
+			$(this).css('color', 'blue');
 			$(this).addClass('flash');
 		}
 	});
