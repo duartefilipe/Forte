@@ -149,16 +149,16 @@
                                     class="fa fa-angle-left pull-right"></i> </a>
                             <ul class="treeview-menu">
                                 <li>
-                                    <a href="#"><i class="fa fa-circle-o"></i>Groupos<i
+                                    <a href="#"><i class="fa fa-circle-o"></i>Grupos<i
                                             class="fa fa-angle-left pull-right"></i></a>
                                     <ul class="treeview-menu" id="menu_group_top"></ul>
                                 </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-circle-o"></i> Itens por Grupo <i
-                                            class="fa fa-angle-left pull-right"></i></a>
+                                <%--<li>--%>
+                                    <%--<a href="#"><i class="fa fa-circle-o"></i> Itens por Grupo <i--%>
+                                            <%--class="fa fa-angle-left pull-right"></i></a>--%>
 
-                                    <ul class="treeview-menu" id="menu_item_top"></ul>
-                                </li>
+                                    <%--<ul class="treeview-menu" id="menu_item_top"></ul>--%>
+                                <%--</li>--%>
                             </ul>
                         </li>
 
