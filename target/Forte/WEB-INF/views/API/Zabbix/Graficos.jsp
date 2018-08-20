@@ -8,6 +8,8 @@
     <!-- for responsive -->
     <!-- <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> -->
     <meta content="width=device-width" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="<c:url value='/resources/Images/Forte16x16.png'/>">
+
 
 
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.css'/>">

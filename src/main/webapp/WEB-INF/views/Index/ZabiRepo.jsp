@@ -9,7 +9,7 @@
     <!-- for responsive -->
     <!-- <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> -->
     <meta content="width=device-width" name="viewport">
-
+    <link rel="shortcut icon" type="image/x-icon" href="<c:url value='/resources/Images/Forte16x16.png'/>">
 
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/bootstrap/css/bootstrap.min.css'/>">
@@ -758,37 +758,37 @@
     <!-- end alert modal -->
 
     <!-- JS -->
-    <script type="text/javascript" charset="UTF-8"
+    <script type="text/javascript"
             src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
+    <script type="text/javascript"
             src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/jquery/jquery-2.2.4.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery/jquery-2.2.4.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.js'/>"></script>
+    <script type="text/javascript"
             src="<c:url value='/resources/plugins/jQueryPlugin/jquery.ui.touch-punch.min.js'/>"></script>
-    <script type="text/javascript"charset="UTF-8" src="<c:url value='/resources/plugins/jQueryPlugin/js.cookie.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/jquery-csv.js/jquery.csv.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/pathseg/pathseg.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/bootstrap/js/bootstrap.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jQueryPlugin/js.cookie.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery-csv.js/jquery.csv.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pathseg/pathseg.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/bootstrap/js/bootstrap.min.js'/>"></script>
+    <script type="text/javascript"
             src="<c:url value='/resources/plugins/bootstrap-multiselect/bootstrap-multiselect.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/adminLTE/app.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/d3.js/d3.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/c3.js/c3.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/pivot.js/pivot.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/pivot.js/c3_renderers.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/pivot.js/d3_renderers.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/zoomjs/zoom.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
+    <script type="text/javascript" src="<c:url value='/resources/plugins/adminLTE/app.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/d3.js/d3.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/c3.js/c3.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/pivot.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/c3_renderers.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/d3_renderers.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/zoomjs/zoom.js'/>"></script>
+    <script type="text/javascript"
             src="<c:url value='/resources/plugins/jquery.multi-select.js/jquery.multi-select.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/jquery.blockUI/jquery.blockUI.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/crossfilter/crossfilter.min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/dc.js/dc.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8"
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery.blockUI/jquery.blockUI.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/crossfilter/crossfilter.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/dc.js/dc.js'/>"></script>
+    <script type="text/javascript"
             src="<c:url value='/resources/plugins/jQRangeSlider/jQRangeSlider-min.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
     <%--<script type="text/javascript" charset="UTF-8" src="<c:url value='/WEB-INF/views/Index/ZabiRepo.jsp'/>"></script>--%>
     <script type="text/javascript"
             src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

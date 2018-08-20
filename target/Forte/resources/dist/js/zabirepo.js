@@ -1460,7 +1460,7 @@ var convStatus = function (status) {
     if (status === "0") {
         return "OK";
     } else {
-        return "problem";
+        return "Problema";
     }
 
 };
@@ -1519,12 +1519,13 @@ var addDcTableColor = function () {
 
     //aqui conforme o dc-table-column a coluna fica piscando
     $.each($(".dc-table-column._1"), function (index, value) {
-        if (this.textContent == "problem") {
+        if (this.textContent == "Problema") {
             $(this).css('color', 'Red');
-            $(this).addClass('alert');
+            //o flash e o .flash que esta no arquivo index.css no dist/css, se quiser que fique piscando so descomentar
+            // $(this).addClass('flash');
         } else {
             $(this).css('color', 'blue');
-            $(this).addClass('flash');
+            // $(this).addClass('flash');
         }
     });
 

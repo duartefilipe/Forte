@@ -127,7 +127,7 @@ table#table {
 .dc-table-column._1 {
 	font-weight: bold;
 }
-
+/*aqui e onde fica piscando o alerta de problem */
 .flash {
 	animation: Flash 1s infinite;
 }
