@@ -46,8 +46,8 @@ public class UsuarioDao {
     private static IHostgroupService hostgroupService = new HostgroupServiceImpl();
     private static IHostService hostService = new HostServiceImpl();
 
-    public static final String url = "http://192.168.199.104/zabbix/api_jsonrpc.php";  //forte pc
-//    public static final String url = "http://177.67.163.20:8089/zabbix/api_jsonrpc.php";  //zabbix externo
+//    public static final String url = "http://192.168.199.104/zabbix/api_jsonrpc.php";  //forte pc
+    public static final String url = "http://177.67.163.20:8089/zabbix/api_jsonrpc.php";  //zabbix externo
 
     private static String loginName;
     private static String password;

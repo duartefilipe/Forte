@@ -310,7 +310,7 @@
     <footer class="main-footer">
         <div class="row>">
             <div class="pull-right hidden-xs">
-                <b>Version</b> 1.0
+                <b>Alpha Version</b> 1.0
                 <button id="google_translate_element"></button>
             </div>
 

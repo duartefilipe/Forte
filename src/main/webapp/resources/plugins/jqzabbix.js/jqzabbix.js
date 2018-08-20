@@ -5,8 +5,8 @@
 		// initialize options
 		options = $.extend({
 			// default settings
-			url : 'http://192.168.199.104/zabbix/api_jsonrpc.php',
-            // url : 'http://177.67.163.20:8089/zabbix/api_jsonrpc.php',
+			// url : 'http://192.168.199.104/zabbix/api_jsonrpc.php',
+            url : 'http://177.67.163.20:8089/zabbix/api_jsonrpc.php',
 			// username : 'Filipe',
 			// password : 'eumesmo',
             username : options.username,

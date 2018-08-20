@@ -10,6 +10,7 @@ public class Connect {
         try {
             Class.forName("org.postgresql.Driver");
             String url ="jdbc:postgresql://192.168.199.131:5432/postgres";
+//            String url ="jdbc:postgresql://177.67.163.20:5444/postgres";
             String user="forte";
             String password = "Forte2018@@";
             c = DriverManager.getConnection(url, user, password);
