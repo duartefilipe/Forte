@@ -7,26 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1c99b5c-4f77-4484-a9bc-d48f40943ab5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22ff58d1-631c-43af-bbb4-4cf27414d941.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/22ff58d1-631c-43af-bbb4-4cf27414d941.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Hosts/Hosts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Hosts/Hosts.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/ZabiRepo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/ZabiRepo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/Forte.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/Forte.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/ZabbixDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/DAO/ZabbixDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/API/API.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/API/API.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/ZabiRepo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/ZabiRepo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Index/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Usuario/Usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/WEB-INF/views/Usuario/Usuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/DAO/UsuarioDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/forte/DAO/ZabbixDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/forte/DAO/ZabbixDao.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,7 +82,7 @@
           <entry key="css" value="9" />
           <entry key="java" value="46" />
           <entry key="js" value="26" />
-          <entry key="jsp" value="42" />
+          <entry key="jsp" value="46" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
@@ -106,7 +90,7 @@
         <counts>
           <entry key="CSS" value="9" />
           <entry key="JAVA" value="46" />
-          <entry key="JSP" value="42" />
+          <entry key="JSP" value="46" />
           <entry key="JavaScript" value="26" />
           <entry key="Scratch" value="2" />
         </counts>
@@ -116,7 +100,7 @@
           <entry key="css" value="103" />
           <entry key="java" value="4308" />
           <entry key="js" value="946" />
-          <entry key="jsp" value="2581" />
+          <entry key="jsp" value="2645" />
           <entry key="sql" value="604" />
         </counts>
       </usages-collector>
@@ -125,7 +109,7 @@
           <entry key="CSS" value="103" />
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="4308" />
-          <entry key="JSP" value="2581" />
+          <entry key="JSP" value="2645" />
           <entry key="JavaScript" value="945" />
           <entry key="Scratch" value="604" />
         </counts>
@@ -225,19 +209,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="512" column="101" selection-start-line="512" selection-start-column="101" selection-end-line="512" selection-end-column="101" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="495" selection-start-line="495" selection-end-line="503" selection-end-column="101" />
+            <state relative-caret-position="90">
+              <caret line="219" column="110" selection-start-line="219" selection-start-column="110" selection-end-line="219" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -332,16 +307,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/dist/css/index.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/dist/js/zabirepo.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Hosts/Hosts.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/Zabbix/Graficos.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/Login/js/login.min.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/ZabiRepo.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/DAO/UsuarioDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/forte/DAO/ZabbixDao.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/22ff58d1-631c-43af-bbb4-4cf27414d941/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/ZabiRepo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Hosts/Hosts.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp" />
       </list>
     </option>
   </component>
@@ -394,9 +369,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="44" />
     <option name="y" value="30" />
-    <option name="width" value="1366" />
-    <option name="height" value="738" />
+    <option name="width" value="1356" />
+    <option name="height" value="553" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -597,7 +573,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="forte" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534860425555" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534862312186" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -792,7 +768,7 @@
       <workItem from="1534508962626" duration="3327000" />
       <workItem from="1534726611941" duration="2363000" />
       <workItem from="1534765681916" duration="11189000" />
-      <workItem from="1534851867878" duration="8437000" />
+      <workItem from="1534851867878" duration="9697000" />
     </task>
     <servers />
   </component>
@@ -829,7 +805,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="512279000" />
+    <option name="totallyTimeSpent" value="513539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1123,13 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Hosts/Hosts.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="107" selection-start-line="7" selection-start-column="107" selection-end-line="7" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/Zabbix/Graficos.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1183,13 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-55">
           <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/ZabiRepo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="488" selection-start-line="488" selection-end-line="488" />
         </state>
       </provider>
     </entry>
@@ -1247,10 +1209,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="371" column="126" selection-start-line="371" selection-start-column="126" selection-end-line="371" selection-end-column="126" />
+        <state relative-caret-position="50">
+          <caret line="495" selection-start-line="495" selection-end-line="503" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/ZabiRepo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="784" column="50" selection-start-line="784" selection-start-column="50" selection-end-line="784" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Hosts/Hosts.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="226" column="145" selection-start-line="226" selection-start-column="145" selection-end-line="226" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="247" column="133" selection-start-line="247" selection-start-column="133" selection-end-line="247" selection-end-column="133" />
         </state>
       </provider>
     </entry>
@@ -1279,17 +1262,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Index/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Usuario/Usuario.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="495" selection-start-line="495" selection-end-line="503" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/API/API.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="512" column="101" selection-start-line="512" selection-start-column="101" selection-end-line="512" selection-end-column="101" />
+        <state relative-caret-position="90">
+          <caret line="219" column="110" selection-start-line="219" selection-start-column="110" selection-end-line="219" selection-end-column="110" />
         </state>
       </provider>
     </entry>

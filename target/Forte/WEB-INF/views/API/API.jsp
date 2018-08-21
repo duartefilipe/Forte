@@ -156,14 +156,14 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">Nome do Host</label>
-                                            <input type="text" class="form-control" name="name" placeholder="Informe um nome para o host">
+                                            <input type="text" class="form-control" name="name" placeholder="Informe um nome para o host" required>
                                         </div>
                                     </div>
 
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">nome visivel</label>
-                                            <input type="text" class="form-control" name="host" placeholder="Informe o nome que ficara visivel">
+                                            <input type="text" class="form-control" name="host" placeholder="Informe o nome que ficara visivel" required>
                                         </div>
                                     </div>
 
@@ -190,14 +190,14 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">Interface SNMP</label>
-                                            <input type="text" class="form-control disable" name="ip" placeholder="172.36.44.210">
+                                            <input type="text" class="form-control disable" name="ip" placeholder="172.36.44.210" required>
                                         </div>
                                     </div>
 
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">Porta</label>
-                                            <input type="text" class="form-control disable" name="port" placeholder="161">
+                                            <input type="text" class="form-control disable" name="port" placeholder="161" required>
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Grupo</label>
-                                            <select name="groupid" class="form-control select2" style="width: 100%;">
+                                            <select name="groupid" class="form-control select2" style="width: 100%;" required>
                                                     <option ></option>
                                                 <c:forEach var="hostgroups" items="${hostgroups}">
                                                     <option value="${hostgroups.groupid}">${hostgroups.name}</option>
@@ -238,14 +238,14 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">Macro</label>
-                                            <input type="text" class="form-control disable" name="macro" placeholder="{$SNMP_COMMUNITY}">
+                                            <input type="text" class="form-control disable" name="macro" placeholder="{$SNMP_COMMUNITY}" required>
                                         </div>
                                     </div>
 
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label type="text">Value</label>
-                                            <input type="text" class="form-control disable" name="value" placeholder="Forte">
+                                            <input type="text" class="form-control disable" name="value" placeholder="Forte" required>
                                         </div>
                                     </div>
 

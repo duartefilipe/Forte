@@ -147,21 +147,21 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label type="text">Nome</label>
-                                        <input type="text" class="form-control" name="nome" placeholder="Nome">
+                                        <input type="text" class="form-control" name="nome" placeholder="Nome" required>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label type="text">CPU</label>
-                                        <input type="text" class="form-control" name="cpu"placeholder="CPU">
+                                        <input type="text" class="form-control" name="cpu"placeholder="CPU" required>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label type="text">Memoria</label>
-                                        <input type="text" class="form-control" name="memoria" placeholder="Memoria">
+                                        <input type="text" class="form-control" name="memoria" placeholder="Memoria" required>
                                     </div>
                                 </div>
 
@@ -171,26 +171,26 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label type="text">Disco</label>
-                                        <input type="text" class="form-control" name="disco" placeholder="Disco">
+                                        <input type="text" class="form-control" name="disco" placeholder="Disco" required>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label type="text">Interfaces</label>
-                                        <input type="text" class="form-control" name="interfaces" placeholder="Interfaces">
+                                        <input type="text" class="form-control" name="interfaces" placeholder="Interfaces" required>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label type="text">Disponibilidade</label>
-                                        <input type="text" class="form-control" name="disponibilidade" placeholder="Disponibilidade">
+                                        <input type="text" class="form-control" name="disponibilidade" placeholder="Disponibilidade" required>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label type="text">Numero de Sessoes</label>
-                                        <input type="text" class="form-control" name="n_sessoes" placeholder="numero de Sessoes">
+                                        <input type="text" class="form-control" name="n_sessoes" placeholder="numero de Sessoes" required>
                                     </div>
 
                                 </div>
@@ -200,21 +200,21 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label type="text">Numero de ips na rede</label>
-                                        <input type="text" class="form-control" name="n_ips_rede" placeholder="Numero de ips na rede">
+                                        <input type="text" class="form-control" name="n_ips_rede" placeholder="Numero de ips na rede" required>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label type="text">Numero de regras de firewall</label>
-                                        <input type="text" class="form-control" name="n_regras_firewall" placeholder="Numero de regras de firewall">
+                                        <input type="text" class="form-control" name="n_regras_firewall" placeholder="Numero de regras de firewall" required>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label type="text">Tamanho do Log</label>
-                                        <input type="text" class="form-control" name="tamanho_log" placeholder="Tamanho do Log">
+                                        <input type="text" class="form-control" name="tamanho_log" placeholder="Tamanho do Log"required>
                                     </div>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label type="text">Quantidade de ataques</label>
-                                        <input type="text" class="form-control" name="quant_ataques" placeholder="Quantidade de ataques">
+                                        <input type="text" class="form-control" name="quant_ataques" placeholder="Quantidade de ataques" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">

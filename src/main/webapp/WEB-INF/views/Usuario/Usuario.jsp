@@ -164,20 +164,20 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label type="text">Nome</label>
-                                <input type="text" class="form-control" name="nome" placeholder="Nome">
+                                <input type="text" class="form-control" name="nome" placeholder="Nome" required>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label type="text">Sobrenome</label>
-                                <input type="text" class="form-control" name="sobrenome"placeholder="Sobrenome">
+                                <input type="text" class="form-control" name="sobrenome"placeholder="Sobrenome" required>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <label type="text">Email</label>
-                            <input type="text" class="form-control" name="email" placeholder="Email">
+                            <input type="text" class="form-control" name="email" placeholder="Email" required>
                         </div>
 
                     </div>
@@ -192,7 +192,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <input type="text" name="telefone" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(99) 99999-9999&quot;" data-mask="">
+                                    <input type="text" name="telefone" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(99) 99999-9999&quot;" data-mask="" required>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +200,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label type="text">Endereco</label>
-                                <input type="text" class="form-control"  name="endereco" placeholder="Endereco">
+                                <input type="text" class="form-control"  name="endereco" placeholder="Endereco" required>
                             </div>
                         </div>
                         <div class="col-md-2"></div>
@@ -210,14 +210,14 @@
                         <div class="col-md-5">
                             <div class="form-group">
                                 <label type="text">Senha</label>
-                                <input type="password" class="form-control" name="senha" placeholder="Senha">
+                                <input type="password" class="form-control" name="senha" placeholder="Senha" required>
                             </div>
                         </div>
 
                         <div class="col-md-5">
                             <div class="form-group">
                                 <label>Perfil</label>
-                                <select name="tipo" class="form-control select2" style="width: 100%;">
+                                <select name="tipo" class="form-control select2" style="width: 100%;" required>
                                     <option></option>
                                     <option value="2">Administrator</option>
                                     <option value="3">Super Administrator</option>
