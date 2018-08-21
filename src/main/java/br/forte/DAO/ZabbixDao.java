@@ -34,7 +34,6 @@ public class ZabbixDao {
     private static IHostService hostService = new HostServiceImpl();
     private static IHostgroupService hostgroupService = new HostgroupServiceImpl();
 
-
     private static Logger log = Logger.getLogger(String.valueOf(HostinterfaceServiceImpl.class));
 
     public boolean CreateHost(Usuario usuario, Host host, HostGroup hostGroup, HostInterface hostInterface, Template template, Macro macro) {
@@ -586,12 +585,14 @@ public class ZabbixDao {
             while (rs.next()) {
                 Host h = new Host();
                 HostInterface hi = new HostInterface();
+                HostIntegration hostIntegration = new HostIntegration();
 
                 h.setHostid(rs.getString("idhost"));
                 h.setName(rs.getString("namehost"));
                 h.setHost(rs.getString("hos"));
                 h.setStatus(rs.getInt("status"));
                 hosts.add(h);
+                hostIntegration.setHost(h);
 
                 hi.setType(rs.getInt("tipo"));
                 hi.setIp(rs.getString("ip"));
@@ -600,18 +601,21 @@ public class ZabbixDao {
                 hi.setMain(rs.getInt("main"));
                 hi.setPort(rs.getString("porta"));
                 hostInterfaces.add(hi);
-            }
+                hostIntegration.setHostInterface(hi);
 
-            //todos hosts
-            HostIntegration hostIntegration = null;
-            for (int h = 0; h < hosts.size(); h++) {
-                hostIntegration = new HostIntegration();
-                for (int hi = 0; hi < hostInterfaces.size(); hi++) {
-                    hostIntegration.setHost(hosts.get(h));
-                    hostIntegration.setHostInterface(hostInterfaces.get(hi));
-                }
                 hostIntegrations.add(hostIntegration);
             }
+
+            //todos hosts ate os que estao vaziu, arrumar depois
+//            HostIntegration hostIntegration = null;
+//            for (int h = 0; h < hosts.size(); h++) {
+//                hostIntegration = new HostIntegration();
+//                for (int hi = 0; hi < hostInterfaces.size(); hi++) {
+//                    hostIntegration.setHost(hosts.get(h));
+//                    hostIntegration.setHostInterface(hostInterfaces.get(hi));
+//                }
+//                hostIntegrations.add(hostIntegration);
+//            }
 
         } catch (Exception e) {
 

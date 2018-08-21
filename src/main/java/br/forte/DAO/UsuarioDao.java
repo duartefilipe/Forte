@@ -660,26 +660,34 @@ public class UsuarioDao {
             while (rs.next()) {
                 User u = new User();
                 Media m = new Media();
+                Integration integration = new Integration();
                 u.setUserid(rs.getString("idusuario"));
                 u.setAlias(rs.getString("userzabbix"));
                 u.setName(rs.getString("nameuser"));
                 u.setSurname(rs.getString("sobrenome"));
                 u.setType(rs.getInt("tipo"));
                 users.add(u);
+                integration.setUser(u);
+
                 m.setSendto(rs.getString("email"));
                 medias.add(m);
+                integration.setMedia(m);
+
+                IntegrationUsers.add(integration);
+
             }
 
-            //todos usuarios
-            Integration integration = null;
-            for (int u = 0; u < users.size(); u++) {
-                integration = new Integration();
-                for (int m = 0; m < medias.size(); m++) {
-                    integration.setUser(users.get(u));
-                    integration.setMedia(medias.get(m));
-                }
-                IntegrationUsers.add(integration);
-            }
+            //todos usuarios mesmo os sem email, arrumar depois
+//            Integration integration = null;
+//            for (int u = 0; u < users.size(); u++) {
+//                integration = new Integration();
+//                for (int m = 0; m < medias.size(); m++) {
+//                    integration.setUser(users.get(u));
+//                    integration.setMedia(medias.get(m));
+//                }
+//                IntegrationUsers.add(integration);
+//            }
+
 
 
         } catch (Exception e) {

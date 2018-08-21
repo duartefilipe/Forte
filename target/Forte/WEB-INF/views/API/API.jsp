@@ -488,8 +488,29 @@
     <script src="<c:url value='/resources/AdminLTE/bower_components/jquery-slimscroll/jquery.slimscroll.min.js'/>"></script>
     <script src="<c:url value='/resources/AdminLTE/bower_components/fastclick/lib/fastclick.js'/>"></script>
     <script src="<c:url value='/resources/AdminLTE/dist/js/adminlte.min.js'/>"></script>
-    <script src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>
-    <script src="<c:url value='/resources/AdminLTE/bower_components/select2/dist/js/select2.full.min.js'/>"></script>
+    <%--<script src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>--%>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/jquery.multi-select.js/jquery.multi-select.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery.blockUI/jquery.blockUI.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/crossfilter/crossfilter.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/dc.js/dc.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/jQRangeSlider/jQRangeSlider-min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
+        <%--<script type="text/javascript" src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>--%>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/bootstrap-multiselect/bootstrap-multiselect.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/adminLTE/app.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/d3.js/d3.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/c3.js/c3.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/pivot.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/c3_renderers.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/d3_renderers.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/zoomjs/zoom.js'/>"></script>
 
     <script>
         $(function () {

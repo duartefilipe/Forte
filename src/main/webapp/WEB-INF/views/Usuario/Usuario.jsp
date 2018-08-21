@@ -20,6 +20,26 @@
     <script src="<c:url value='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'/>"></script>
     <link rel="stylesheet" href="<c:url value='/resources/AdminLTE/bower_components/select2/dist/css/select2.min.css'/>">
     <link rel="stylesheet" href="<c:url value='/resources/AdminLTE/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css'/>">
+    <link rel="stylesheet"
+          href="<c:url value='/resources/AdminLTE/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/bootstrap/css/bootstrap.min.css'/>">
+    <link rel="stylesheet" type="text/css"
+          href="<c:url value='/resources/plugins/bootstrap-multiselect/bootstrap-multiselect.css'/>">
+    <link rel="stylesheet" type="text/css"
+          href="<c:url value='/resources/plugins/Font-Awesome/css/font-awesome.min.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/ionicons/ionicons.min.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/adminLTE/AdminLTE.min.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/adminLTE/skin-blue.min.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/c3.js/c3.min.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/pivot.js/pivot.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/zoomjs/zoom.css'/>">
+    <link type="text/css" media="screen" rel="stylesheet"
+          href="<c:url value='/resources/plugins/jquery.multi-select.js/multi-select.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/dc.js/dc.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/plugins/jQRangeSlider/css/iThing-min.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/dist/css/index.css'/>">
+
 
 
 </head>
@@ -304,18 +324,52 @@
 
 </div>
 
-<script src="<c:url value='/resources/AdminLTE/bower_components/jquery/dist/jquery.min.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/bower_components/fastclick/lib/fastclick.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/bower_components/select2/dist/js/select2.full.min.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/dist/js/adminlte.min.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/plugins/input-mask/jquery.inputmask.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/plugins/input-mask/jquery.inputmask.date.extensions.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/plugins/input-mask/jquery.inputmask.extensions.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/bower_components/datatables.net/js/jquery.dataTables.min.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js'/>"></script>
-<script src="<c:url value='/resources/AdminLTE/bower_components/jquery-slimscroll/jquery.slimscroll.min.js'/>"></script>
+    <script src="<c:url value='/resources/AdminLTE/bower_components/jquery/dist/jquery.min.js'/>"></script>
+    <script src="<c:url value='/resources/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js'/>"></script>
+    <script src="<c:url value='/resources/AdminLTE/bower_components/datatables.net/js/jquery.dataTables.min.js'/>"></script>
+    <script src="<c:url value='/resources/AdminLTE/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js'/>"></script>
+    <script src="<c:url value='/resources/AdminLTE/bower_components/jquery-slimscroll/jquery.slimscroll.min.js'/>"></script>
+    <script src="<c:url value='/resources/AdminLTE/bower_components/fastclick/lib/fastclick.js'/>"></script>
+    <script src="<c:url value='/resources/AdminLTE/dist/js/adminlte.min.js'/>"></script>
+    <%--<script src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>--%>
+    <script src="<c:url value='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js'/>"></script>
+    <script src="<c:url value='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'/>"></script>
+
+    <!-- JS -->
+    <script type="text/javascript"
+            src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery/jquery-2.2.4.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery-ui/jquery-ui.min.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/jQueryPlugin/jquery.ui.touch-punch.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jQueryPlugin/js.cookie.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery-csv.js/jquery.csv.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pathseg/pathseg.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/bootstrap/js/bootstrap.min.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/bootstrap-multiselect/bootstrap-multiselect.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/adminLTE/app.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/d3.js/d3.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/c3.js/c3.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/pivot.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/c3_renderers.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/pivot.js/d3_renderers.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/zoomjs/zoom.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/jquery.multi-select.js/jquery.multi-select.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jquery.blockUI/jquery.blockUI.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/crossfilter/crossfilter.min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/dc.js/dc.js'/>"></script>
+    <script type="text/javascript"
+            src="<c:url value='/resources/plugins/jQRangeSlider/jQRangeSlider-min.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
+    <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
+    <%--<script type="text/javascript" src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>--%>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 

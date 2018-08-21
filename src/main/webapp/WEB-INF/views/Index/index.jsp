@@ -263,7 +263,7 @@
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                <table id="example1" class="table table-bordered table-striped">
+                                <table id="example3" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
                                         <th>IP</th>
@@ -345,6 +345,8 @@
                 'info': true,
                 'autoWidth': false
             })
+            $('#example3').DataTable()
+            $('#example4').DataTable()
         })
     </script>
 
@@ -398,7 +400,7 @@
                 </div>
 
                 <div class="box-body">
-                    <table id="example3" class="table table-bordered table-striped">
+                    <table id="example4" class="table table-bordered table-striped">
                         <thead>
                         <tr>
                             <th>Nome</th>
@@ -474,7 +476,7 @@
     <script src="<c:url value='/resources/AdminLTE/bower_components/jquery-slimscroll/jquery.slimscroll.min.js'/>"></script>
     <script src="<c:url value='/resources/AdminLTE/bower_components/fastclick/lib/fastclick.js'/>"></script>
     <script src="<c:url value='/resources/AdminLTE/dist/js/adminlte.min.js'/>"></script>
-    <script src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>
+    <%--<script src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>--%>
     <script src="<c:url value='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js'/>"></script>
     <script src="<c:url value='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'/>"></script>
 
@@ -510,9 +512,10 @@
     <script type="text/javascript" src="<c:url value='/resources/plugins/jqzabbix.js/jqzabbix.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo-param.js'/>"></script>
     <script type="text/javascript" src="<c:url value='/resources/dist/js/zabirepo.js'/>"></script>
+    <%--<script type="text/javascript" src="<c:url value='/resources/AdminLTE/dist/js/demo.js'/>"></script>--%>
 
-    <script type="text/javascript"
-            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 </body>
 </html>

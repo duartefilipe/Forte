@@ -52,17 +52,9 @@
         window.onload = function () {
             var enviar = document.getElementById('submit_login');
             enviar.click();
-            console.log("document is ready");
+            // console.log("document is ready");
         };
     </script>
-
-    <%--<script>--%>
-    <%--function ready() {--%>
-    <%--var enviar =document.getElementById('submit_login');--%>
-    <%--enviar.click();--%>
-    <%--}--%>
-    <%--</script>--%>
-
 
     <div id="top_login">
         <h1 align="center">CARREGANDO</h1>
@@ -262,7 +254,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                         <div id="chart_severity">
                                             <p>
-                                                Severidade
+                                                Gravidade
                                             </p>
                                         </div>
                                     </div>
@@ -494,8 +486,6 @@
                                         </button>
                                     </div>
 
-                                    <!-- TODO: time picker -->
-
                                     <button id="reflesh_graph" type="button" class="btn  btn-default pull-right">
                                         <i class="glyphicon glyphicon-refresh"></i>
                                     </button>
@@ -652,9 +642,11 @@
                                 <button type="submit" class="btn btn-primary" id="submit_graph_setting">
                                     Enviar
                                 </button>
+
                                 <button type="submit" class="btn btn-default" id="cancel_graph_setting">
                                     Cancelar
                                 </button>
+
                                 <span class="alert alert-success" id="alert_graph_setting">Sucesso</span>
                                 <div></div>
 
