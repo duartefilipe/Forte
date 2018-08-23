@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="postgres@192.168.199.131">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.10">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
     <root id="1">
       <ServerVersion>9.3.23</ServerVersion>
     </root>
@@ -59,7 +59,7 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-08-21.10:39:39.763</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-08-22.10:48:45.545</IntrospectionTimestamp>
       <IntrospectionStateNumber>1594</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>

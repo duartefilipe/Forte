@@ -14,6 +14,8 @@
 			basicauth : false,
 			busername : '',
 			bpassword : '',
+            // busername : options.username,
+            // bpassword : options.password,
 			timeout : 100000,
 			limit : 1000,
 		}, options);

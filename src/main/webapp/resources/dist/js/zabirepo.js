@@ -5,22 +5,29 @@ $(document).ready(function () {
         return;
     }
 
+
     $("#zabirepoVersion").text(zabirepo.VERSION);
 
     // TODO 保存されたセッションIDでログインする
-    // var zbxsession = db.get("zbxsession");
-    // if (zbxsession !== null) {
-    // server.authid = zbxsession;
-    //
-    // $("#top_login").hide();
-    // $(".body").removeClass("login-page");
-    // $("#top_contents").show();
-    // int.ready();
-    // }
+    //aqui que ta pegando sessao
+
+    var zbxsession = db.get("zbxsession");
+
+
+    if (zbxsession !== null) {
+    server.authid = zbxsession;
+
+    $("#top_login").hide();
+    $(".body").removeClass("login-page");
+    $("#top_contents").show();
+    int.ready();
+    }
 
     $("#submit_login").click(function () {
         int.ready();
     });
+
+    // console.log("aquiiii");
 
 });
 
@@ -295,6 +302,9 @@ var int = {
         lastPeriod = 3600;
         options.username = $("#inputUser").val();
         options.password = $("#inputPasswd").val();
+        console.log("testando");
+        console.log(options.username);
+        console.log(options.password);
 
         //ver se e aqui que eu posso enviar o usuario logado
         // for API Login
@@ -718,7 +728,16 @@ var int = {
         groupNames_array.sort();
 
         $.each(groupNames_array, function (index, elem) {
-            $('<li><p><a class="menu_group"><i class="fa"></i><font size="2">' + elem + '</font></a></p></li>').appendTo("#menu_group_top");
+            //pegar sessao do usuario logado
+            var zbxsession = db.get("zbxsession");
+            //aqui arrumar o nome que ta na sessao
+            // if(zbxsession.getNamedItem() == groupNames) {
+            console.log("vendo o nome que ta no exibir lista de graficos: "+options.username);
+            var teste = "teste1";
+                $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> ' + elem + '  </font></a></p></li>').appendTo("#menu_group_top");
+                console.log("aqui")
+                console.log(teste)
+            // }
         });
 
         $.each(keyNames, function (index, elem) {

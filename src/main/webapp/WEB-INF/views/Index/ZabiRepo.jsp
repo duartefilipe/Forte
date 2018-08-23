@@ -61,8 +61,10 @@
         <div class="col-md-5"></div>
 
         <div class="col-md-4">
-            <img src="/resources/Images/loading.gif" alt=""/>
+            <%--<img src="/resources/Images/loading.gif" alt=""/>--%>
+            <img alt="" src="<c:url value='/resources/Images/loading.gif'/>"/>
                 <%--<img src="https://tenor.com/PwmK.gif" alt=""/>--%>
+            <%--href="<c:url value='/resources/Images/Forte16x16.png'/>"--%>
 
             <input type="hidden" id="inputUser" value="${usuario.userzabbix}"/>
             <input type="hidden" id="inputPasswd" value="${usuario.senhazabbix}"/>

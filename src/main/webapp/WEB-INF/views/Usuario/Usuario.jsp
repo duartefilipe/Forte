@@ -41,7 +41,6 @@
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/dist/css/index.css'/>">
 
 
-
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 
@@ -192,7 +191,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <input type="text" name="telefone" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(99) 99999-9999&quot;" data-mask="" required>
+                                    <input type="text" name="telefone" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(99) 99999-9999&quot;" data-mask="" disabled>
                                 </div>
                             </div>
                         </div>
