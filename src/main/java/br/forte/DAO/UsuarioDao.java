@@ -781,7 +781,7 @@ public class UsuarioDao {
                             JSONObject object = array.getJSONObject(i);
                             Template temp = new Template();
                             temp.setTemplateid(object.getString("templateid"));
-                            temp.setNameTemplate(object.getString("nametemplate"));
+                            temp.setNameTemplate(object.getString("nameTemplate"));
 
                             System.out.println("Id do template: "+temp.getTemplateid()+" Nome do Template: "+temp.getNameTemplate());
                         }

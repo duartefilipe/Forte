@@ -27,7 +27,7 @@ $(document).ready(function () {
         int.ready();
     });
 
-    console.log("aquiiii");
+    // console.log("aquiiii");
 
 });
 
@@ -302,9 +302,11 @@ var int = {
         lastPeriod = 3600;
         options.username = $("#inputUser").val();
         options.password = $("#inputPasswd").val();
-        console.log("testando");
-        console.log(options.username);
-        console.log(options.password);
+        options.tipo = $("#tipo").val();
+        // console.log("testando");
+        // console.log(options.username);
+        // console.log(options.password);
+        // console.log(options.tipo)
 
         //ver se e aqui que eu posso enviar o usuario logado
         // for API Login
@@ -723,21 +725,31 @@ var int = {
 
         var groupNames_array = [];
         $.each(groupNames, function (index, elem) {
-            groupNames_array.push(elem.groupName);
+                groupNames_array.push(elem.groupName);
+
         });
         groupNames_array.sort();
 
+        console.log("to vendo o tipo de usuario");
+        //aqui arrumar o nome que ta na sessao
+        console.log("vendo o nome que ta no exibir lista de graficos: "+options.username);
+
+        console.log(options.tipo);
         $.each(groupNames_array, function (index, elem) {
             //pegar sessao do usuario logado
-            var zbxsession = db.get("zbxsession");
-            //aqui arrumar o nome que ta na sessao
-            // if(zbxsession.getNamedItem() == groupNames) {
-            console.log("vendo o nome que ta no exibir lista de graficos: "+options.username);
-            var teste = "teste1";
-                $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> ' + elem + '  </font></a></p></li>').appendTo("#menu_group_top");
-                console.log("aqui")
-                console.log(teste)
-            console.log(zbxsession)
+            // var zbxsession = db.get("zbxsession");
+
+            $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> ' + elem + '  </font></a></p></li>').appendTo("#menu_group_top");
+            // if(options.tipo == 3){
+            //     $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> ' + elem + '  </font></a></p></li>').appendTo("#menu_group_top");
+            //     // console.log("aqui")
+            //     // console.log(elem)
+            // }else{
+            //     if(elem == options.username){
+            //         $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> ' + elem + '  </font></a></p></li>').appendTo("#menu_group_top");
+            //     }else{
+            //         $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> "Nenhum Grupo encontrado"  </font></a></p></li>').appendTo("#menu_group_top");
+            //     }
             // }
         });
 

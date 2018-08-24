@@ -68,6 +68,7 @@
 
             <input type="hidden" id="inputUser" value="${usuario.userzabbix}"/>
             <input type="hidden" id="inputPasswd" value="${usuario.senhazabbix}"/>
+                <input type="hidden" id="tipo" value="${usuario.tipo}"/>
             <input type="hidden" id="submit_login"/>
         </div>
 
