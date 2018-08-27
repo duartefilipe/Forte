@@ -1,75 +1,68 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     if (typeof localStorage == "undefined") {
         window.alert("This browser does not support.");
         return;
     }
 
-
     $("#zabirepoVersion").text(zabirepo.VERSION);
 
     // TODO 保存されたセッションIDでログインする
-    //aqui que ta pegando sessao
+    // var zbxsession = db.get("zbxsession");
+    // if (zbxsession !== null) {
+    // server.authid = zbxsession;
+    //
+    // $("#top_login").hide();
+    // $(".body").removeClass("login-page");
+    // $("#top_contents").show();
+    // int.ready();
+    // }
 
-    var zbxsession = db.get("zbxsession");
-
-
-    if (zbxsession !== null) {
-    server.authid = zbxsession;
-
-    $("#top_login").hide();
-    $(".body").removeClass("login-page");
-    $("#top_contents").show();
-    int.ready();
-    }
-
-    $("#submit_login").click(function () {
+    $("#submit_login").click(function() {
         int.ready();
     });
-
-    // console.log("aquiiii");
 
 });
 
 var zbxApi = {
     // for Test
-    apiTest: {
-        get: function () {
+    apiTest : {
+        get : function() {
             var method = "item.get";
             var params = {
                 // "output" : "extend",
-                "output": ["name", "lastvalue"],
-                "selectHosts": ["host"],
-                "filter": {
-                    "value_type": [0, 3]
+                "output" : [ "name", "lastvalue" ],
+                "selectHosts" : [ "host" ],
+                "filter" : {
+                    "value_type" : [ 0, 3 ]
                 },
-                "sortfield": "name",
-                "monitored": true,
-                "limit": "50000"
+                "sortfield" : "name",
+                "monitored" : true,
+                "limit" : "50000"
             };
             return server.sendAjaxRequest(method, params);
         },
-        success: function (data) {
+        success : function(data) {
             console.log(data);
 
-            $.each(data.result, function (result_index, result_value) {
-                $.each(result_value.hosts, function (host_index, host_value) {
+            $.each(data.result, function(result_index, result_value) {
+                $.each(result_value.hosts, function(host_index, host_value) {
                     console.log(host_value.host + " / " + result_value.name + " / " + result_value.lastvalue);
                 });
             });
         }
     },
-    auth: {
-        get: function () {
+    auth : {
+        get : function() {
             return server.userLogin();
         },
 
-        success: function (data) {
+        success : function(data) {
 
             Cookies.set('zbx_sessionid', data.result, {
-                expires: 7,
-                path: '/zabbix',
-                domain: (baseURL.split('/')[2]).split(':')[0]
+                expires : 7,
+                path : '/zabbix',
+                domain : (baseURL.split('/')[2]).split(':')[0]
             });
 
             // db.set("zbxsession", data.result)
@@ -77,32 +70,33 @@ var zbxApi = {
         }
     },
 
-    itemNames: {
-        get_all: function () {
+    itemNames : {
+        get_all : function() {
             var method = "item.get";
             var params = {
-                "output": ["key_"],
-                "monitored": true,
-                "sortfield": "key_",
-                "filter": {
-                    "value_type": [0, 3]
+                "output" : [ "key_" ],
+                "monitored" : true,
+                "sortfield" : "key_",
+                "filter" : {
+                    "value_type" : [ 0, 3 ]
                 },
-                "limit": "50000"
+                "limit" : "50000"
             };
 
             return server.sendAjaxRequest(method, params);
         },
-        success_all: function (data) {
+        success_all : function(data) {
             itemKeyNamesUniqArray = db.get("itemKeyNamesUniqArray");
 
 
+
             if (itemKeyNamesUniqArray === null) {
-                setTimeout(function () {
+                setTimeout(function() {
                     var itemKeyNamesArray = [];
-                    $.each(data.result, function (key, value) {
+                    $.each(data.result, function(key, value) {
                         itemKeyNamesArray.push(value.key_);
                     });
-                    itemKeyNamesUniqArray = itemKeyNamesArray.filter(function (x, i, self) {
+                    itemKeyNamesUniqArray = itemKeyNamesArray.filter(function(x, i, self) {
                         return self.indexOf(x) === i;
                     });
                     db.set("itemKeyNamesUniqArray", itemKeyNamesUniqArray);
@@ -111,102 +105,102 @@ var zbxApi = {
         }
     },
 
-    itemIDs: {
-        get: function (groupName, itemfilterName) {
+    itemIDs : {
+        get : function(groupName, itemfilterName) {
             var method = "item.get";
             var params = {
-                "output": ["itemid", "name", "key_"],
-                "group": groupName,
-                "searchWildcardsEnabled": true,
-                "search": {
-                    "key_": [itemfilterName]
+                "output" : [ "itemid", "name", "key_" ],
+                "group" : groupName,
+                "searchWildcardsEnabled" : true,
+                "search" : {
+                    "key_" : [ itemfilterName ]
                 },
-                "limit": "50000"
+                "limit" : "50000"
             };
             return server.sendAjaxRequest(method, params);
         }
     },
 
-    multiSelectHostGroupNames: {
-        get: function () {
+    multiSelectHostGroupNames : {
+        get : function() {
             var method = "hostgroup.get";
             var params = {
-                "output": ["groupid", "name"],
-                "sortfield": "name",
-                "with_monitored_items": "true"
+                "output" : [ "groupid", "name" ],
+                "sortfield" : "name",
+                "with_monitored_items" : "true"
             };
             return server.sendAjaxRequest(method, params);
         }
     },
-    alertTrigger: {
-        get: function () {
+    alertTrigger : {
+        get : function() {
             var method = "trigger.get";
             var params = {
-                "output": "",
-                "monitored": true,
-                "skipDependent": true,
-                "filter": {
-                    "value": "1"
+                "output" : "",
+                "monitored" : true,
+                "skipDependent" : true,
+                "filter" : {
+                    "value" : "1"
                 },
-                "countOutput": true,
-                "limit": "10000"
+                "countOutput" : true,
+                "limit" : "10000"
             };
 
             return server.sendAjaxRequest(method, params);
 
         },
-        success: function (data) {
+        success : function(data) {
             $("#infobox_alertTrigger").text(data.result);
         }
 
     },
-    unAckknowledgeEvent: {
-        get: function () {
+    unAckknowledgeEvent : {
+        get : function() {
             var method = "trigger.get";
             var params = {
-                "output": "",
-                "monitored": true,
-                "skipDependent": true,
-                "withUnacknowledgedEvents": true,
-                "countOutput": true,
+                "output" : "",
+                "monitored" : true,
+                "skipDependent" : true,
+                "withUnacknowledgedEvents" : true,
+                "countOutput" : true,
 
-                "limit": "10000"
+                "limit" : "10000"
             };
 
             return server.sendAjaxRequest(method, params);
 
         },
-        success: function (data) {
+        success : function(data) {
             $("#unAcknowledgedEvents").text(data.result);
         }
 
     },
 
-    event: {
-        get: function () {
+    event : {
+        get : function() {
             var beforeMinites = db.get("beforeDay") * 60 * 60 * 24;
             var nowUtime = Math.floor($.now() / 1000);
 
             var method = "event.get";
             var params = {
-                "output": "extend",
-                "selectHosts": ["host"],
-                "selectRelatedObject": ["description", "priority"],
-                "sortfield": "clock",
-                "time_from": nowUtime - beforeMinites,
-                "limit": "10000"
+                "output" : "extend",
+                "selectHosts" : [ "host" ],
+                "selectRelatedObject" : [ "description", "priority" ],
+                "sortfield" : "clock",
+                "time_from" : nowUtime - beforeMinites,
+                "limit" : "10000"
             };
             return server.sendAjaxRequest(method, params);
         },
 
-        success: function (data) {
+        success : function(data) {
 
             var resultArray = [];
-            resultArray.push(["Date", "Host", "Description", "Status", "Severity"]);
+            resultArray.push([ "Date", "Host", "Description", "Status", "Severity" ]);
 
-            $.each(data.result, function (top_index, top_value) {
+            $.each(data.result, function(top_index, top_value) {
                 if (top_value.hosts.length !== 0) {
-                    var innerArray = [convTime(top_value.clock), top_value.hosts[0].host, top_value.relatedObject.description, convStatus(top_value.value), convPriority(top_value.relatedObject.priority)];
+                    var innerArray = [ convTime(top_value.clock), top_value.hosts[0].host, top_value.relatedObject.description, convStatus(top_value.value), convPriority(top_value.relatedObject.priority) ];
                     resultArray.push(innerArray);
                 }
 
@@ -215,33 +209,33 @@ var zbxApi = {
             return resultArray;
         }
     },
-    triggerInfo: {
-        get: function () {
+    triggerInfo : {
+        get : function() {
             var method = "trigger.get";
             var params = {
-                "output": ["description", "priority", "value", "lastchange"],
-                "monitored": true,
-                "skipDependent": true,
-                "expandDescription": true,
-                "selectGroups": ["name"],
-                "selectHosts": ["host", "maintenance_status"],
-                "selectItems": ["itemid"],
-                "sortfield": "description",
-                "only_true": true,
+                "output" : [ "description", "priority", "value", "lastchange" ],
+                "monitored" : true,
+                "skipDependent" : true,
+                "expandDescription" : true,
+                "selectGroups" : [ "name" ],
+                "selectHosts" : [ "host", "maintenance_status" ],
+                "selectItems" : [ "itemid" ],
+                "sortfield" : "description",
+                "only_true" : true,
 
                 //esse filter e pra escolher se quer mostrar os eventos recentes, qualquer ou problemas
-                "filter": {
-                    "value": [1]
+                "filter" : {
+                    "value" : [ 1 ]
                 },
 
-                "selectLastEvent": "true",
-                "limit": "10000"
+                "selectLastEvent" : "true",
+                "limit" : "10000"
             };
 
             return server.sendAjaxRequest(method, params);
 
         },
-        success: function (data) {
+        success : function(data) {
 
             var resultArray = [];
 
@@ -263,27 +257,27 @@ var zbxApi = {
 
                 // console.log(data);
 
-                $.each(data.result, function (top_index, top_value) {
+                $.each(data.result, function(top_index, top_value) {
                     if (top_value.hosts.length !== 0 && top_value.groups.length !== 0) {
 
                         // TODO アイテムのシンプルグラフへのリンクを表示する
                         var itemArray = [];
-                        $.each(top_value.items, function (second_index, second_value) {
+                        $.each(top_value.items, function(second_index, second_value) {
                             itemArray.push(second_value);
                         });
 
                         var innerArray = {
-                            "host": top_value.hosts[0].host,
-                            "group": top_value.groups[0].name,
-                            "status": convStatus(top_value.value),
-                            "severity": convPriority(top_value.priority),
-                            "description": top_value.description,
-                            "lastchange": convTime(top_value.lastchange),
-                            "age": convDeltaTime(top_value.lastchange),
-                            "ack": convAck(top_value.lastEvent.acknowledged),
-                            "mainte_status": top_value.hosts[0].maintenance_status,
+                            "host" : top_value.hosts[0].host,
+                            "group" : top_value.groups[0].name,
+                            "status" : convStatus(top_value.value),
+                            "severity" : convPriority(top_value.priority),
+                            "description" : top_value.description,
+                            "lastchange" : convTime(top_value.lastchange),
+                            "age" : convDeltaTime(top_value.lastchange),
+                            "ack" : convAck(top_value.lastEvent.acknowledged),
+                            "mainte_status" : top_value.hosts[0].maintenance_status,
                             // "triggerid" : triggerid,
-                            "itemids": top_value.items
+                            "itemids" : top_value.items
                         };
                         resultArray.push(innerArray);
                     }
@@ -298,31 +292,27 @@ var zbxApi = {
 };
 
 var int = {
-    ready: function () {
+    ready : function() {
         lastPeriod = 3600;
         options.username = $("#inputUser").val();
         options.password = $("#inputPasswd").val();
         options.tipo = $("#tipo").val();
-        // console.log("testando");
-        // console.log(options.username);
-        // console.log(options.password);
-        // console.log(options.tipo)
 
         //ver se e aqui que eu posso enviar o usuario logado
         // for API Login
         server = new $.jqzabbix(options);
-        server.getApiVersion().then(function () {
+        server.getApiVersion().then(function() {
             return zbxApi.auth.get();
-        }, function () {
+        }, function() {
             $.unblockUI(blockUI_opt_all);
             alertDiag(server.isError);
-        }).then(function (data) {
+        }).then(function(data) {
             return zbxApi.auth.success(data);
-        }, function (data) {
+        }, function(data) {
             alertDiag(data.error.data);
             // end API Login
 
-        }).then(function () {
+        }).then(function() {
             // for Dashboard
             $.blockUI(blockUI_opt_all);
             $("#top_login").hide();
@@ -330,15 +320,15 @@ var int = {
             $("#top_contents").show();
             // for dashboard
             int.dashboardView();
-        }).then(function () {
+        }).then(function() {
             // for multiSelectHostGroup in setting
             int.createMultiSelectHostGroupNames();
-        }).then(function () {
+        }).then(function() {
             // for suggest
             return zbxApi.itemNames.get_all();
-        }).then(function (data, status, jqXHR) {
+        }).then(function(data, status, jqXHR) {
             zbxApi.itemNames.success_all(data);
-        }).then(function () {
+        }).then(function() {
             // DOM event attach
             int.createEvents();
 
@@ -346,15 +336,15 @@ var int = {
         });
     },
 
-    createEvents: function () {
+    createEvents : function() {
 
         // ##### Window resize #####
         var timer = false;
-        $(window).resize(function () {
+        $(window).resize(function() {
             if (timer !== false) {
                 clearTimeout(timer);
             }
-            timer = setTimeout(function () {
+            timer = setTimeout(function() {
 
                 // TODO スマホだとウインドウを動かす度にリロードしてしまうので保留
                 // if ($("#base_graph").css("display") === "block")
@@ -372,51 +362,51 @@ var int = {
             int.createGraphMenu();
         }
 
-        $("#menu_dashboard").click(function () {
+        $("#menu_dashboard").click(function() {
             $("[id^=base]").hide();
             $("#base_dashboard").show();
             int.dashboardView();
         });
 
-        $("#menu_histogram").click(function () {
+        $("#menu_histogram").click(function() {
             $("[id^=base]").hide();
             pivotDisplay();
             $("#base_event").show();
             $("#base_histogram").show();
         });
 
-        $("#menu_pivottable").click(function () {
+        $("#menu_pivottable").click(function() {
             $("[id^=base]").hide();
             pivotDisplay();
             $("#base_event").show();
             $("#base_pivottable").show();
         });
 
-        $("#menu_treemap").click(function () {
+        $("#menu_treemap").click(function() {
             $("[id^=base]").hide();
             pivotDisplay();
             $("#base_event").show();
             $("#base_treemap").show();
         });
 
-        $("#menu_free").click(function () {
+        $("#menu_free").click(function() {
             $("[id^=base]").hide();
             pivotDisplay();
             $("#base_event").show();
             $("#base_free").show();
         });
 
-        $("#menu_setting").click(function () {
+        $("#menu_setting").click(function() {
             $("[id^=base]").hide();
             $("#base_setting").show();
         });
 
-        $("#groupSelect_li").click(function () {
+        $("#groupSelect_li").click(function() {
             $("#contents_top > div").hide();
             $("#graph").show();
         });
 
-        $("#groupSelect li a").click(function () {
+        $("#groupSelect li a").click(function() {
             $("#contents_top > div").hide();
             $("#graph").show();
 
@@ -425,7 +415,7 @@ var int = {
             createGraphTable(targetPeriod, menuGroup);
         });
 
-        $("#menu_setting").click(function () {
+        $("#menu_setting").click(function() {
             $("#contents_top > div").hide();
             $("#form_beforeDay").val(db.get("beforeDay"));
             $("#setting").show();
@@ -433,16 +423,16 @@ var int = {
 
         // ##### dashboard #####
 
-        $("#reload_dashboard").click(function () {
+        $("#reload_dashboard").click(function() {
             int.dashboardView();
         });
 
-        $(function ($) {
-            $('#reload_dashboard_selecter').change(function () {
+        $(function($) {
+            $('#reload_dashboard_selecter').change(function() {
                 var selectVal = $(this).val();
                 if (selectVal != 0) {
                     $("#reload_dashboard").attr({
-                        "disabled": "disabled"
+                        "disabled" : "disabled"
                     });
 
                     reloadTimer(true, selectVal);
@@ -458,57 +448,57 @@ var int = {
         // ##### events #####
 
         var filterDisp = {
-            on: function (labelName) {
+            on : function(labelName) {
                 $("#label_" + labelName).removeClass("label-info").addClass("label-warning").text("Filter ON");
                 alertFade("#alert_" + labelName);
             },
 
-            off: function (labelName) {
+            off : function(labelName) {
                 $("#label_" + labelName).removeClass("label-warning").addClass("label-info").text("Filter OFF");
                 alertFade("#alert_" + labelName);
 
             }
         };
 
-        $("#save_event_histogram").click(function () {
+        $("#save_event_histogram").click(function() {
             db.set("event_histogram", db.get("event_histogram_tmp"));
             filterDisp.on("event_histogram");
         });
 
-        $("#clear_event_histogram").click(function () {
+        $("#clear_event_histogram").click(function() {
             db.remove("event_histogram");
             filterDisp.off("event_histogram");
             pivotDisplay();
         });
 
-        $("#save_event_pivot").click(function () {
+        $("#save_event_pivot").click(function() {
             db.set("event_pivot", db.get("event_pivot_tmp"));
             filterDisp.on("event_pivot");
         });
 
-        $("#clear_event_pivot").click(function () {
+        $("#clear_event_pivot").click(function() {
             db.remove("event_pivot");
             filterDisp.off("event_pivot");
             pivotDisplay();
         });
 
-        $("#save_event_treemap").click(function () {
+        $("#save_event_treemap").click(function() {
             db.set("event_treemap", db.get("event_treemap_tmp"));
             filterDisp.on("event_treemap");
         });
 
-        $("#clear_event_treemap").click(function () {
+        $("#clear_event_treemap").click(function() {
             db.remove("event_treemap");
             filterDisp.off("event_treemap");
             pivotDisplay();
         });
 
-        $("#save_event_free").click(function () {
+        $("#save_event_free").click(function() {
             db.set("event_free", db.get("event_free_tmp"));
             filterDisp.on("event_free");
         });
 
-        $("#clear_event_free").click(function () {
+        $("#clear_event_free").click(function() {
             db.remove("event_free");
             filterDisp.off("event_free");
             pivotDisplay();
@@ -516,11 +506,11 @@ var int = {
 
         // ##### graphs #####
 
-        $("#reflesh_graph").click(function () {
+        $("#reflesh_graph").click(function() {
             int.createGraphTable();
         });
 
-        $("#periodSelect button").click(function () {
+        $("#periodSelect button").click(function() {
             $(this).addClass("active").siblings().removeClass("active");
             switch ($("#periodSelect button").index(this)) {
                 case 0:
@@ -581,7 +571,7 @@ var int = {
         // ##### Setting #####
 
         // ##### Setting => events
-        $("#submit_form_beforeDay").click(function () {
+        $("#submit_form_beforeDay").click(function() {
 
             if ($("#form_beforeDay").val() === "") {
                 alertDiag("Setting Save Error");
@@ -592,35 +582,35 @@ var int = {
             alertFade("#alert_form_beforeDay");
         });
 
-        $("#cancel_form_beforeDay").click(function () {
+        $("#cancel_form_beforeDay").click(function() {
             $("#form_beforeDay").val(db.get("beforeDay"));
             alertFade("#alert_form_beforeDay");
         });
 
         // ##### Setting => graphs
 
-        $('a[href="#tab_graph_setting"]').click(function () {
+        $('a[href="#tab_graph_setting"]').click(function() {
             int.settingTabGraph();
         });
 
-        $(document).on("click", ".addList", function () {
+        $(document).on("click", ".addList", function() {
             $("#graph_setting-tbody > tr").eq(0).clone().insertAfter($(this).parent().parent());
             setting.graphAutocomp();
             setting.graphCheckRowCount();
         });
 
-        $(document).on("click", ".removeList", function () {
+        $(document).on("click", ".removeList", function() {
             $(this).parent().parent().remove();
             setting.graphAutocomp();
             setting.graphCheckRowCount();
 
         });
 
-        $("#submit_graph_setting").click(function () {
+        $("#submit_graph_setting").click(function() {
 
             // keySetting
             var itemKeys = [];
-            $("#graph_setting-tbody > tr").each(function () {
+            $("#graph_setting-tbody > tr").each(function() {
                 var input_key = $(this).find(".input_zbx_key").val();
 
                 if ($(this).find(".input_zbx_split").prop("checked")) {
@@ -631,8 +621,8 @@ var int = {
 
                 if (input_key !== "") {
                     itemKeys.push({
-                        "search_key": input_key,
-                        "split_flag": input_split
+                        "search_key" : input_key,
+                        "split_flag" : input_split
                     });
                 }
             });
@@ -650,7 +640,7 @@ var int = {
             alertFade("#alert_graph_setting");
         });
 
-        $("#cancel_graph_setting").click(function () {
+        $("#cancel_graph_setting").click(function() {
             var ret_settingCheck = int.settingCheck();
             if (ret_settingCheck === true) {
                 int.createGraphMenu();
@@ -661,17 +651,17 @@ var int = {
 
         // ##### Setting => etc
 
-        $("#allClear").click(function () {
+        $("#allClear").click(function() {
             localStorage.clear();
             infoDiag("Success:Setting All Clear");
         });
 
         // TODO 保存した設定をダウンロードできるようにする。
-        $("#export").click(function () {
+        $("#export").click(function() {
 
             // 指定されたデータを保持するBlobを作成する。
-            var blob = new Blob([content], {
-                "type": "application/x-msdownload"
+            var blob = new Blob([ content ], {
+                "type" : "application/x-msdownload"
             });
 
             // Aタグのhref属性にBlobオブジェクトを設定し、リンクを生成
@@ -683,10 +673,10 @@ var int = {
             var a = document.createElement('a');
             a.textContent = 'export';
             a.download = 'tasks.json';
-            a.href = window.URL.createObjectURL(new Blob([data], {
-                type: 'text/plain'
+            a.href = window.URL.createObjectURL(new Blob([ data ], {
+                type : 'text/plain'
             }));
-            a.dataset.downloadurl = ['text/plain', a.download, a.href].join(':');
+            a.dataset.downloadurl = [ 'text/plain', a.download, a.href ].join(':');
 
             var exportLink = document.getElementById('export-link');
             exportLink.appendChild(a);
@@ -694,20 +684,20 @@ var int = {
         });
 
         // TODO 設定をインポートできるようにする。
-        $("#import").click(function () {
+        $("#import").click(function() {
 
             infoDiag("Success:Setting Import");
         });
 
         // Logout
-        $("#log-out").click(function () {
+        $("#log-out").click(function() {
             $.blockUI(blockUI_opt_all);
             db.remove("zbxsession");
             jQuery.getScript("js/zabirepo-param.js");
 
             $(".body").addClass("login-page");
-            $("#top_contents").hide('fade', '', 500, function () {
-                $("#top_login").show('fade', '', 500, function () {
+            $("#top_contents").hide('fade', '', 500, function() {
+                $("#top_login").show('fade', '', 500, function() {
                     location.reload($.unblockUI(blockUI_opt_all));
                 });
             });
@@ -715,7 +705,7 @@ var int = {
 
     },
 
-    createGraphMenu: function () {
+    createGraphMenu : function() {
         $("#menu_group_top").empty();
         $("#menu_item_top").empty();
 
@@ -724,44 +714,28 @@ var int = {
 
 
         var groupNames_array = [];
-        $.each(groupNames, function (index, elem) {
-            //push adiciona no final do array
-            //sort reordena a lista em ordem
-                groupNames_array.push(elem.groupName);
+        $.each(groupNames, function(index, elem) {
+            groupNames_array.push(elem.groupName);
         });
         groupNames_array.sort();
 
-        console.log("to vendo o tipo de usuario");
-        //aqui arrumar o nome que ta na sessao
-        console.log("vendo o nome que ta no exibir lista de graficos: "+options.username);
+        console.log("Usuario que ta na sessao"+ options.username)
+        console.log("Tipo de usuario: "+options.tipo)
+        console.log("\n")
 
-        console.log(options.tipo);
-        $.each(groupNames_array, function (index, elem) {
-            //pegar sessao do usuario logado
-            // var zbxsession = db.get("zbxsession");
-
-            $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> ' + elem + '  </font></a></p></li>').appendTo("#menu_group_top");
-            // if(options.tipo == 3){
-            //     $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> ' + elem + '  </font></a></p></li>').appendTo("#menu_group_top");
-            //     // console.log("aqui")
-            //     // console.log(elem)
-            // }else{
-            //     if(elem == options.username){
-            //         $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> ' + elem + '  </font></a></p></li>').appendTo("#menu_group_top");
-            //     }else{
-            //         $('<li><p><a class="menu_group"><i class="fa"></i><font size="2"> "Nenhum Grupo encontrado"  </font></a></p></li>').appendTo("#menu_group_top");
-            //     }
-            // }
+        $.each(groupNames_array, function(index, elem) {
+            $('<li><p><a class="menu_group"><i class="fa"></i><font size="2">' + elem + '</font></a></p></li>').appendTo("#menu_group_top");
+            console.log(elem)
         });
 
-        $.each(keyNames, function (index, elem) {
+        $.each(keyNames, function(index, elem) {
             $('<li><p><a class="menu_item" data-splitFlag="' + elem.split_flag + '"><i class="fa"></i><font size="2">' + elem.search_key + '</font></a></li>').appendTo("#menu_item_top");
 
             $("#menu_item_top li:last-child").data("split_flag2", elem.split_flag);
         });
 
         $(document).off("click", ".menu_group");
-        $(document).on("click", ".menu_group", function () {
+        $(document).on("click", ".menu_group", function() {
             var i = 0;
             if (i === 0) {
                 int.createGraphArray(this.text, "group");
@@ -770,7 +744,7 @@ var int = {
         });
 
         $(document).off("click", ".menu_item");
-        $(document).on("click", ".menu_item", function () {
+        $(document).on("click", ".menu_item", function() {
             var i = 0;
             if (i === 0) {
                 int.createGraphArray(this.text, "item");
@@ -780,7 +754,7 @@ var int = {
 
     },
 
-    createGraphArray: function (clickText, type) {
+    createGraphArray : function(clickText, type) {
         var kickCount = 0;
         var endCount = 0;
         resultObj = [];
@@ -788,16 +762,16 @@ var int = {
 
         if (type === "group") {
             var keyNames = db.get("keyNamesArray");
-            $.each(keyNames, function (k_key, k_value) {
+            $.each(keyNames, function(k_key, k_value) {
 
                 var jqXHR = zbxApi.itemIDs.get(clickText, k_value.search_key);
-                jqXHR.done(function (data, status, jqXHR) {
+                jqXHR.done(function(data, status, jqXHR) {
                     endCount++;
                     if (data.result.length !== 0) {
                         var resultMap = {
-                            rpcid: data.id,
-                            data: data.result,
-                            split: k_value.split_flag,
+                            rpcid : data.id,
+                            data : data.result,
+                            split : k_value.split_flag,
                         };
                         resultObj.push(resultMap);
                     }
@@ -813,15 +787,15 @@ var int = {
         } else { // for item click
             var groupNames = db.get("groupNamesArray");
 
-            $.each(groupNames, function (g_key, g_value) {
+            $.each(groupNames, function(g_key, g_value) {
                 var jqXHR = zbxApi.itemIDs.get(g_value.groupName, clickText);
-                jqXHR.done(function (data, status, jqXHR) {
+                jqXHR.done(function(data, status, jqXHR) {
                     endCount++;
                     if (data.result.length !== 0) {
                         var resultMap = {
-                            rpcid: data.id,
-                            data: data.result,
-                            split: 1,
+                            rpcid : data.id,
+                            data : data.result,
+                            split : 1,
 
                         };
                         resultObj.push(resultMap);
@@ -836,7 +810,7 @@ var int = {
             });
         }
     },
-    createGraphTable: function () {
+    createGraphTable : function() {
 
         // TODO ホスト別に選択可能にする
         // $("#multiSelectSample1").multiselect({
@@ -866,24 +840,24 @@ var int = {
 
         // create uniq key
         var itemKeyTmp = [];
-        $.each(resultObj, function (top_index, top_value) {
-            $.each(top_value.data, function (second_index, second_value) {
+        $.each(resultObj, function(top_index, top_value) {
+            $.each(top_value.data, function(second_index, second_value) {
                 itemKeyTmp.push(second_value.key_);
             });
         });
 
-        var itemKeyUniqArray = itemKeyTmp.filter(function (x, i, self) {
+        var itemKeyUniqArray = itemKeyTmp.filter(function(x, i, self) {
             return self.indexOf(x) === i;
         });
         // end create uniq key
 
         // split option check
         var itemKeys = [];
-        $.each(resultObj, function (top_index, top_value) {
+        $.each(resultObj, function(top_index, top_value) {
             if (top_value.split === 1) {
-                $.each(itemKeyUniqArray, function (itemKeyUniq_index, itemKeyUniq_value) {
+                $.each(itemKeyUniqArray, function(itemKeyUniq_index, itemKeyUniq_value) {
                     var itemKeysTmp = [];
-                    $.each(top_value.data, function (second_index, second_value) {
+                    $.each(top_value.data, function(second_index, second_value) {
 
                         if (itemKeyUniq_value === second_value.key_) {
                             itemKeysTmp.push(second_value.itemid);
@@ -895,7 +869,7 @@ var int = {
                 });
             } else {
                 var itemKeysTmp = [];
-                $.each(top_value.data, function (second_index, second_value) {
+                $.each(top_value.data, function(second_index, second_value) {
                     itemKeysTmp.push(second_value.itemid);
                 });
                 if (itemKeysTmp.length !== 0) {
@@ -929,13 +903,13 @@ var int = {
 
         $("#graphCount").text("Display " + itemKeys.length + " of graph");
 
-        $.each(itemKeys, function (top_index, top_value) {
+        $.each(itemKeys, function(top_index, top_value) {
             var first = 0;
             var itemUrl = "";
 
             if (top_value.length <= zabirepo.GRAPH_ITEM_LIMIT) {
 
-                $.each(top_value, function (second_index, second_value) {
+                $.each(top_value, function(second_index, second_value) {
                     if (first !== 0) {
                         itemUrl = itemUrl + '&';
                     }
@@ -971,25 +945,25 @@ var int = {
 
     },
 
-    dashboardView: function () {
+    dashboardView : function() {
 
         $(".info-box-content").block(blockUI_opt_el);
 
-        $.when(zbxApi.alertTrigger.get(), zbxApi.unAckknowledgeEvent.get()).done(function (data_a, data_b) {
+        $.when(zbxApi.alertTrigger.get(), zbxApi.unAckknowledgeEvent.get()).done(function(data_a, data_b) {
             zbxApi.alertTrigger.success(data_a[0]);
             zbxApi.unAckknowledgeEvent.success(data_b[0]);
             $("#lastUpdateDashboard").text(convTime());
 
-        }).fail(function () {
+        }).fail(function() {
             console.log("dashboardView : Network Error");
             alertDiag("Network Error");
-        }).always(function () {
+        }).always(function() {
             $(".info-box-content").unblock(blockUI_opt_el);
         });
         int.dcCreate();
     },
 
-    dcCreate: function () {
+    dcCreate : function() {
         // $("#chart_severity").empty();
         // $("#chart_hostGroup").empty();
         // $("#chart_host").empty();
@@ -1001,83 +975,83 @@ var int = {
         // $("#eventList *").off();
 
         // for SystemStatus
-        zbxApi.triggerInfo.get().done(function (data, status, jqXHR) {
+        zbxApi.triggerInfo.get().done(function(data, status, jqXHR) {
 
             var cf = crossfilter(zbxApi.triggerInfo.success(data));
             // Severity
-            var dimSeverity = cf.dimension(function (d) {
+            var dimSeverity = cf.dimension(function(d) {
                 return d.severity;
             });
             var gpSeverity = dimSeverity.group().reduceCount();
             var chartSeverity = dc.pieChart('#chart_severity');
             chartSeverity.width(250).height(200).cx(160).radius(90).innerRadius(35).slicesCap(Infinity) // すべて表示
-                .dimension(dimSeverity).group(gpSeverity).ordering(function (t) {
+                .dimension(dimSeverity).group(gpSeverity).ordering(function(t) {
                 return -t.value;
             }).legend(dc.legend())
-            chartSeverity.label(function (d) {
+            chartSeverity.label(function(d) {
                 return d.key + ' : ' + d.value;
             });
             chartSeverity.render();
 
             // hostgroup
-            var dimGroup = cf.dimension(function (d) {
+            var dimGroup = cf.dimension(function(d) {
                 return d.group;
             });
             var gpGroup = dimGroup.group().reduceCount();
             var chartGroup = dc.rowChart('#chart_hostGroup');
-            chartGroup.width(300).height(220).dimension(dimGroup).group(gpGroup).ordering(function (t) {
+            chartGroup.width(300).height(220).dimension(dimGroup).group(gpGroup).ordering(function(t) {
                 return -t.value;
             }).legend(dc.legend());
 
             chartGroup.elasticX(1);
             // chartGroup.xAxis().ticks(1);
-            chartGroup.label(function (d) {
+            chartGroup.label(function(d) {
                 return d.key + ' : ' + d.value;
             });
             chartGroup.render();
 
             // host
-            var dimHost = cf.dimension(function (d) {
+            var dimHost = cf.dimension(function(d) {
                 return d.host;
             });
             var gpHost = dimHost.group().reduceCount();
             var chartHost = dc.rowChart('#chart_host');
-            chartHost.width(300).height(220).dimension(dimHost).group(gpHost).ordering(function (t) {
+            chartHost.width(300).height(220).dimension(dimHost).group(gpHost).ordering(function(t) {
                 return -t.value;
             }).legend(dc.legend());
             chartHost.elasticX(1);
             // chartHost.xAxis().ticks(10);
-            chartHost.label(function (d) {
+            chartHost.label(function(d) {
                 return d.key + ' : ' + d.value;
             });
             chartHost.render();
 
             // event list
-            var dimEventList = cf.dimension(function (d) {
+            var dimEventList = cf.dimension(function(d) {
                 return d.description;
             });
 
             var tbl = dc.dataTable('#eventList');
-            tbl.dimension(dimEventList).size(30).group(function (d) {
+            tbl.dimension(dimEventList).size(30).group(function(d) {
                 return d.severity;
-            }).columns([function (d) {
+            }).columns([ function(d) {
                 return d.severity;
-            }, function (d) {
+            }, function(d) {
                 return d.status;
-            }, function (d) {
+            }, function(d) {
                 return d.lastchange;
-            }, function (d) {
+            }, function(d) {
                 return d.age;
                 // }, function(d) {
                 // 	return d.ack;
-            }, function (d) {
+            }, function(d) {
                 return d.host;
-            }, function (d) {
+            }, function(d) {
                 return d.description;
-            }, function (d) {
-            }]).render();
+            }, function(d) {
+            } ]).render();
 
-            tbl.on("postRedraw", function (tbl) {
+            tbl.on("postRedraw", function(tbl) {
                 addDcTableColor();
             });
 
@@ -1087,32 +1061,32 @@ var int = {
 
     },
 
-    createMultiSelectHostGroupNames: function () {
+    createMultiSelectHostGroupNames : function() {
 
-        zbxApi.multiSelectHostGroupNames.get().done(function (data, status, jqXHR) {
+        zbxApi.multiSelectHostGroupNames.get().done(function(data, status, jqXHR) {
             $('#zbxGroup').empty();
-            $.each(data.result, function (key, value) {
+            $.each(data.result, function(key, value) {
                 $('#zbxGroup').append("<option value='" + value.groupid + "," + value.name + "'>" + value.name + "</option>");
             });
 
             $('#zbxGroup').multiSelect({
-                selectableHeader: "<div class='custom-header'>Selectable Groups</div>",
-                selectionHeader: "<div class='custom-header'>Selection Groups</div>",
-                afterSelect: function (values) {
-                    $.each(values, function (key, value) {
+                selectableHeader : "<div class='custom-header'>Selectable Groups</div>",
+                selectionHeader : "<div class='custom-header'>Selection Groups</div>",
+                afterSelect : function(values) {
+                    $.each(values, function(key, value) {
                         var add_value = value.split(",");
                         var addObj = {
-                            groupid: add_value[0],
-                            groupName: add_value[1]
+                            groupid : add_value[0],
+                            groupName : add_value[1]
                         };
                         groupNames.push(addObj);
                     });
                 },
-                afterDeselect: function (values) {
-                    $.each(values, function (key, value) {
+                afterDeselect : function(values) {
+                    $.each(values, function(key, value) {
                         var del_value = value.split(",");
                         var del_target = del_value[0];
-                        groupNames.some(function (v, i) {
+                        groupNames.some(function(v, i) {
                             if (v.groupid == del_target)
                                 groupNames.splice(i, 1);
                         });
@@ -1120,23 +1094,23 @@ var int = {
                 }
             });
 
-            $('#select-all-zbxGroup').click(function () {
+            $('#select-all-zbxGroup').click(function() {
                 $('#zbxGroup').multiSelect('select_all');
                 return false;
             });
 
-            $('#deselect-all-zbxGroup').click(function () {
+            $('#deselect-all-zbxGroup').click(function() {
                 $('#zbxGroup').multiSelect('deselect_all');
                 return false;
             });
 
-        }).fail(function () {
+        }).fail(function() {
             console.log("createMultiSelectHostGroupNames : Network Error");
             alertDiag("Network Error");
         });
     },
 
-    settingTabGraph: function () {
+    settingTabGraph : function() {
         // groupSetting
         $('#zbxGroup').multiSelect('refresh');
 
@@ -1145,7 +1119,7 @@ var int = {
         } else {
             groupNames = [];
             var groupNames_tmp = db.get('groupNamesArray');
-            $.each(groupNames_tmp, function (index, value) {
+            $.each(groupNames_tmp, function(index, value) {
                 $('#zbxGroup').multiSelect('select', value.groupid + "," + value.groupName);
             });
         }
@@ -1167,7 +1141,7 @@ var int = {
             $("#graph_setting-tbody > tr").eq(0).clone().insertAfter($("#graph_setting-tbody > tr:last-child"));
         } else {
             var keyNames = db.get("keyNamesArray");
-            $.each(keyNames, function (index, value) {
+            $.each(keyNames, function(index, value) {
                 $("#graph_setting-tbody > tr").eq(0).clone().insertAfter($("#graph_setting-tbody > tr:last-child"));
                 $("#graph_setting-tbody .input_zbx_key:last").val(value.search_key);
 
@@ -1181,23 +1155,23 @@ var int = {
         setting.graphCheckRowCount();
 
         $("#graph_setting-tbody").sortable({
-            tolerance: "pointer",
-            distance: 1,
-            cursor: "move",
-            revert: true,
-            handle: ".graph_setting-icon",
-            scroll: true,
-            helper: "original"
+            tolerance : "pointer",
+            distance : 1,
+            cursor : "move",
+            revert : true,
+            handle : ".graph_setting-icon",
+            scroll : true,
+            helper : "original"
         });
 
-        $("#graph_setting-tbody").bind('click.sortable mousedown.sortable', function (ev) {
+        $("#graph_setting-tbody").bind('click.sortable mousedown.sortable',function(ev){
             ev.target.focus();
         });
 
         $("#graph_setting-tbody").disableSelection();
 
     },
-    settingCheck: function () {
+    settingCheck : function() {
         if (db.get("beforeDay") === null || db.get("beforeDay").length === 0) {
             db.set("beforeDay", "7");
             $("#form_beforeDay").val("7");
@@ -1216,12 +1190,12 @@ var int = {
     }
 };
 
-var pivotDisplay = function () {
+var pivotDisplay = function() {
 
     $.blockUI(blockUI_opt_all);
     var beforeDay = db.get("beforeDay");
 
-    zbxApi.event.get().done(function (data, statusText, jqXHR) {
+    zbxApi.event.get().done(function(data, statusText, jqXHR) {
 
         var Latest_events = zbxApi.event.success(data);
         pivotMain(Latest_events, "event_histogram");
@@ -1229,7 +1203,7 @@ var pivotDisplay = function () {
         pivotMain(Latest_events, "event_treemap");
         pivotMain(Latest_events, "event_free");
         $.unblockUI(blockUI_opt_all);
-    }).fail(function (jqXHR, statusText, errorThrown) {
+    }).fail(function(jqXHR, statusText, errorThrown) {
         $.unblockUI(blockUI_opt_all);
         console.log("pivotDisplay : Network Error");
         alertDiag("Network Error");
@@ -1237,46 +1211,46 @@ var pivotDisplay = function () {
 
 };
 
-var pivotMain = function (Latest_events, event_type) {
+var pivotMain = function(Latest_events, event_type) {
 
     var derivers = $.pivotUtilities.derivers;
     var renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.c3_renderers, $.pivotUtilities.d3_renderers);
     var dateFormat = $.pivotUtilities.derivers.dateFormat;
     var sortAs = $.pivotUtilities.sortAs;
     var event_conf = {
-        renderers: renderers,
-        menuLimit: 3000,
-        rows: [""],
-        cols: [""],
-        vals: [""],
-        exclusions: {
-            "Status": ["OK"]
+        renderers : renderers,
+        menuLimit : 3000,
+        rows : [ "" ],
+        cols : [ "" ],
+        vals : [ "" ],
+        exclusions : {
+            "Status" : [ "OK" ]
         },
-        aggregatorName: "Count",
-        rendererName: "",
-        derivedAttributes: {
-            "Year": dateFormat("Date", "%y"),
-            "Month": dateFormat("Date", "%m"),
-            "Day": dateFormat("Date", "%d"),
-            "Hour": dateFormat("Date", "%H"),
-            "Minute": dateFormat("Date", "%M"),
-            "Second": dateFormat("Date", "%S"),
-            "Day name": dateFormat("Date", "%w")
+        aggregatorName : "Count",
+        rendererName : "",
+        derivedAttributes : {
+            "Year" : dateFormat("Date", "%y"),
+            "Month" : dateFormat("Date", "%m"),
+            "Day" : dateFormat("Date", "%d"),
+            "Hour" : dateFormat("Date", "%H"),
+            "Minute" : dateFormat("Date", "%M"),
+            "Second" : dateFormat("Date", "%S"),
+            "Day name" : dateFormat("Date", "%w")
         },
-        utcOutput: false,
-        sorters: function (attr) {
+        utcOutput : false,
+        sorters : function(attr) {
             if (attr == "Day name") {
-                return sortAs(["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]);
+                return sortAs([ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]);
             }
             if (attr == "Severity") {
-                return sortAs(["Desastre", "Alta", "Média", "Atenção", "Informação", "Não Classificada"]);
+                return sortAs([ "Desastre", "Alta", "Media", "Atencao", "Informaçao", "Não Classificada" ]);
             }
             if (attr == "Status") {
-                return sortAs(["PROBLEM", "OK"]);
+                return sortAs([ "PROBLEM", "OK" ]);
             }
         },
-        hiddenAttributes: ["Date"],
-        onRefresh: function (config) {
+        hiddenAttributes : [ "Date" ],
+        onRefresh : function(config) {
             db.set(event_type + "_tmp", config);
             $("#base_event").find(".pvtVal[data-value='null']").css("background-color", "palegreen");
         }
@@ -1294,16 +1268,16 @@ var pivotMain = function (Latest_events, event_type) {
     } else {
 
         if (event_type == "event_histogram") {
-            event_conf["rows"] = ["Severity"];
-            event_conf["cols"] = ["Year", "Month", "Day"];
-            event_conf["rendererName"] = ["Stacked Bar Chart"];
+            event_conf["rows"] = [ "Severity" ];
+            event_conf["cols"] = [ "Year", "Month", "Day" ];
+            event_conf["rendererName"] = [ "Stacked Bar Chart" ];
         } else if (event_type == "event_pivot") {
-            event_conf["rows"] = ["Host", "Description"];
-            event_conf["cols"] = ["Year", "Month", "Day"];
-            event_conf["rendererName"] = ["Heatmap"];
+            event_conf["rows"] = [ "Host", "Description" ];
+            event_conf["cols"] = [ "Year", "Month", "Day" ];
+            event_conf["rendererName"] = [ "Heatmap" ];
         } else if (event_type == "event_treemap") {
-            event_conf["rows"] = ["Description"];
-            event_conf["rendererName"] = ["Treemap"];
+            event_conf["rows"] = [ "Description" ];
+            event_conf["rendererName"] = [ "Treemap" ];
         } else {
             // free
         }
@@ -1311,36 +1285,36 @@ var pivotMain = function (Latest_events, event_type) {
     }
 
     $("#" + event_type).pivotUI(Latest_events, event_conf, {
-        overwrite: "true"
+        overwrite : "true"
     });
 
     $("#base_event").find(".pvtAggregator").css("visibility", "hidden");
 
 };
 
-var alertDiag = function (data) {
+var alertDiag = function(data) {
     $("#modal-alert-text").text(data);
     $('#modal-alert').modal('show');
 };
 
-var infoDiag = function (data) {
+var infoDiag = function(data) {
     $("#modal-info-text").text(data);
     $('#modal-info').modal('show');
 };
 
-var alertFade = function (target) {
+var alertFade = function(target) {
     $(target).fadeIn(1000).delay(2000).fadeOut(1000);
 };
 
-var sortObject = function (object, key) {
+var sortObject = function(object, key) {
     var sorted = [];
     var array = [];
 
-    $.each(object, function (object_index, object_data) {
+    $.each(object, function(object_index, object_data) {
         array.push(object_data[key]);
     });
 
-    array.sort(function (a, b) {
+    array.sort(function(a, b) {
         if (a < b)
             return -1;
         if (a > b)
@@ -1348,8 +1322,8 @@ var sortObject = function (object, key) {
         return 0;
     });
 
-    $.each(array, function (array_index, array_data) {
-        $.each(object, function (object_index, object_data) {
+    $.each(array, function(array_index, array_data) {
+        $.each(object, function(object_index, object_data) {
             if (array_data === object_data[key]) {
                 sorted.push(object_data);
             }
@@ -1359,18 +1333,18 @@ var sortObject = function (object, key) {
     return sorted;
 }
 
-var sortObjectStr = function (object, key) {
+var sortObjectStr = function(object, key) {
     var sorted = [];
     var array = [];
 
-    $.each(object, function (object_index, object_data) {
+    $.each(object, function(object_index, object_data) {
         array.push(object_data[key]);
     });
 
     array.sort();
 
-    $.each(array, function (array_index, array_data) {
-        $.each(object, function (object_index, object_data) {
+    $.each(array, function(array_index, array_data) {
+        $.each(object, function(object_index, object_data) {
             if (array_data === object_data[key]) {
                 sorted.push(object_data);
             }
@@ -1382,50 +1356,50 @@ var sortObjectStr = function (object, key) {
 
 var blockUI_opt_all = {
 
-    message: '<h4><img src="/resources/dist/img/loading.gif" />　Please Wait...</h4>',
-    fadeIn: 200,
-    fadeOut: 200,
-    css: {
-        border: 'none',
-        padding: '15px',
-        backgroundColor: '#000',
-        '-webkit-border-radius': '10px',
-        '-moz-border-radius': '10px',
-        opacity: .5,
-        color: '#fff'
+    message : '<h4><img src="/resources/dist/img/loading.gif" />　Please Wait...</h4>',
+    fadeIn : 200,
+    fadeOut : 200,
+    css : {
+        border : 'none',
+        padding : '15px',
+        backgroundColor : '#000',
+        '-webkit-border-radius' : '10px',
+        '-moz-border-radius' : '10px',
+        opacity : .5,
+        color : '#fff'
     }
 };
 
 var blockUI_opt_el = {
-    message: '<img src="/resources/dist/img/loading.gif" />',
-    fadeIn: 200,
-    fadeOut: 200,
+    message : '<img src="/resources/dist/img/loading.gif" />',
+    fadeIn : 200,
+    fadeOut : 200,
 
 };
 
 var db = {
-    set: function (key, obj) {
+    set : function(key, obj) {
         localStorage.setItem(key, JSON.stringify(obj));
     },
-    get: function (key) {
+    get : function(key) {
         return JSON.parse(localStorage.getItem(key));
     },
-    remove: function (key) {
+    remove : function(key) {
         localStorage.removeItem(key);
     }
 };
 
 var setting = {
 
-    graphAutocomp: function () {
+    graphAutocomp : function() {
         $(".input_zbx_key").autocomplete({
-            source: itemKeyNamesUniqArray,
-            autoFocus: false,
-            delay: 100,
-            minLength: 0
+            source : itemKeyNamesUniqArray,
+            autoFocus : false,
+            delay : 100,
+            minLength : 0
         });
     },
-    graphCheckRowCount: function () {
+    graphCheckRowCount : function() {
         if ($(".removeList").length == 2) {
             $(".removeList").prop("disabled", true);
         } else {
@@ -1434,7 +1408,7 @@ var setting = {
     }
 };
 
-var convTime = function (date) {
+var convTime = function(date) {
 
     if (date === undefined) {
         var d = new Date();
@@ -1453,7 +1427,7 @@ var convTime = function (date) {
     return date;
 };
 
-var convDeltaTime = function (lastchange) {
+var convDeltaTime = function(lastchange) {
 
     var SECOND_MILLISECOND = 1000;
     var MINUTE_MILLISECOND = 60 * SECOND_MILLISECOND;
@@ -1488,17 +1462,17 @@ var convDeltaTime = function (lastchange) {
 
 };
 
-var convStatus = function (status) {
+var convStatus = function(status) {
 
     if (status === "0") {
         return "OK";
     } else {
-        return "Problema";
+        return "problem";
     }
 
 };
 
-var convAck = function (ack) {
+var convAck = function(ack) {
 
     if (ack === "0") {
         return "UnackedeventList";
@@ -1508,7 +1482,7 @@ var convAck = function (ack) {
 
 };
 
-var convPriority = function (priority) {
+var convPriority = function(priority) {
 
     switch (priority) {
         case "0":
@@ -1526,13 +1500,13 @@ var convPriority = function (priority) {
     }
 }
 
-var reloadTimer = function (flag, interval) {
+var reloadTimer = function(flag, interval) {
     if (flag === true) {
         clearInterval(zabirepo.reloadId);
         var counter = interval;
         $("#countDownTimer").text(interval);
 
-        zabirepo.reloadId = setInterval(function () {
+        zabirepo.reloadId = setInterval(function() {
             counter--;
             $("#countDownTimer").text(counter);
 
@@ -1548,17 +1522,17 @@ var reloadTimer = function (flag, interval) {
     }
 };
 
-var addDcTableColor = function () {
+var addDcTableColor = function() {
 
     //aqui conforme o dc-table-column a coluna fica piscando
-    $.each($(".dc-table-column._1"), function (index, value) {
-        if (this.textContent == "Problema") {
+    $.each($(".dc-table-column._1"), function(index, value) {
+        if (this.textContent == "problem") {
             $(this).css('color', 'Red');
-            //o flash e o .flash que esta no arquivo index.css no dist/css, se quiser que fique piscando so descomentar
+            //descomentar pra voltar a piscar o problem
             // $(this).addClass('flash');
         } else {
             $(this).css('color', 'blue');
-            // $(this).addClass('flash');
+            $(this).addClass('flash');
         }
     });
 
@@ -1572,19 +1546,19 @@ var addDcTableColor = function () {
     // 	}
     // });
 
-    $.each($(".dc-table-column._0"), function (index, value) {
+    $.each($(".dc-table-column._0"), function(index, value) {
         switch (this.textContent) {
-            case "Não Classificada":
+            case "Nao Classificada":
                 $(this).css('background-color', '#97AAB3');
                 break;
-            case "Informação":
+            case "Informaçao":
                 $(this).css('background-color', '#7499FF');
                 break;
-            case "Atenção":
+            case "Atençao":
                 $(this).css('background-color', '#FFC859');
                 break;
-            case "Média":
-                $(this).css('background-color', '#ffa059');
+            case "Media":
+                $(this).css('background-color', '#FFA059');
                 break;
             case "Alta":
                 $(this).css('background-color', '#e97303');
