@@ -8,7 +8,709 @@
   <component name="ChangeListManager">
     <list default="true" id="f1c99b5c-4f77-4484-a9bc-d48f40943ab5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/dist/js/zabirepo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/dist/js/zabirepo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/Forte.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Forte/Forte.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/Model/Host.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/Apis/Zabbix/util/ZabbixLoginUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/WEB-INF/classes/br/forte/controller/Apis/Zabbix/util/zabbix_configinfos.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/bootstrap/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/dist/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/dist/js/app.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/chartjs/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/chartjs/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/adapters/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/build-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/ckeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/contents.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/de-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/tt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/about/dialogs/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/about/dialogs/logo_ckeditor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/icons_hidpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/image/images/noimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/link/dialogs/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/link/dialogs/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/link/images/anchor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/magicline/images/icon-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/magicline/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/pastefromword/filter/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/scayt/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/scayt/dialogs/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/table/dialogs/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/wsc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/css/samples.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/img/github-top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/img/header-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/img/header-separator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/img/navigation-tip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/js/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/js/sf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/appendto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/assets/inlineall/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/assets/sample.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/assets/uilanguages/languages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/datafiltering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/divreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/inlineall.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/inlinebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/jquery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/readonly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/replacebyclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/replacebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/tabindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/uicolor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/uilanguages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/font/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/dialog_ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/dialog_ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/dialog_ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/dialog_iequirks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/editor_gecko.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/editor_ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/editor_ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/editor_ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/editor_iequirks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/icons_hidpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/hidpi/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/hidpi/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/hidpi/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/lock-open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/images/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/skins/moono/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ckeditor/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/bootstrap-colorpicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/bootstrap-colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/bootstrap-colorpicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/bootstrap-colorpicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/img/alpha-horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/img/alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/img/hue-horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/img/hue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/colorpicker/img/saturation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/dataTables.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/dataTables.bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/examples/columns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/examples/complete-callback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/examples/fill-both.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/examples/fill-horizontal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/examples/scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/examples/step-callback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/images/filler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/alt_insert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/col_filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/colvis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/fixedheader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/jqueryui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/new_init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/predefined.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/realtime.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/reset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/server_side.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/examples/state_save.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/images/insert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/css/dataTables.colVis.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/css/dataTables.colvis.jqueryui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/button_order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/exclude_columns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/group_columns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/jqueryui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/mouseover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/new_init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/restore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/title_callback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/two_tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/examples/two_tables_identical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/col_filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/colvis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/css_size.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/index_column.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/right_column.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/rowspan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/server-side-processing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/examples/two_columns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/examples/header_footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/examples/top_left_right.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/examples/two_tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/examples/zIndexes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/examples/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/examples/html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/examples/scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/css/dataTables.responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/display-control/auto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/display-control/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/display-control/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/display-control/init-classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/initialisation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/styling/compact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/styling/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/css/dataTables.scroller.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/examples/api_scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/examples/data/2500.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/examples/data/ssp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/examples/large_js_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/examples/server-side_processing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/examples/state_saving.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/images/loading-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/alter_buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/bootstrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/button_text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/collection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/defaults.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/jqueryui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/multi_instance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/multiple_tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/new_init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/pdf_message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/plug-in.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/select_column.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/select_multi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/select_os.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/select_single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/examples/swf_path.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/collection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/collection_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/copy_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/csv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/csv_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/pdf_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/print_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/psd/collection.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/psd/copy document.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/psd/file_types.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/psd/printer.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/xls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/images/xls_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/swf/copy_csv_xls.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/images/sort_asc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/images/sort_asc_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/images/sort_both.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/images/sort_desc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/images/sort_desc_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/jquery.dataTables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/jquery.dataTables.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datatables/jquery.dataTables_themeroller.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/datepicker3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.kk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.kr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.rs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/daterangepicker/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/daterangepicker/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/daterangepicker/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/daterangepicker/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/fastclick/fastclick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/fastclick/fastclick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/excanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/excanvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.colorhelpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.colorhelpers.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.canvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.categories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.categories.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.crosshair.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.crosshair.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.errorbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.errorbars.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.fillbetween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.fillbetween.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.image.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.navigate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.navigate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.pie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.resize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.selection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.selection.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.stack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.stack.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.symbol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.symbol.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.threshold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.threshold.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/flot/jquery.flot.time.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/fullcalendar/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/fullcalendar/fullcalendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/fullcalendar/fullcalendar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/fullcalendar/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/fullcalendar/fullcalendar.print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ionslider/img/sprite-skin-flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ionslider/img/sprite-skin-nice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ionslider/ion.rangeSlider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ionslider/ion.rangeSlider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ionslider/ion.rangeSlider.skinFlat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/ionslider/ion.rangeSlider.skinNice.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/knob/jquery.knob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/morris/morris.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/morris/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/morris/morris.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/select2/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/slimScroll/jquery.slimscroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/sparkline/jquery.sparkline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Forte/resources/AdminLTE/plugins/sparkline/jquery.sparkline.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +737,7 @@
     <session id="-1509149149">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.106" value="1" />
@@ -117,7 +819,7 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22ff58d1-631c-43af-bbb4-4cf27414d941/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
+              <caret line="1" column="20" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -135,7 +837,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/jqzabbix.js/jqzabbix.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="51" />
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -169,7 +871,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dc-legend-item</find>
       <find>3182bd</find>
       <find>chart_severity</find>
       <find>pie-slice</find>
@@ -199,6 +900,7 @@
       <find>testa</find>
       <find>var zbxsession = db.get(&quot;zbxsession&quot;);</find>
       <find>sessao</find>
+      <find>input_zbx_key</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -739,7 +1441,7 @@
       <workItem from="1535072545690" duration="2591000" />
       <workItem from="1535112205710" duration="7702000" />
       <workItem from="1535376507243" duration="3760000" />
-      <workItem from="1535551423444" duration="1511000" />
+      <workItem from="1535551423444" duration="2986000" />
     </task>
     <servers />
   </component>
@@ -776,7 +1478,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="550230000" />
+    <option name="totallyTimeSpent" value="551705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,7 +1490,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1366" height="738" extended-state="7" />
+    <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2439394" />
@@ -802,7 +1504,7 @@
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284055" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848485" visible="true" weight="0.34210527" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848485" weight="0.34210527" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39802632" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1207,14 +1909,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/jqzabbix.js/jqzabbix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="51" />
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22ff58d1-631c-43af-bbb4-4cf27414d941/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
+          <caret line="1" column="20" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
