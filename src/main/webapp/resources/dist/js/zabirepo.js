@@ -1140,10 +1140,14 @@ var int = {
         if (db.get("keyNamesArray") == null) {
             $("#graph_setting-tbody > tr").eq(0).clone().insertAfter($("#graph_setting-tbody > tr:last-child"));
         } else {
+
             var keyNames = db.get("keyNamesArray");
+
             $.each(keyNames, function(index, value) {
+
                 $("#graph_setting-tbody > tr").eq(0).clone().insertAfter($("#graph_setting-tbody > tr:last-child"));
                 $("#graph_setting-tbody .input_zbx_key:last").val(value.search_key);
+                console.log(value.search_key)
 
                 if (value.split_flag == 0) {
                     $(".input_zbx_split:last").prop("checked", false);
@@ -1243,7 +1247,7 @@ var pivotMain = function(Latest_events, event_type) {
                 return sortAs([ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]);
             }
             if (attr == "Severity") {
-                return sortAs([ "Desastre", "Alta", "Media", "Atencao", "Informaçao", "Não Classificada" ]);
+                return sortAs([ "Desastre", "Alta", "Média", "Atencão", "Informação", "Não Classificada" ]);
             }
             if (attr == "Status") {
                 return sortAs([ "PROBLEM", "OK" ]);
@@ -1548,16 +1552,16 @@ var addDcTableColor = function() {
 
     $.each($(".dc-table-column._0"), function(index, value) {
         switch (this.textContent) {
-            case "Nao Classificada":
+            case "Não Classificada":
                 $(this).css('background-color', '#97AAB3');
                 break;
-            case "Informaçao":
+            case "Informação":
                 $(this).css('background-color', '#7499FF');
                 break;
-            case "Atençao":
+            case "Atenção":
                 $(this).css('background-color', '#FFC859');
                 break;
-            case "Media":
+            case "Média":
                 $(this).css('background-color', '#FFA059');
                 break;
             case "Alta":
