@@ -613,6 +613,7 @@ var int = {
             $("#graph_setting-tbody > tr").each(function() {
                 var input_key = $(this).find(".input_zbx_key").val();
 
+
                 if ($(this).find(".input_zbx_split").prop("checked")) {
                     var input_split = 1;
                 } else {
@@ -831,10 +832,10 @@ var int = {
         $('#base_graph').show();
 
         $('#table').empty();
-        $("#reportName").text("Display Report ： 【 " + graphLabel + " 】");
+        $("#reportName").text("Graficos ： 【 " + graphLabel + " 】");
 
         if (resultObj.length === 0) {
-            $('<div class="center-block"><strong>Item is not found.</strong></div>').appendTo("#table");
+            $('<div class="center-block"><strong>Item nao encontrado.</strong></div>').appendTo("#table");
             return;
         }
 

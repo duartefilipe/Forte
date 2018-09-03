@@ -116,12 +116,12 @@
                     </a>
                 </li>
 
-                    <%--<li>--%>
-                    <%--<a href="Hosts">--%>
-                    <%--<i class="fa fa-book"></i>--%>
-                    <%--<span>Hosts</span>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
+                <li>
+                    <a href="Trigger">
+                        <i class="fa fa-book"></i>
+                        <span>Triggers</span>
+                    </a>
+                </li>
 
                 <li>
                     <a href="APIs">
@@ -136,6 +136,7 @@
                         <span>Graphs</span>
                     </a>
                 </li>
+
 
             </ul>
         </section>

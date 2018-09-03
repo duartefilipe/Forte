@@ -26,6 +26,12 @@ public class ZabbixController {
         return "API/Zabbix/Graficos";
     }
 
+    @RequestMapping("Trigger")
+    public String redirecionaTrigger() {
+        System.out.println("Foi pras triggers");
+        return "API/Trigger";
+    }
+
     @RequestMapping ("CadZabbix")
     public String CadZabbix (Usuario usuario, Host host, HostGroup hostGroup, HostInterface hostInterface, Template template, Macro macro, HttpServletRequest rq){
         try {
@@ -129,5 +135,22 @@ public class ZabbixController {
         }
     }
 
+    @RequestMapping ("CadTriggerZabbix")
+    public String CadTriggerZabbix (Trigger trigger, Usuario Usuario, HttpServletRequest rq){
+        try {
+
+            boolean retorno = new ZabbixDao().CreateTrigger(trigger);
+
+            if (retorno) {
+                rq.setAttribute("mensagem", "Trigger cadastrado sucesso");
+                return "API/Trigger";
+            } else {
+                return "API/Trigger";
+            }
+        }catch (Exception e){
+            System.out.println("ERRO no cad zabbix: "+e);
+        }
+        return "API/API";
+    }
 
 }

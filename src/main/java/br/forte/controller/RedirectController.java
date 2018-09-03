@@ -9,4 +9,10 @@ public class RedirectController {
         return "API/API";
     }
 
+    @RequestMapping("Trigger")
+    public String redirecionaTrigger() {
+        System.out.println("Foi pras triggers");
+        return "API/Trigger";
+    }
+
 }

@@ -15,13 +15,13 @@ import junit.framework.TestCase;
 
 
 public class TestItem extends TestCase {
-//	private static IItemService itemService = new ItemServiceImpl();
-//	private static IHistoryService historyService = new HistoryServiceImpl();
-//
-//	static {
-//		System.out.println("ta aqui no login do zabbix dao");
-//		new UsuarioDao().login();
-//	}
+	private static IItemService itemService = new ItemServiceImpl();
+	private static IHistoryService historyService = new HistoryServiceImpl();
+
+	static {
+		System.out.println("ta aqui no login do zabbix dao");
+		new UsuarioDao().login();
+	}
 //
 //	public void testCreate() {
 //		// 数据准备

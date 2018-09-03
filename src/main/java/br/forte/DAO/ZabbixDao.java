@@ -9,7 +9,9 @@ import br.forte.controller.Apis.Zabbix.api.domain.host.HostGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.hostgroup.HostGroupCreateRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.hostgroup.HostGroupGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.hostinterface.HostInterfaceGetRequest;
+import br.forte.controller.Apis.Zabbix.api.domain.item.ItemGetRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.template.TemplateGetRequest;
+import br.forte.controller.Apis.Zabbix.api.domain.trigger.TriggerCreateRequest;
 import br.forte.controller.Apis.Zabbix.api.domain.usergroup.UserGroupGetRequest;
 import br.forte.controller.Apis.Zabbix.api.service.*;
 import br.forte.controller.Apis.Zabbix.api.service.impl.*;
@@ -33,6 +35,7 @@ public class ZabbixDao {
 
     private static IHostService hostService = new HostServiceImpl();
     private static IHostgroupService hostgroupService = new HostgroupServiceImpl();
+    private static ITriggerService triggerService = new TriggerServiceImpl();
 
     private static Logger log = Logger.getLogger(String.valueOf(HostinterfaceServiceImpl.class));
 
@@ -715,4 +718,166 @@ public class ZabbixDao {
         }
         return rs;
     }
+
+    public boolean CreateTrigger(Trigger trigger) {
+        boolean retorno;
+
+        System.out.println("ta no test create trigger");
+        System.out.println("Nome: "+trigger.getDescription()+" Expressao: "+trigger.getExpression()+" descricao: "+trigger.getComments()+" severidade: "+trigger.getPriority());
+
+        try {
+
+            Connection c = null;
+            PreparedStatement stmt = null;
+
+            String nome = trigger.getDescription();
+            String expressao = trigger.getExpression();
+            String descricao = trigger.getComments();
+            int severidade = trigger.getPriority();
+
+            System.out.println("Nome: "+nome+" Expressao: "+expressao+" descricao: "+descricao+" severidade: "+severidade);
+
+            c = Connect.getConexao();
+
+            String sql = "INSERT INTO trigger (nome, expressao, descricao, severidade) values(?,?,?,?)";
+            stmt = c.prepareStatement(sql);
+            stmt.setString(1, nome);
+            stmt.setString(2, expressao);
+            stmt.setString(3, descricao);
+            stmt.setInt(4, severidade);
+
+
+            stmt.execute();
+            stmt.close();
+
+            login();
+
+            TriggerCreateRequest create = new TriggerCreateRequest();
+
+            create.getParams().setDescription(nome);
+            create.getParams().setExpression(expressao);
+            create.getParams().setComments(descricao);
+            create.getParams().setPriority(severidade);
+
+//		 Trigger t = new Trigger();
+//		 t.setTriggerid("977");
+//		 create.getParams().getDependencies().add(t);
+
+            triggerService.create(create);
+
+            retorno = true;
+            return retorno;
+
+        } catch (Exception e) {
+            System.out.println("ERRO: " + e);
+        }
+
+        retorno = true;
+        return retorno;
+    }
+
+    public List<Item> getItem() {
+
+        ArrayList<Item> items = new ArrayList<Item>();
+
+        ItemGetRequest itemGet = new ItemGetRequest();
+
+        JSONObject result = (JSONObject) this.itemGet(itemGet);
+
+        if (result != null) {
+            if (result.has("result")) {
+                try {
+                    JSONArray array = result.getJSONArray("result");
+
+                    if (array != null && array.length() > 0) {
+
+                        for (int i = 0; i < array.length(); i++) {
+
+                            Item item = new Item();
+
+                            JSONObject object = array.getJSONObject(i);
+
+                            item.setItemid(object.getString("itemid"));
+                            item.setName(object.getString("name"));
+                            items.add(item);
+
+                        }
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    return null;
+                }
+                return items;
+            } else if (result.has("error")) {
+                return null;
+            }
+        }
+        return items;
+    }
+
+    public Object itemGet(ItemGetRequest itemGet) {
+        Gson js = new Gson();
+        HttpClient client = new HttpClient();
+        PostMethod putMethod = new PostMethod(FormatData.API_URL);
+        putMethod.setRequestHeader("Content-Type", "application/json-rpc");
+        JSONObject rs = null;
+        try {
+            String json = js.toJson(itemGet);
+            putMethod.setRequestBody(FormatData.fromString(json));
+            client.executeMethod(putMethod);
+            String response = putMethod.getResponseBodyAsString();
+            rs = new JSONObject(response);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return rs;
+    }
+
+    public ArrayList<HostIntegration> getHosts() throws ClassNotFoundException {
+
+        ArrayList<HostIntegration> hostIntegrations = new ArrayList<HostIntegration>();
+        ArrayList<Host> hosts = new ArrayList<Host>();
+        ArrayList<HostInterface> hostInterfaces = new ArrayList<HostInterface>();
+        Connection con = Connect.getConexao();
+
+        try {
+            String sql = sql = "SELECT * FROM host";
+
+            PreparedStatement stmt = con.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+
+            //ta trazendo a quantidade de hosts certa, mas repetidos
+            while (rs.next()) {
+                Host h = new Host();
+                HostInterface hi = new HostInterface();
+                HostIntegration hostIntegration = new HostIntegration();
+
+                h.setHostid(rs.getString("idhost"));
+                h.setName(rs.getString("namehost"));
+                h.setHost(rs.getString("hos"));
+                h.setStatus(rs.getInt("status"));
+                hosts.add(h);
+                hostIntegration.setHost(h);
+
+                hi.setType(rs.getInt("tipo"));
+                hi.setIp(rs.getString("ip"));
+                hi.setDns(rs.getString("dns"));
+                hi.setUseip(rs.getInt("useip")); //1 - SNMP
+                hi.setMain(rs.getInt("main"));
+                hi.setPort(rs.getString("porta"));
+                hostInterfaces.add(hi);
+                hostIntegration.setHostInterface(hi);
+
+                hostIntegrations.add(hostIntegration);
+            }
+
+        } catch (Exception e) {
+
+            System.out.println("ERRO no try catch trazer hosts: " + e);
+        }
+        return hostIntegrations;
+
+    }
+
+
 }

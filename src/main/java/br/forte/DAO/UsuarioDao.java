@@ -49,8 +49,8 @@ public class UsuarioDao {
 //    public static final String url = "http://192.168.199.104/zabbix/api_jsonrpc.php";  //forte pc
     public static final String url = "http://177.67.163.20:8089/zabbix/api_jsonrpc.php";  //zabbix externo
 
-    private static String loginName;
-    private static String password;
+    private static String loginName = "Filipe";
+    private static String password = "eumesmo";
 
     static {
         FormatData.API_URL = url;
@@ -84,12 +84,14 @@ public class UsuarioDao {
             u.setSenhazabbix(rs.getString("senhazabbix"));
             u.setGrupo(rs.getString("hostgroupid"));
         }
-        loginName = u.getUserzabbix();
-        password = u.getSenhazabbix();
+//        loginName = u.getUserzabbix();
+//        password = u.getSenhazabbix();
 
-        getTemplate();
-        ZabbixDao zD = new ZabbixDao();
-        zD.getTemplate();
+
+        //getTemplate();
+
+//        ZabbixDao zD = new ZabbixDao();
+//        zD.getTemplate();
 
         return u;
     }

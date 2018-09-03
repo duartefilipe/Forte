@@ -20,7 +20,7 @@ public class TestTrigger extends TestCase {
 //		System.out.println("ta aqui no login do zabbix dao");
 //		new UsuarioDao().login();
 //	}
-//
+////
 //	public void testAdddependencies() {
 //		// 数据准备
 //		TriggerAdddependenciesRequest adddependencies = new TriggerAdddependenciesRequest();
@@ -31,20 +31,20 @@ public class TestTrigger extends TestCase {
 //		triggerService.adddependencies(adddependencies);
 //
 //	}
-//
+////
 //	public void testCreate() {
 //		// 数据准备
 //		TriggerCreateRequest create = new TriggerCreateRequest();
 //
-//		create.getParams().setDescription("主机CPU使用率大于阀值20小于阀值80触发告警");
-//		create.getParams()
-//				.setExpression(
-//						"{Template OS Windows:system.cpu.util[,system].last()}>20&&{Template OS Windows:system.cpu.util[,system].last()}<80");
-//		create.getParams().setPriority(2);
-//		// Trigger t = new Trigger();
-//		// t.setTriggerid("977");
-//		// create.getParams().getDependencies().add(t);
-//
+//		create.getParams().setDescription("teste");
+//		create.getParams().setExpression("{CAMNPAL:icmpping.max(#3)}=0");
+//		create.getParams().setComments("tttttteste");
+//		create.getParams().setPriority(4);
+
+//		 Trigger t = new Trigger();
+//		 t.setTriggerid("977");
+//		 create.getParams().getDependencies().add(t);
+
 //		triggerService.create(create);
 //
 //	}
