@@ -777,6 +777,7 @@ public class ZabbixDao {
     }
 
     public List<Item> getItem() {
+        //testando
 
         ArrayList<Item> items = new ArrayList<Item>();
 
